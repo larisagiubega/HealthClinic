@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bf697a2b65804ef9b7cbdbf38c4d4fad" Name="Diagram1">
+        <EntityTypeShape EntityType="HealthClinicDBModel.DISEASES" Width="1.5" PointX="7.75" PointY="1.125" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.DISEASES_SYMPTOMS" Width="1.5" PointX="10" PointY="0.875" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.INVOICE" Width="1.5" PointX="7.75" PointY="6.75" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.MEDICINE" Width="1.5" PointX="9.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.NOTICE_BOARD" Width="1.5" PointX="5.25" PointY="6" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.RIGHT" Width="1.5" PointX="0.75" PointY="2.875" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.SHIFT" Width="1.5" PointX="3" PointY="7.875" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.SYMPTOMS" Width="1.5" PointX="7.75" PointY="4.125" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_DISEASES" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_SYMPTOMS" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.SCHEDULE" Width="1.5" PointX="5.25" PointY="9.25" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_CLOCKING_SHIFT1" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.APPOINTMENTS" Width="1.5" PointX="5.25" PointY="13.625" />
+        <EntityTypeShape EntityType="HealthClinicDBModel.USER" Width="1.5" PointX="3" PointY="13.25" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_APPOINTMENTS_USER" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_NOTICE_BOARD_ADD_BY1" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_PERSON_RIGHT1" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_CLOCKING_PERSON" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

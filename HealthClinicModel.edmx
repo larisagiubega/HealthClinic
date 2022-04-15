@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HealthClinicDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="APPOINTMENTS">
+          <Key>
+            <PropertyRef Name="APPOINTMENT_ID" />
+          </Key>
+          <Property Name="APPOINTMENT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="APPOINTMENT_DATE" Type="date" Nullable="false" />
+          <Property Name="PHONE_NUMBER" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DOCTOR_USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DISEASES">
+          <Key>
+            <PropertyRef Name="ID_DISEASE" />
+          </Key>
+          <Property Name="ID_DISEASE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DISEASE" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DISEASES_SYMPTOMS">
+          <Key>
+            <PropertyRef Name="ID_DISEASE_SYMPTOM" />
+          </Key>
+          <Property Name="ID_DISEASE_SYMPTOM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_DISEASE" Type="int" Nullable="false" />
+          <Property Name="ID_SYMPTOM" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INVOICE">
+          <Key>
+            <PropertyRef Name="ID_INVOICE" />
+          </Key>
+          <Property Name="ID_INVOICE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SUPPLIER_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="BILLING_DATE" Type="datetime" Nullable="false" />
+          <Property Name="REGISTRATION_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MEDICINE">
+          <Key>
+            <PropertyRef Name="ID_MEDICINE" />
+          </Key>
+          <Property Name="ID_MEDICINE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MEDICINE_NAME" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="QUANTITY" Type="int" Nullable="false" />
+          <Property Name="LAST_BILLING" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NOTICE_BOARD">
+          <Key>
+            <PropertyRef Name="ID_NOTICE" />
+          </Key>
+          <Property Name="ID_NOTICE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOTICE" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="DATE_NOTICE" Type="datetime" Nullable="false" />
+          <Property Name="ADDED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RIGHT">
+          <Key>
+            <PropertyRef Name="ID_RIGHT" />
+          </Key>
+          <Property Name="ID_RIGHT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RIGHT_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SCHEDULE">
+          <Key>
+            <PropertyRef Name="ID_SCHEDULE" />
+          </Key>
+          <Property Name="ID_SCHEDULE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_SHIFT" Type="int" Nullable="false" />
+          <Property Name="CHANGED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DATE" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SHIFT">
+          <Key>
+            <PropertyRef Name="ID_SHIFT" />
+          </Key>
+          <Property Name="ID_SHIFT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SHIFT_START" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="SHIFT_END" Type="varchar" MaxLength="5" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SYMPTOMS">
+          <Key>
+            <PropertyRef Name="ID_SYMPTOM" />
+          </Key>
+          <Property Name="ID_SYMPTOM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SYMPTOM" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID_RIGHT" Type="int" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_APPOINTMENTS_USER">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="APPOINTMENTS" Type="Self.APPOINTMENTS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="APPOINTMENTS">
+              <PropertyRef Name="DOCTOR_USERNAME" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLOCKING_CHANGED_BY">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Self.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="CHANGED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLOCKING_PERSON">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Self.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="USERNAME" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLOCKING_SHIFT">
+          <End Role="SHIFT" Type="Self.SHIFT" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Self.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SHIFT">
+              <PropertyRef Name="ID_SHIFT" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="ID_SHIFT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DISEASES">
+          <End Role="DISEASES" Type="Self.DISEASES" Multiplicity="1" />
+          <End Role="DISEASES_SYMPTOMS" Type="Self.DISEASES_SYMPTOMS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISEASES">
+              <PropertyRef Name="ID_DISEASE" />
+            </Principal>
+            <Dependent Role="DISEASES_SYMPTOMS">
+              <PropertyRef Name="ID_DISEASE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NOTICE_BOARD_ADD_BY">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="NOTICE_BOARD" Type="Self.NOTICE_BOARD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="NOTICE_BOARD">
+              <PropertyRef Name="ADDED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSON_RIGHT">
+          <End Role="RIGHT" Type="Self.RIGHT" Multiplicity="1" />
+          <End Role="USER" Type="Self.USER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RIGHT">
+              <PropertyRef Name="ID_RIGHT" />
+            </Principal>
+            <Dependent Role="USER">
+              <PropertyRef Name="ID_RIGHT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SYMPTOMS">
+          <End Role="SYMPTOMS" Type="Self.SYMPTOMS" Multiplicity="1" />
+          <End Role="DISEASES_SYMPTOMS" Type="Self.DISEASES_SYMPTOMS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SYMPTOMS">
+              <PropertyRef Name="ID_SYMPTOM" />
+            </Principal>
+            <Dependent Role="DISEASES_SYMPTOMS">
+              <PropertyRef Name="ID_SYMPTOM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HealthClinicDBModelStoreContainer">
+          <EntitySet Name="APPOINTMENTS" EntityType="Self.APPOINTMENTS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DISEASES" EntityType="Self.DISEASES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DISEASES_SYMPTOMS" EntityType="Self.DISEASES_SYMPTOMS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INVOICE" EntityType="Self.INVOICE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MEDICINE" EntityType="Self.MEDICINE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NOTICE_BOARD" EntityType="Self.NOTICE_BOARD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RIGHT" EntityType="Self.RIGHT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SCHEDULE" EntityType="Self.SCHEDULE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SHIFT" EntityType="Self.SHIFT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SYMPTOMS" EntityType="Self.SYMPTOMS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_APPOINTMENTS_USER" Association="Self.FK_APPOINTMENTS_USER">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="APPOINTMENTS" EntitySet="APPOINTMENTS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLOCKING_CHANGED_BY" Association="Self.FK_CLOCKING_CHANGED_BY">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLOCKING_PERSON" Association="Self.FK_CLOCKING_PERSON">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLOCKING_SHIFT" Association="Self.FK_CLOCKING_SHIFT">
+            <End Role="SHIFT" EntitySet="SHIFT" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DISEASES" Association="Self.FK_DISEASES">
+            <End Role="DISEASES" EntitySet="DISEASES" />
+            <End Role="DISEASES_SYMPTOMS" EntitySet="DISEASES_SYMPTOMS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NOTICE_BOARD_ADD_BY" Association="Self.FK_NOTICE_BOARD_ADD_BY">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="NOTICE_BOARD" EntitySet="NOTICE_BOARD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSON_RIGHT" Association="Self.FK_PERSON_RIGHT">
+            <End Role="RIGHT" EntitySet="RIGHT" />
+            <End Role="USER" EntitySet="USER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SYMPTOMS" Association="Self.FK_SYMPTOMS">
+            <End Role="SYMPTOMS" EntitySet="SYMPTOMS" />
+            <End Role="DISEASES_SYMPTOMS" EntitySet="DISEASES_SYMPTOMS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HealthClinicDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="HealthClinicEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DISEASES" EntityType="HealthClinicDBModel.DISEASES" />
+          <EntitySet Name="DISEASES_SYMPTOMS" EntityType="HealthClinicDBModel.DISEASES_SYMPTOMS" />
+          <EntitySet Name="INVOICE" EntityType="HealthClinicDBModel.INVOICE" />
+          <EntitySet Name="MEDICINE" EntityType="HealthClinicDBModel.MEDICINE" />
+          <EntitySet Name="NOTICE_BOARD" EntityType="HealthClinicDBModel.NOTICE_BOARD" />
+          <EntitySet Name="RIGHT" EntityType="HealthClinicDBModel.RIGHT" />
+          <EntitySet Name="SHIFT" EntityType="HealthClinicDBModel.SHIFT" />
+          <EntitySet Name="SYMPTOMS" EntityType="HealthClinicDBModel.SYMPTOMS" />
+          <AssociationSet Name="FK_DISEASES" Association="HealthClinicDBModel.FK_DISEASES">
+            <End Role="DISEASES" EntitySet="DISEASES" />
+            <End Role="DISEASES_SYMPTOMS" EntitySet="DISEASES_SYMPTOMS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SYMPTOMS" Association="HealthClinicDBModel.FK_SYMPTOMS">
+            <End Role="SYMPTOMS" EntitySet="SYMPTOMS" />
+            <End Role="DISEASES_SYMPTOMS" EntitySet="DISEASES_SYMPTOMS" />
+          </AssociationSet>
+          <EntitySet Name="SCHEDULE" EntityType="HealthClinicDBModel.SCHEDULE" />
+          <AssociationSet Name="FK_CLOCKING_SHIFT1" Association="HealthClinicDBModel.FK_CLOCKING_SHIFT1">
+            <End Role="SHIFT" EntitySet="SHIFT" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <EntitySet Name="APPOINTMENTS" EntityType="HealthClinicDBModel.APPOINTMENTS" />
+          <EntitySet Name="USER" EntityType="HealthClinicDBModel.USER" />
+          <AssociationSet Name="FK_APPOINTMENTS_USER" Association="HealthClinicDBModel.FK_APPOINTMENTS_USER">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="APPOINTMENTS" EntitySet="APPOINTMENTS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NOTICE_BOARD_ADD_BY1" Association="HealthClinicDBModel.FK_NOTICE_BOARD_ADD_BY1">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="NOTICE_BOARD" EntitySet="NOTICE_BOARD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PERSON_RIGHT1" Association="HealthClinicDBModel.FK_PERSON_RIGHT1">
+            <End Role="RIGHT" EntitySet="RIGHT" />
+            <End Role="USER" EntitySet="USER" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLOCKING_CHANGED_BY" Association="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CLOCKING_PERSON" Association="HealthClinicDBModel.FK_CLOCKING_PERSON">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="DISEASES">
+          <Key>
+            <PropertyRef Name="ID_DISEASE" />
+          </Key>
+          <Property Name="ID_DISEASE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DISEASE" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DISEASES_SYMPTOMS" Relationship="HealthClinicDBModel.FK_DISEASES" FromRole="DISEASES" ToRole="DISEASES_SYMPTOMS" />
+        </EntityType>
+        <EntityType Name="DISEASES_SYMPTOMS">
+          <Key>
+            <PropertyRef Name="ID_DISEASE_SYMPTOM" />
+          </Key>
+          <Property Name="ID_DISEASE_SYMPTOM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_DISEASE" Type="Int32" Nullable="false" />
+          <Property Name="ID_SYMPTOM" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DISEASES" Relationship="HealthClinicDBModel.FK_DISEASES" FromRole="DISEASES_SYMPTOMS" ToRole="DISEASES" />
+          <NavigationProperty Name="SYMPTOMS" Relationship="HealthClinicDBModel.FK_SYMPTOMS" FromRole="DISEASES_SYMPTOMS" ToRole="SYMPTOMS" />
+        </EntityType>
+        <EntityType Name="INVOICE">
+          <Key>
+            <PropertyRef Name="ID_INVOICE" />
+          </Key>
+          <Property Name="ID_INVOICE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SUPPLIER_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BILLING_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="REGISTRATION_DATE" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="MEDICINE">
+          <Key>
+            <PropertyRef Name="ID_MEDICINE" />
+          </Key>
+          <Property Name="ID_MEDICINE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MEDICINE_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="QUANTITY" Type="Int32" Nullable="false" />
+          <Property Name="LAST_BILLING" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="NOTICE_BOARD">
+          <Key>
+            <PropertyRef Name="ID_NOTICE" />
+          </Key>
+          <Property Name="ID_NOTICE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOTICE" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="DATE_NOTICE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ADDED_BY" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USER" Relationship="HealthClinicDBModel.FK_NOTICE_BOARD_ADD_BY1" FromRole="NOTICE_BOARD" ToRole="USER" />
+        </EntityType>
+        <EntityType Name="RIGHT">
+          <Key>
+            <PropertyRef Name="ID_RIGHT" />
+          </Key>
+          <Property Name="ID_RIGHT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RIGHT_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USER" Relationship="HealthClinicDBModel.FK_PERSON_RIGHT1" FromRole="RIGHT" ToRole="USER" />
+        </EntityType>
+        <EntityType Name="SHIFT">
+          <Key>
+            <PropertyRef Name="ID_SHIFT" />
+          </Key>
+          <Property Name="ID_SHIFT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SHIFT_START" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="SHIFT_END" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SCHEDULE" Relationship="HealthClinicDBModel.FK_CLOCKING_SHIFT1" FromRole="SHIFT" ToRole="SCHEDULE" />
+        </EntityType>
+        <EntityType Name="SYMPTOMS">
+          <Key>
+            <PropertyRef Name="ID_SYMPTOM" />
+          </Key>
+          <Property Name="ID_SYMPTOM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SYMPTOM" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DISEASES_SYMPTOMS" Relationship="HealthClinicDBModel.FK_SYMPTOMS" FromRole="SYMPTOMS" ToRole="DISEASES_SYMPTOMS" />
+        </EntityType>
+        <Association Name="FK_DISEASES">
+          <End Type="HealthClinicDBModel.DISEASES" Role="DISEASES" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.DISEASES_SYMPTOMS" Role="DISEASES_SYMPTOMS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DISEASES">
+              <PropertyRef Name="ID_DISEASE" />
+            </Principal>
+            <Dependent Role="DISEASES_SYMPTOMS">
+              <PropertyRef Name="ID_DISEASE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SYMPTOMS">
+          <End Type="HealthClinicDBModel.SYMPTOMS" Role="SYMPTOMS" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.DISEASES_SYMPTOMS" Role="DISEASES_SYMPTOMS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SYMPTOMS">
+              <PropertyRef Name="ID_SYMPTOM" />
+            </Principal>
+            <Dependent Role="DISEASES_SYMPTOMS">
+              <PropertyRef Name="ID_SYMPTOM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SCHEDULE">
+          <Key>
+            <PropertyRef Name="ID_SCHEDULE" />
+          </Key>
+          <Property Name="ID_SCHEDULE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_SHIFT" Type="Int32" Nullable="false" />
+          <Property Name="CHANGED_BY" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DATE" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="SHIFT" Relationship="HealthClinicDBModel.FK_CLOCKING_SHIFT1" FromRole="SCHEDULE" ToRole="SHIFT" />
+          <NavigationProperty Name="USER" Relationship="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY" FromRole="SCHEDULE" ToRole="USER" />
+          <NavigationProperty Name="USER1" Relationship="HealthClinicDBModel.FK_CLOCKING_PERSON" FromRole="SCHEDULE" ToRole="USER" />
+        </EntityType>
+        <Association Name="FK_CLOCKING_SHIFT1">
+          <End Type="HealthClinicDBModel.SHIFT" Role="SHIFT" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.SCHEDULE" Role="SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SHIFT">
+              <PropertyRef Name="ID_SHIFT" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="ID_SHIFT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="APPOINTMENTS">
+          <Key>
+            <PropertyRef Name="APPOINTMENT_ID" />
+          </Key>
+          <Property Name="APPOINTMENT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIRST_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_NAME" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="APPOINTMENT_DATE" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PHONE_NUMBER" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DOCTOR_USERNAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USER" Relationship="HealthClinicDBModel.FK_APPOINTMENTS_USER" FromRole="APPOINTMENTS" ToRole="USER" />
+        </EntityType>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="USERNAME" />
+          </Key>
+          <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FIRST_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID_RIGHT" Type="Int32" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="APPOINTMENTS" Relationship="HealthClinicDBModel.FK_APPOINTMENTS_USER" FromRole="USER" ToRole="APPOINTMENTS" />
+          <NavigationProperty Name="NOTICE_BOARD" Relationship="HealthClinicDBModel.FK_NOTICE_BOARD_ADD_BY1" FromRole="USER" ToRole="NOTICE_BOARD" />
+          <NavigationProperty Name="RIGHT" Relationship="HealthClinicDBModel.FK_PERSON_RIGHT1" FromRole="USER" ToRole="RIGHT" />
+          <NavigationProperty Name="SCHEDULE" Relationship="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY" FromRole="USER" ToRole="SCHEDULE" />
+          <NavigationProperty Name="SCHEDULE1" Relationship="HealthClinicDBModel.FK_CLOCKING_PERSON" FromRole="USER" ToRole="SCHEDULE" />
+        </EntityType>
+        <Association Name="FK_APPOINTMENTS_USER">
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.APPOINTMENTS" Role="APPOINTMENTS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="APPOINTMENTS">
+              <PropertyRef Name="DOCTOR_USERNAME" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NOTICE_BOARD_ADD_BY1">
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.NOTICE_BOARD" Role="NOTICE_BOARD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="NOTICE_BOARD">
+              <PropertyRef Name="ADDED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PERSON_RIGHT1">
+          <End Type="HealthClinicDBModel.RIGHT" Role="RIGHT" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RIGHT">
+              <PropertyRef Name="ID_RIGHT" />
+            </Principal>
+            <Dependent Role="USER">
+              <PropertyRef Name="ID_RIGHT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLOCKING_CHANGED_BY">
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.SCHEDULE" Role="SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="CHANGED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CLOCKING_PERSON">
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.SCHEDULE" Role="SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="USERNAME" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HealthClinicDBModelStoreContainer" CdmEntityContainer="HealthClinicEntities">
+          <EntitySetMapping Name="DISEASES">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.DISEASES">
+              <MappingFragment StoreEntitySet="DISEASES">
+                <ScalarProperty Name="DISEASE" ColumnName="DISEASE" />
+                <ScalarProperty Name="ID_DISEASE" ColumnName="ID_DISEASE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DISEASES_SYMPTOMS">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.DISEASES_SYMPTOMS">
+              <MappingFragment StoreEntitySet="DISEASES_SYMPTOMS">
+                <ScalarProperty Name="ID_SYMPTOM" ColumnName="ID_SYMPTOM" />
+                <ScalarProperty Name="ID_DISEASE" ColumnName="ID_DISEASE" />
+                <ScalarProperty Name="ID_DISEASE_SYMPTOM" ColumnName="ID_DISEASE_SYMPTOM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INVOICE">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.INVOICE">
+              <MappingFragment StoreEntitySet="INVOICE">
+                <ScalarProperty Name="REGISTRATION_DATE" ColumnName="REGISTRATION_DATE" />
+                <ScalarProperty Name="BILLING_DATE" ColumnName="BILLING_DATE" />
+                <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+                <ScalarProperty Name="ID_INVOICE" ColumnName="ID_INVOICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEDICINE">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.MEDICINE">
+              <MappingFragment StoreEntitySet="MEDICINE">
+                <ScalarProperty Name="LAST_BILLING" ColumnName="LAST_BILLING" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="MEDICINE_NAME" ColumnName="MEDICINE_NAME" />
+                <ScalarProperty Name="ID_MEDICINE" ColumnName="ID_MEDICINE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NOTICE_BOARD">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.NOTICE_BOARD">
+              <MappingFragment StoreEntitySet="NOTICE_BOARD">
+                <ScalarProperty Name="ADDED_BY" ColumnName="ADDED_BY" />
+                <ScalarProperty Name="DATE_NOTICE" ColumnName="DATE_NOTICE" />
+                <ScalarProperty Name="NOTICE" ColumnName="NOTICE" />
+                <ScalarProperty Name="ID_NOTICE" ColumnName="ID_NOTICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RIGHT">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.RIGHT">
+              <MappingFragment StoreEntitySet="RIGHT">
+                <ScalarProperty Name="RIGHT_NAME" ColumnName="RIGHT_NAME" />
+                <ScalarProperty Name="ID_RIGHT" ColumnName="ID_RIGHT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SHIFT">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.SHIFT">
+              <MappingFragment StoreEntitySet="SHIFT">
+                <ScalarProperty Name="SHIFT_END" ColumnName="SHIFT_END" />
+                <ScalarProperty Name="SHIFT_START" ColumnName="SHIFT_START" />
+                <ScalarProperty Name="ID_SHIFT" ColumnName="ID_SHIFT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SYMPTOMS">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.SYMPTOMS">
+              <MappingFragment StoreEntitySet="SYMPTOMS">
+                <ScalarProperty Name="SYMPTOM" ColumnName="SYMPTOM" />
+                <ScalarProperty Name="ID_SYMPTOM" ColumnName="ID_SYMPTOM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SCHEDULE">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.SCHEDULE">
+              <MappingFragment StoreEntitySet="SCHEDULE">
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="CHANGED_BY" ColumnName="CHANGED_BY" />
+                <ScalarProperty Name="ID_SHIFT" ColumnName="ID_SHIFT" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="ID_SCHEDULE" ColumnName="ID_SCHEDULE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="APPOINTMENTS">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.APPOINTMENTS">
+              <MappingFragment StoreEntitySet="APPOINTMENTS">
+                <ScalarProperty Name="DOCTOR_USERNAME" ColumnName="DOCTOR_USERNAME" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+                <ScalarProperty Name="APPOINTMENT_DATE" ColumnName="APPOINTMENT_DATE" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="APPOINTMENT_ID" ColumnName="APPOINTMENT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USER">
+            <EntityTypeMapping TypeName="HealthClinicDBModel.USER">
+              <MappingFragment StoreEntitySet="USER">
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="ID_RIGHT" ColumnName="ID_RIGHT" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

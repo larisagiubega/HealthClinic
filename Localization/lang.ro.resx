@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbdomenBulge" xml:space="preserve">
+    <value>Umflatură în abdomen</value>
+  </data>
+  <data name="AbdomenDiscomfort" xml:space="preserve">
+    <value>Disconfort în partea superioară a abdomenului</value>
+  </data>
+  <data name="AbdominalAorticAneurysm" xml:space="preserve">
+    <value>Anevrism de aortă abdominală</value>
+  </data>
+  <data name="AbdominalPain" xml:space="preserve">
+    <value>Dureri abdominale</value>
+  </data>
+  <data name="AchingMuscles" xml:space="preserve">
+    <value>Dureri musculare</value>
+  </data>
+  <data name="AcuteCholecystitis" xml:space="preserve">
+    <value>Colecistită acută</value>
+  </data>
+  <data name="AcutePancreatitis" xml:space="preserve">
+    <value>Pancreatită acută</value>
+  </data>
+  <data name="AddisonsDisease" xml:space="preserve">
+    <value>Boala Addison's</value>
+  </data>
+  <data name="AlcoholDisease" xml:space="preserve">
+    <value>Boli hepatice legate de alcool</value>
+  </data>
+  <data name="Allergies" xml:space="preserve">
+    <value>Alergii</value>
+  </data>
+  <data name="Anaphylaxis" xml:space="preserve">
+    <value>Anafilaxie</value>
+  </data>
+  <data name="Anxiety" xml:space="preserve">
+    <value>Anxietate</value>
+  </data>
+  <data name="Appendicitis" xml:space="preserve">
+    <value>Apendicită</value>
+  </data>
+  <data name="Asthma" xml:space="preserve">
+    <value>Astm</value>
+  </data>
+  <data name="BackAbdominalPain" xml:space="preserve">
+    <value>Dureri de spate sau abdominale</value>
+  </data>
+  <data name="BeingSick" xml:space="preserve">
+    <value>Sunt bolnav(ă)</value>
+  </data>
+  <data name="BladderProblem" xml:space="preserve">
+    <value>Probleme cu vezica urinară</value>
+  </data>
+  <data name="Bloating" xml:space="preserve">
+    <value>Balonare</value>
+  </data>
+  <data name="BlockedNose" xml:space="preserve">
+    <value>Nas înfundat (presiune în sinusuri)</value>
+  </data>
+  <data name="BloodyCough" xml:space="preserve">
+    <value>Tuse cu sânge sau flegmă pătată de sânge</value>
+  </data>
+  <data name="BloodyDiarrhoea" xml:space="preserve">
+    <value>Diaree, care poate conține sânge sau mucus</value>
+  </data>
+  <data name="BlurredVision" xml:space="preserve">
+    <value>Vedere încețoșată</value>
+  </data>
+  <data name="BodyRash" xml:space="preserve">
+    <value>Erupție cutanată pe corp</value>
+  </data>
+  <data name="BowelProblems" xml:space="preserve">
+    <value>Probleme intestinale</value>
+  </data>
+  <data name="BrittleHairNails" xml:space="preserve">
+    <value>Păr și unghii fragile</value>
+  </data>
+  <data name="Bronchiectasis" xml:space="preserve">
+    <value>Bronșiectazie</value>
+  </data>
+  <data name="Bronchitis" xml:space="preserve">
+    <value>Bronșită</value>
+  </data>
+  <data name="CapsLockOn" xml:space="preserve">
+    <value>Caps lock este pornit.</value>
+  </data>
+  <data name="ChestPain" xml:space="preserve">
+    <value>Dureri de piept</value>
+  </data>
+  <data name="Chills" xml:space="preserve">
+    <value>Frisoane</value>
+  </data>
+  <data name="ChokingSensation" xml:space="preserve">
+    <value>Senzație de sufocare</value>
+  </data>
+  <data name="ChurningStomach" xml:space="preserve">
+    <value>Stomacul agitat</value>
+  </data>
+  <data name="ColdAndFlu" xml:space="preserve">
+    <value>Raceală și gripă</value>
+  </data>
+  <data name="ColdSensitivity" xml:space="preserve">
+    <value>Senzitivitate la rece</value>
+  </data>
+  <data name="CollapseAndUnconsciousness" xml:space="preserve">
+    <value>Prăbuşire şi lipsa cunştiienţei</value>
+  </data>
+  <data name="Confusion" xml:space="preserve">
+    <value>Confuzie</value>
+  </data>
+  <data name="Constipation" xml:space="preserve">
+    <value>Constipare</value>
+  </data>
+  <data name="ConstipationDiarrhoea" xml:space="preserve">
+    <value>Constipare sau diaree</value>
+  </data>
+  <data name="Cough" xml:space="preserve">
+    <value>Tuse</value>
+  </data>
+  <data name="DarkColouredUrine" xml:space="preserve">
+    <value>Urină de culoare închisă</value>
+  </data>
+  <data name="Dehydration" xml:space="preserve">
+    <value>Deshidratare</value>
+  </data>
+  <data name="Depression" xml:space="preserve">
+    <value>Depresie</value>
+  </data>
+  <data name="DepressionAnxiety" xml:space="preserve">
+    <value>Depresie și anxietate</value>
+  </data>
+  <data name="DifficultyConcentrating" xml:space="preserve">
+    <value>Dificultăți de concentrare</value>
+  </data>
+  <data name="DifficultySleeping" xml:space="preserve">
+    <value>Dificultatea de a dormi</value>
+  </data>
+  <data name="DisorderlyBehaviour" xml:space="preserve">
+    <value>Comportament dezordonat sau irațional, care poate fi confundat cu stare de ebrietate</value>
+  </data>
+  <data name="Ebola" xml:space="preserve">
+    <value>Ebola</value>
+  </data>
+  <data name="Fever" xml:space="preserve">
+    <value>Febră</value>
+  </data>
+  <data name="FingertipsClubbed" xml:space="preserve">
+    <value>Baterea vârfurilor degetelor – țesutul de sub unghie se îngroașă, iar vârfurile degetelor devin rotunjite și bulboase</value>
+  </data>
+  <data name="Flatulence" xml:space="preserve">
+    <value>Eructații sau flatulență</value>
+  </data>
+  <data name="Flu" xml:space="preserve">
+    <value>Gripă</value>
+  </data>
+  <data name="FoodPoisoning" xml:space="preserve">
+    <value>Intoxicație alimentară</value>
+  </data>
+  <data name="ForgottenPassword" xml:space="preserve">
+    <value>Ați uitat parola?</value>
+  </data>
+  <data name="ForgottenUsername" xml:space="preserve">
+    <value>Ați uitat numele de utilizator?</value>
+  </data>
+  <data name="GlandularFever" xml:space="preserve">
+    <value>Febră glandulară</value>
+  </data>
+  <data name="Halitosis" xml:space="preserve">
+    <value>Respirație neplăcut mirositoare (halitoză)</value>
+  </data>
+  <data name="HayFever" xml:space="preserve">
+    <value>Guturai</value>
+  </data>
+  <data name="Headache" xml:space="preserve">
+    <value>Durere de cap</value>
+  </data>
+  <data name="HepatitisA" xml:space="preserve">
+    <value>Hepatita A</value>
+  </data>
+  <data name="HepatitisB" xml:space="preserve">
+    <value>Hepatita B</value>
+  </data>
+  <data name="HIV" xml:space="preserve">
+    <value>HIV</value>
+  </data>
+  <data name="Hives" xml:space="preserve">
+    <value>Erupție cutanată crescută, cu mâncărime (urticarie)</value>
+  </data>
+  <data name="lblFormTitle" xml:space="preserve">
+    <value>Cum vă simțiți?*</value>
+  </data>
+  <data name="Hypoglycaemia" xml:space="preserve">
+    <value>Hipoglicemie</value>
+  </data>
+  <data name="Indigestion" xml:space="preserve">
+    <value>Indigestie</value>
+  </data>
+  <data name="ItchyFace" xml:space="preserve">
+    <value>Mâncărimi în gât, gură, nas și urechi</value>
+  </data>
+  <data name="KidneyInfection" xml:space="preserve">
+    <value>Infecție la rinichi</value>
+  </data>
+  <data name="lblAccount" xml:space="preserve">
+    <value>* Vă puteți loga doar dacă aveți un cont predefinit. În caz contrar, vă rugăm continuați ca pacient.</value>
+  </data>
+  <data name="Measles" xml:space="preserve">
+    <value>Pojar</value>
+  </data>
+  <data name="Migraine" xml:space="preserve">
+    <value>Migrenă</value>
+  </data>
+  <data name="MS" xml:space="preserve">
+    <value>Scleroză multiplă (SM)</value>
+  </data>
+  <data name="Mumps" xml:space="preserve">
+    <value>Oreion</value>
+  </data>
+  <data name="NeedToUrinate" xml:space="preserve">
+    <value>O nevoie de urinare mai des decat de obicei</value>
+  </data>
+  <data name="NoSymptomsChecked" xml:space="preserve">
+    <value>Nu a fost ales niciun simptom.</value>
+  </data>
+  <data name="PanicDisorder" xml:space="preserve">
+    <value>Tulburare de panica</value>
+  </data>
+  <data name="PolymyalgiaRheumatica" xml:space="preserve">
+    <value>Polimialgie reumatică</value>
+  </data>
+  <data name="PossibleDisease" xml:space="preserve">
+    <value>Pe baza simptomelor furnizate de dv., ați putea avea</value>
+  </data>
+  <data name="PotentialHeartAttack" xml:space="preserve">
+    <value>Potențial infarct</value>
+  </data>
+  <data name="ProvidePassword" xml:space="preserve">
+    <value>Vă rugăm furnizați o parolă!</value>
+  </data>
+  <data name="ProvideUsername" xml:space="preserve">
+    <value>Vă rugăm furnizați un nume de utilizator!</value>
+  </data>
+  <data name="ReducedSmell" xml:space="preserve">
+    <value>Simțul mirosului redus</value>
+  </data>
+  <data name="Reflux" xml:space="preserve">
+    <value>Aducerea alimentelor sau lichidelor înapoi din stomac (reflux)</value>
+  </data>
+  <data name="ResultInconclusive" xml:space="preserve">
+    <value>Rezultatul dv. a fost neconcludent! Recomandăm să vizitați medicul de familie.</value>
+  </data>
+  <data name="SaltyCravings" xml:space="preserve">
+    <value>Poftă de mâncăruri sărate</value>
+  </data>
+  <data name="SickleCellDisease" xml:space="preserve">
+    <value>Siclemie</value>
+  </data>
+  <data name="Sinusitis" xml:space="preserve">
+    <value>Sinuzită</value>
+  </data>
+  <data name="StiffNeckHeadache" xml:space="preserve">
+    <value>Cefalee severă, gât rigid sau amețeli</value>
+  </data>
+  <data name="TenderSwollenTummy" xml:space="preserve">
+    <value>Abdomen sensibil sau umflat</value>
+  </data>
+  <data name="ThreeSymptomsRequired" xml:space="preserve">
+    <value>Vă rugăm să alegeți cel puțin 3 simptome!</value>
+  </data>
+  <data name="TightChest" xml:space="preserve">
+    <value>Piept strâns</value>
+  </data>
+  <data name="TinglingFingers" xml:space="preserve">
+    <value>Senzație de furnicături în degete</value>
+  </data>
+  <data name="Tonsillitis" xml:space="preserve">
+    <value>Amigdalită</value>
+  </data>
+  <data name="Tuberculosis" xml:space="preserve">
+    <value>Tuberculoză</value>
+  </data>
+  <data name="TummyPain" xml:space="preserve">
+    <value>Diaree sau dureri abdominale</value>
+  </data>
+  <data name="UnderactiveThyroids" xml:space="preserve">
+    <value>Tiroidă subactivă</value>
+  </data>
+  <data name="Unwell" xml:space="preserve">
+    <value>O senzație generală de rău</value>
+  </data>
+  <data name="UrinaryTractInfection" xml:space="preserve">
+    <value>Infecții ale tractului urinar</value>
+  </data>
+  <data name="VB12Deficiency" xml:space="preserve">
+    <value>Deficit de vitamina B12 (de folat)</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bine ați venit</value>
+  </data>
+  <data name="Dizziness" xml:space="preserve">
+    <value>Amețeli</value>
+  </data>
+  <data name="Drowsiness" xml:space="preserve">
+    <value>Somnolență, confuzie sau vorbire neclară</value>
+  </data>
+  <data name="DryScalySkin" xml:space="preserve">
+    <value>Piele uscată și solzoasă</value>
+  </data>
+  <data name="DryMouth" xml:space="preserve">
+    <value>Gură uscată</value>
+  </data>
+  <data name="DryFace" xml:space="preserve">
+    <value>Uscarea gurii, buzelor și ochilor</value>
+  </data>
+  <data name="SuddenlyStomachAche" xml:space="preserve">
+    <value>Durere surdă în jurul partea superioară a stomacului, care se dezvoltă brusc</value>
+  </data>
+  <data name="Earache" xml:space="preserve">
+    <value>Durere de ureche</value>
+  </data>
+  <data name="Fatigue" xml:space="preserve">
+    <value>Durere și oboseală mai intensă</value>
+  </data>
+  <data name="EyeIrritation" xml:space="preserve">
+    <value>Iritație la ochi</value>
+  </data>
+  <data name="FeelingAndBeingSick" xml:space="preserve">
+    <value>Să te simți și să fii bolnav</value>
+  </data>
+  <data name="UnableToEmptyBladder" xml:space="preserve">
+    <value>Simți că nu poți să-ți golești complet vezica urinară</value>
+  </data>
+  <data name="FeelingFaint" xml:space="preserve">
+    <value>Senzație de amețeală sau de leșin</value>
+  </data>
+  <data name="FeelingUnwell" xml:space="preserve">
+    <value>Senzație de rău în general</value>
+  </data>
+  <data name="FeelingHungry" xml:space="preserve">
+    <value>Senzație de foame</value>
+  </data>
+  <data name="FeelingOrBeingSick" xml:space="preserve">
+    <value>Să te simți sau să fii bolnav</value>
+  </data>
+  <data name="FeelingTired" xml:space="preserve">
+    <value>Senzație de oboseală</value>
+  </data>
+  <data name="FeelingFull" xml:space="preserve">
+    <value>Senzație incomod de plin sau greu</value>
+  </data>
+  <data name="FeelingWeak" xml:space="preserve">
+    <value>Te simți foarte slab sau obosit</value>
+  </data>
+  <data name="Seizures" xml:space="preserve">
+    <value>Crize (convulsii)</value>
+  </data>
+  <data name="FrequentSneezing" xml:space="preserve">
+    <value>Strănuturi frecvente</value>
+  </data>
+  <data name="GeneralPains" xml:space="preserve">
+    <value>Dureri generale</value>
+  </data>
+  <data name="GoingPale" xml:space="preserve">
+    <value>Paloare</value>
+  </data>
+  <data name="HackingCough" xml:space="preserve">
+    <value>Tuse scurtă, uscată și frecventă</value>
+  </data>
+  <data name="Tinnitus" xml:space="preserve">
+    <value>Auziți sunete care provin din interiorul corpului, mai degrabă decât dintr-o sursă exterioară (tinitus)</value>
+  </data>
+  <data name="HotFlushes" xml:space="preserve">
+    <value>Frisoane</value>
+  </data>
+  <data name="IncreasedSensitivity" xml:space="preserve">
+    <value>Sensibilitate crescută la lumină și sunet</value>
+  </data>
+  <data name="IncreasedThirst" xml:space="preserve">
+    <value>Sete crescută</value>
+  </data>
+  <data name="InflamedItchyNoseThroat" xml:space="preserve">
+    <value>Nas și gât inflamate, mâncărimi</value>
+  </data>
+  <data name="IntenseHeadache" xml:space="preserve">
+    <value>Dureri de cap intense</value>
+  </data>
+  <data name="IrregularHeavyPeriods" xml:space="preserve">
+    <value>Menstruații neregulate sau abundente</value>
+  </data>
+  <data name="Irritability" xml:space="preserve">
+    <value>Iritabilitate</value>
+  </data>
+  <data name="ItchySkinRash" xml:space="preserve">
+    <value>Mâncărimi ale pielii sau o erupție cutanată în relief, roșie</value>
+  </data>
+  <data name="AllergicConjunctivitis" xml:space="preserve">
+    <value>Conjunctivită alergică</value>
+  </data>
+  <data name="Jaundice" xml:space="preserve">
+    <value>Icter (îngălbenirea pielii și a albului ochilor)</value>
+  </data>
+  <data name="JointPain" xml:space="preserve">
+    <value>Dureri articulare</value>
+  </data>
+  <data name="LackOfAppetite" xml:space="preserve">
+    <value>Lipsa poftei de mâncare și pierderea în greutate</value>
+  </data>
+  <data name="Lethargy" xml:space="preserve">
+    <value>Lipsa energiei (letargie)</value>
+  </data>
+  <data name="LimbJointPain" xml:space="preserve">
+    <value>Dureri ale membrelor sau articulațiilor</value>
+  </data>
+  <data name="AppetiteLoss" xml:space="preserve">
+    <value>Pierderea apetitului</value>
+  </data>
+  <data name="VoiceLossOrChanges" xml:space="preserve">
+    <value>Pierderea sau modificări ale vocii</value>
+  </data>
+  <data name="MildDepression" xml:space="preserve">
+    <value>Dispoziție scăzută (depresie ușoară) sau iritabilitate</value>
+  </data>
+  <data name="MildAbdominalPain" xml:space="preserve">
+    <value>Durere abdominală ușoară</value>
+  </data>
+  <data name="MobilityProblems" xml:space="preserve">
+    <value>Probleme de mobilitate</value>
+  </data>
+  <data name="SevereDryCough" xml:space="preserve">
+    <value>Tuse mai severă, adesea uscată</value>
+  </data>
+  <data name="MuscleAchesWeakness" xml:space="preserve">
+    <value>Dureri musculare și slăbiciune</value>
+  </data>
+  <data name="MuscleCramps" xml:space="preserve">
+    <value>Crampe musculare</value>
+  </data>
+  <data name="MusclePain" xml:space="preserve">
+    <value>Dureri musculare</value>
+  </data>
+  <data name="MuscleSpams" xml:space="preserve">
+    <value>Spasme musculare, rigiditate și slăbiciune</value>
+  </data>
+  <data name="MuscleWeakness" xml:space="preserve">
+    <value>Slabiciune musculară</value>
+  </data>
+  <data name="Nausea" xml:space="preserve">
+    <value>Greaţă</value>
+  </data>
+  <data name="NauseaOrVomiting" xml:space="preserve">
+    <value>Greață (senzație de rău) sau vărsături</value>
+  </data>
+  <data name="NauseaAndVomiting" xml:space="preserve">
+    <value>Greață și vărsături</value>
+  </data>
+  <data name="NightSweats" xml:space="preserve">
+    <value>Transpirații nocturne</value>
+  </data>
+  <data name="NumbnessTingling" xml:space="preserve">
+    <value>Amorțeală și furnicături</value>
+  </data>
+  <data name="Numbness" xml:space="preserve">
+    <value>Amorțeală sau înțepături</value>
+  </data>
+  <data name="Pain" xml:space="preserve">
+    <value>Dureri</value>
+  </data>
+  <data name="GenitalsPain" xml:space="preserve">
+    <value>Durere și disconfort în partea inferioară a spatelui sau în jurul organelor genitale</value>
+  </data>
+  <data name="HeadPain" xml:space="preserve">
+    <value>Durere și sensibilitate în jurul obrajilor, ochilor sau frunții</value>
+  </data>
+  <data name="BehindEyesPain" xml:space="preserve">
+    <value>Durere în jurul sau în spatele ochilor</value>
+  </data>
+  <data name="UpperAbdomenPain" xml:space="preserve">
+    <value>Durere în partea dreaptă sus a abdomenului</value>
+  </data>
+  <data name="LowerTummyPain" xml:space="preserve">
+    <value>Durere în partea de jos a abdomenului</value>
+  </data>
+  <data name="DiscomfortUrinating" xml:space="preserve">
+    <value>Durere sau disconfort la urinare</value>
+  </data>
+  <data name="CarpalTunnelSyndrome" xml:space="preserve">
+    <value>Durere, amorțeală și senzație de furnicături în mână și degete (sindrom de tunel carpian)</value>
+  </data>
+  <data name="PaleSkin" xml:space="preserve">
+    <value>Piele palidă</value>
+  </data>
+  <data name="Palpitations" xml:space="preserve">
+    <value>Palpitații</value>
+  </data>
+  <data name="InfrequentlyPassingUrine" xml:space="preserve">
+    <value>Trecerea unei cantități mici de urină (mai puțin de trei sau patru ori pe zi)</value>
+  </data>
+  <data name="PersistentAbdominalPain" xml:space="preserve">
+    <value>Dureri abdominale persistente</value>
+  </data>
+  <data name="PersistentBackPain" xml:space="preserve">
+    <value>Dureri persistente de spate</value>
+  </data>
+  <data name="ProblemsBreathing" xml:space="preserve">
+    <value>Probleme de respirație</value>
+  </data>
+  <data name="ProblemsConcentrating" xml:space="preserve">
+    <value>Probleme cu gândirea, învățarea și planificarea</value>
+  </data>
+  <data name="PuffyWateryEyes" xml:space="preserve">
+    <value>Ochi umflați și lăcrimați</value>
+  </data>
+  <data name="EarsRinging" xml:space="preserve">
+    <value>Țiuit în urechi</value>
+  </data>
+  <data name="RunnyNose" xml:space="preserve">
+    <value>Nas curgător</value>
+  </data>
+  <data name="RunnyBlockedNose" xml:space="preserve">
+    <value>Nasul curgător sau blocat</value>
+  </data>
+  <data name="SeriousUnrespondingPain" xml:space="preserve">
+    <value>Durere gravă care nu răspunde la tratamentele la domiciliu</value>
+  </data>
+  <data name="SevereMuscleWeakness" xml:space="preserve">
+    <value>Slăbiciune musculară severă</value>
+  </data>
+  <data name="Shaking" xml:space="preserve">
+    <value>Tremur</value>
+  </data>
+  <data name="Shivering" xml:space="preserve">
+    <value>Fior sau frisoane</value>
+  </data>
+  <data name="BreathShortness" xml:space="preserve">
+    <value>Dificultăți de respirație</value>
+  </data>
+  <data name="PaleSkinLips" xml:space="preserve">
+    <value>Piele sau buze foarte palide</value>
+  </data>
+  <data name="SlowMovementsAndThoughts" xml:space="preserve">
+    <value>Mișcări și gânduri lente</value>
+  </data>
+  <data name="WhiteSpotsInMouth" xml:space="preserve">
+    <value>Pete mici alb-cenușii în gură</value>
+  </data>
+  <data name="PurpleSpotsInMouth" xml:space="preserve">
+    <value>Pete mici roșii sau violete pe cerul gurii</value>
+  </data>
+  <data name="Sneezing" xml:space="preserve">
+    <value>Strănut</value>
+  </data>
+  <data name="SoreThroat" xml:space="preserve">
+    <value>Durere de gât</value>
+  </data>
+  <data name="SoreSensitiveEyes" xml:space="preserve">
+    <value>Ochi dureroși, roșii, care pot fi sensibili la lumină</value>
+  </data>
+  <data name="SpeechSwallowingDifficulties" xml:space="preserve">
+    <value>Dificultăți de vorbire și de înghițire</value>
+  </data>
+  <data name="StomachCrampsAbdominalPain" xml:space="preserve">
+    <value>Crampe de stomac și dureri abdominale</value>
+  </data>
+  <data name="StuffyNose" xml:space="preserve">
+    <value>Nas înfundat</value>
+  </data>
+  <data name="SuddenTummySwelling" xml:space="preserve">
+    <value>Umflare bruscă în abdomen</value>
+  </data>
+  <data name="SuddenUrgesToUrinate" xml:space="preserve">
+    <value>Impulsuri bruște de a urina</value>
+  </data>
+  <data name="SuddenVisionLoss" xml:space="preserve">
+    <value>Pierderea bruscă a vederii sau modificări ale vederii</value>
+  </data>
+  <data name="Sweating" xml:space="preserve">
+    <value>Transpiraţie</value>
+  </data>
+  <data name="MouthSwelling" xml:space="preserve">
+    <value>Umflarea gurii, gâtului sau limbii, care poate provoca dificultăți de respirație și de înghițire</value>
+  </data>
+  <data name="EyesSwelling" xml:space="preserve">
+    <value>Umflare în jurul ochilor</value>
+  </data>
+  <data name="EyelidsSwelling" xml:space="preserve">
+    <value>Pleoapele umflate</value>
+  </data>
+  <data name="SwollenEyesLipsHandsFeet" xml:space="preserve">
+    <value>Ochi, buze, mâini și picioare umflate</value>
+  </data>
+  <data name="SwollenGlands" xml:space="preserve">
+    <value>Glande umflate în gât și posibil în alte părți ale corpului, cum ar fi sub axile</value>
+  </data>
+  <data name="SwollenTonsils" xml:space="preserve">
+    <value>Amigdalele și adenoidele umflate (bucăți mici de țesut în partea din spate a nasului), care vă pot afecta respirația</value>
+  </data>
+  <data name="SwollenLymphGlands" xml:space="preserve">
+    <value>Glandele limfatice umflate și dureroase în gât</value>
+  </data>
+  <data name="TummyTenderness" xml:space="preserve">
+    <value>Sensibilitate sau umflare a abdomenului</value>
+  </data>
+  <data name="RedThroat" xml:space="preserve">
+    <value>Interiorul gâtului foarte roșu și scurgere lichid</value>
+  </data>
+  <data name="FrequentUrination" xml:space="preserve">
+    <value>Necesitatea de a urina frecvent</value>
+  </data>
+  <data name="TinglingLips" xml:space="preserve">
+    <value>Furnicături de buze</value>
+  </data>
+  <data name="Tiredness" xml:space="preserve">
+    <value>Oboseală</value>
+  </data>
+  <data name="Toothache" xml:space="preserve">
+    <value>Dureri dentare</value>
+  </data>
+  <data name="TremblingOrShakiness" xml:space="preserve">
+    <value>Dârdâit sau tremurat</value>
+  </data>
+  <data name="TroubleSleeping" xml:space="preserve">
+    <value>Dificultăți de somn</value>
+  </data>
+  <data name="CloudyUrine" xml:space="preserve">
+    <value>Urină care este tulbure, urât mirositoare sau care conține sânge</value>
+  </data>
+  <data name="VisionProblems" xml:space="preserve">
+    <value>Probleme de vedere</value>
+  </data>
+  <data name="Vomiting" xml:space="preserve">
+    <value>Vărsături</value>
+  </data>
+  <data name="WateryEyes" xml:space="preserve">
+    <value>Ochi umezi</value>
+  </data>
+  <data name="WeaknessInBody" xml:space="preserve">
+    <value>Slăbiciune pe una sau ambele părți ale corpului</value>
+  </data>
+  <data name="WeightGain" xml:space="preserve">
+    <value>Creștere în greutate</value>
+  </data>
+  <data name="WeightLoss" xml:space="preserve">
+    <value>Pierdere în greutate</value>
+  </data>
+  <data name="Wheezing" xml:space="preserve">
+    <value>Respiraţie şuierătoare</value>
+  </data>
+  <data name="AchesAndPains" xml:space="preserve">
+    <value>Discomfort și dureri</value>
+  </data>
+  <data name="NeedToUrinateMoreFrequently" xml:space="preserve">
+    <value>Nevoia de a urina mai des decât de obicei</value>
+  </data>
+  <data name="SinusHeadache" xml:space="preserve">
+    <value>O durere de cap sinusală</value>
+  </data>
+  <data name="FeelingOfDread" xml:space="preserve">
+    <value>Senzație de teamă sau frică de moarte</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Închideți</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Engleză</value>
+  </data>
+  <data name="Romanian" xml:space="preserve">
+    <value>Română</value>
+  </data>
+  <data name="btnContinueAsPatient" xml:space="preserve">
+    <value>Continuați ca pacient</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Logare</value>
+  </data>
+  <data name="lblSelectLanguage" xml:space="preserve">
+    <value>Selectați limba</value>
+  </data>
+  <data name="cbPasswordVisible" xml:space="preserve">
+    <value>Parolă vizibilă</value>
+  </data>
+  <data name="lblOr" xml:space="preserve">
+    <value>...sau...</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Parolă</value>
+  </data>
+  <data name="lblUsername" xml:space="preserve">
+    <value>Nume de utilizator</value>
+  </data>
+  <data name="btnAppointments" xml:space="preserve">
+    <value>Faceți o programare</value>
+  </data>
+  <data name="btnBack" xml:space="preserve">
+    <value>Înapoi</value>
+  </data>
+  <data name="btnCheckSymptoms" xml:space="preserve">
+    <value>Verificați-vă simptomele</value>
+  </data>
+  <data name="btnNoticeBoard" xml:space="preserve">
+    <value>Verificați avizier</value>
+  </data>
+  <data name="lblDisease" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWarning" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSymptomsWarning" xml:space="preserve">
+    <value>*Disclaimer: acest instrument nu este destinat să înlocuiască sfatul, diagnosticul sau tratamentul medical calificat.</value>
+  </data>
+  <data name="btnCheckAppointments" xml:space="preserve">
+    <value>Verificați/ validați programări</value>
+  </data>
+  <data name="btnCreateSchedule" xml:space="preserve">
+    <value>Creați program</value>
+  </data>
+  <data name="btnLogOut" xml:space="preserve">
+    <value>Delogare</value>
+  </data>
+  <data name="btnMedications" xml:space="preserve">
+    <value>Tineți evidența medicamentelor</value>
+  </data>
+  <data name="btnProcessInvoices" xml:space="preserve">
+    <value>Verificați/ validați facturi</value>
+  </data>
+  <data name="btnSchedule" xml:space="preserve">
+    <value>Verificați programul</value>
+  </data>
+  <data name="WelcomePatient" xml:space="preserve">
+    <value>Bine ați venit, pacient!</value>
+  </data>
+  <data name="btnCreateNotice" xml:space="preserve">
+    <value>Creați anunt</value>
+  </data>
+  <data name="btnEditDeleteNotice" xml:space="preserve">
+    <value>Modificați/ Ștergeți anunțul</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Salvați</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Creat de către</value>
+  </data>
+  <data name="ApplicationWillRestart" xml:space="preserve">
+    <value>Pentru a avea loc modificările, aplicația se va reporni.</value>
+  </data>
+  <data name="HealthClinic" xml:space="preserve">
+    <value>Clinică medicală</value>
+  </data>
+  <data name="lblPickUser" xml:space="preserve">
+    <value>Alegeți utilizator</value>
+  </data>
+  <data name="lblPickDayOfWeek" xml:space="preserve">
+    <value>Alegeți ziua din săptămâna curentă</value>
+  </data>
+  <data name="lblPickShift" xml:space="preserve">
+    <value>Alegeți orele schimbului</value>
+  </data>
+  <data name="PleaseSelectUser" xml:space="preserve">
+    <value>Vă rugăm selectați utilizatorul</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Vineri</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Luni</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Sâmbătă</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Duminică</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Joi</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Marți</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Atenție!</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Miercuri</value>
+  </data>
+  <data name="MultipleShiftsPerDayNotPossible" xml:space="preserve">
+    <value>O persoană nu poate lucra schimburi multiple în aceeași zi!</value>
+  </data>
+  <data name="ScheduleSaved" xml:space="preserve">
+    <value>Programul a fost salvat!</value>
+  </data>
+  <data name="lblFriday" xml:space="preserve">
+    <value>Program vineri</value>
+  </data>
+  <data name="lblMonday" xml:space="preserve">
+    <value>Program luni</value>
+  </data>
+  <data name="lblSaturday" xml:space="preserve">
+    <value>Program sâmbătă</value>
+  </data>
+  <data name="lblSunday" xml:space="preserve">
+    <value>Program duminică</value>
+  </data>
+  <data name="lblThursday" xml:space="preserve">
+    <value>Program joi</value>
+  </data>
+  <data name="lblTuesday" xml:space="preserve">
+    <value>Program marți</value>
+  </data>
+  <data name="lblWednesday" xml:space="preserve">
+    <value>Program miercuri</value>
+  </data>
+  <data name="btnEditNotice" xml:space="preserve">
+    <value>Salvați anunț</value>
+  </data>
+  <data name="lblSelectNotice" xml:space="preserve">
+    <value>Alegeți un anunț</value>
+  </data>
+  <data name="Notice" xml:space="preserve">
+    <value>Anunț </value>
+  </data>
+  <data name="PleaseSelectNotice" xml:space="preserve">
+    <value>Vă rugăm să alegeți un anunț.</value>
+  </data>
+  <data name="PleaseMakeAnAppointment" xml:space="preserve">
+    <value>Vă rugăm să faceți o programare.</value>
+  </data>
+  <data name="btnDeleteNotice" xml:space="preserve">
+    <value>Ștergeți anunț</value>
+  </data>
+  <data name="btnShowAllNotices" xml:space="preserve">
+    <value>Afișați toate anunțurile</value>
+  </data>
+  <data name="PleaseEditNotice" xml:space="preserve">
+    <value>Nu puteți salva un anunț nemodificat. Vă rugăm modificați anunțul, iar apoi salvați-l.</value>
+  </data>
+  <data name="AddingUnsuccessful" xml:space="preserve">
+    <value>Adăugarea nu a putut avea loc!</value>
+  </data>
+  <data name="DeletingUnsuccessful" xml:space="preserve">
+    <value>Anunțul nu a putut fi șters!</value>
+  </data>
+  <data name="EditingUnsuccessful" xml:space="preserve">
+    <value>Anunțul nu a putut fi editat!</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>Eroare</value>
+  </data>
+  <data name="SuccessfullyDeleted" xml:space="preserve">
+    <value>Anunțul a fost șters cu succes!</value>
+  </data>
+  <data name="SuccessfullyEdited" xml:space="preserve">
+    <value>Anunțul a fost modificat cu succes!</value>
+  </data>
+  <data name="SuccessfullySaved" xml:space="preserve">
+    <value>Anunțul a fost adăugat cu succes!</value>
+  </data>
+  <data name="lblContactAdministrator" xml:space="preserve">
+    <value>* Vă rugăm să contactați administratorul pentru eventuale modificări.</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Liber</value>
+  </data>
+  <data name="AppointmentSaved" xml:space="preserve">
+    <value>Programarea a fost salvată!</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Eroare!</value>
+  </data>
+  <data name="ErrorSavingAppointment" xml:space="preserve">
+    <value>Programarea nu a putut fi salvată!</value>
+  </data>
+  <data name="lblAppointmentDate" xml:space="preserve">
+    <value>Data programării</value>
+  </data>
+  <data name="lblDoctorName" xml:space="preserve">
+    <value>Numele doctorului</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>Prenume</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Nume</value>
+  </data>
+  <data name="lblPhoneNo" xml:space="preserve">
+    <value>Număr de telefon</value>
+  </data>
+  <data name="PleaseInsertFirstName" xml:space="preserve">
+    <value>Vă rugăm să vă introduceți prenumele!</value>
+  </data>
+  <data name="PleaseInsertLastName" xml:space="preserve">
+    <value>Vă rugăm să vă introduceți numele!</value>
+  </data>
+  <data name="PleaseInsertPhoneNumber" xml:space="preserve">
+    <value>Vă rugăm să vă introduceți numărul de telefon!</value>
+  </data>
+  <data name="PleasePickADoctor" xml:space="preserve">
+    <value>Vă rugăm să alegeți un doctor!</value>
+  </data>
+  <data name="lblAppointmentHour" xml:space="preserve">
+    <value>Ora programării</value>
+  </data>
+  <data name="PleasePickAValidDate" xml:space="preserve">
+    <value>Vă rugăm să alegeți o dată validă!</value>
+  </data>
+  <data name="PleaseInsertAValidFirstName" xml:space="preserve">
+    <value>Vă rugăm să introduceți un prenume valid!</value>
+  </data>
+  <data name="PleaseInsertAValidLastName" xml:space="preserve">
+    <value>Vă rugăm să introduceți un nume valid!</value>
+  </data>
+  <data name="PleaseInsertAValidPhoneNo" xml:space="preserve">
+    <value>Vă rugăm să introduceți un număr de telefon valid!</value>
+  </data>
+</root>
