@@ -57,12 +57,27 @@ namespace HealthClinic.Presenters
 
         public bool IsNameCorrect(string name)
         {
-            return !name.Any(char.IsDigit);
+            return name.All(char.IsLetter);
         }
 
         public bool IsPhoneNumberCorrect(string phoneNo)
         {
-            return !phoneNo.Any(char.IsLetter);
+            return phoneNo.All(char.IsDigit);
+        }
+
+        public DateTime RoundTime(DateTime dateTime)
+        {
+            var mins = dateTime.TimeOfDay.TotalMinutes;
+
+            if(mins >=0 && mins < 30)
+            {
+                return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, dateTime.Hour, 30, 0);
+            }
+            else
+            {
+                return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, dateTime.Hour, 0, 0);
+            }
+
         }
     }
 }

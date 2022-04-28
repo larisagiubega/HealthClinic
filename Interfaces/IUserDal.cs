@@ -3,7 +3,7 @@ namespace HealthClinic.Interfaces
 {
     using HealthClinic.DTOs;
     using System.Collections.Generic;
-    interface IUserDal
+    public interface IUserDal
     {
         List<UserDto> GetAllAccounts();
         List<UserDto> GetAllMedicalPersonnelAccounts();

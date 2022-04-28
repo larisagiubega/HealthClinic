@@ -6,7 +6,9 @@ namespace HealthClinic.Forms__Views_.Patient
     using HealthClinic.Localization;
     using HealthClinic.Presenters;
     using System;
+    using System.Collections.Generic;
     using System.Drawing;
+    using System.Linq;
     using System.Resources;
     using System.Windows.Forms;
     public partial class AppointmentsForm : Form
@@ -74,12 +76,18 @@ namespace HealthClinic.Forms__Views_.Patient
                     cbDoctor.Items.Add($"{doctor.FirstName} {doctor.LastName}");
                 }
             }
+
+            cbDoctor.Text = res.GetString("PlaseSelectDoctor");
+
         }
 
         private void FillHourCombobox()
         {
             if (cbAppointmentHour.Items.Count == 0)
             {
+                var hours = new Dictionary<int, string>();
+                int index = 0;
+
                 var eightAm = DateTime.Today.AddHours(8);
                 var ninePm = DateTime.Today.AddHours(21);
 
@@ -89,10 +97,18 @@ namespace HealthClinic.Forms__Views_.Patient
                 while (currentHour <= ninePm)
                 {
                     currentHourString = currentHour.ToString("HH:mm");
+                    hours.Add(index++, currentHourString);
                     cbAppointmentHour.Items.Add(currentHourString);
 
-                    currentHour = currentHour.AddMinutes(30);
+                    currentHour = currentHour.AddHours(1);
                 }
+
+
+                currentHour = presenter.RoundTime(DateTime.Now.AddMinutes(30));
+                currentHourString = currentHour.ToString("HH:mm");
+
+                var indexOfDict = hours.FirstOrDefault(x => x.Value.Contains(currentHourString)).Key;
+                cbAppointmentHour.SelectedItem = cbAppointmentHour.Items[indexOfDict];
             }
         }
 
@@ -102,6 +118,9 @@ namespace HealthClinic.Forms__Views_.Patient
             {
                 cbYear.Items.Add(DateTime.Now.Year);
                 cbYear.Items.Add(DateTime.Now.Year + 1);
+
+
+                cbYear.SelectedIndex = 0;
             }
         }
 
@@ -109,10 +128,19 @@ namespace HealthClinic.Forms__Views_.Patient
         {
             if (cbMonth.Items.Count == 0)
             {
+                int todaysMonth = 0;
+
                 for (int i = 1; i <= 12; i++)
                 {
                     cbMonth.Items.Add(i);
+                
+                    if(i == DateTime.Now.Month)
+                    {
+                        todaysMonth = i;
+                    }
                 }
+
+                cbMonth.SelectedItem = cbMonth.Items[todaysMonth - 1]; //indexing starts at 0 instead of 1
             }
         }
 
@@ -120,11 +148,21 @@ namespace HealthClinic.Forms__Views_.Patient
         {
             if (cbDay.Items.Count == 0)
             {
+                int todaysDay = 0;
+
                 for (int i = 1; i <= 31; i++)
                 {
                     cbDay.Items.Add(i);
+
+                    if (i == DateTime.Now.Day)
+                    {
+                        todaysDay = i;
+                    }
                 }
+
+                cbDay.SelectedItem = cbDay.Items[todaysDay]; //today's day is indexed -1 in list, but valid appointments start from the day after today
             }
+
         }
 
         private void ChangeControlsFont()

@@ -10,6 +10,8 @@ namespace HealthClinic.Forms__Views_
     using System.Windows.Forms;
     using HealthClinic.Localization;
     using HealthClinic.DTOs;
+    using HealthClinic.Interfaces;
+    using HealthClinic.DAL;
 
     public partial class AdministratorForm : Form
     {
@@ -18,6 +20,8 @@ namespace HealthClinic.Forms__Views_
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
         private string language = HealthClinicLocalization.GetLanguage();
 
+        private IAppointmentsDal appointmentsDal;
+
         static UserDto loggedInUser = null;
         public AdministratorForm(HealthClinicEntities ctx, UserDto user)
         {
@@ -25,14 +29,14 @@ namespace HealthClinic.Forms__Views_
 
             _ctx = ctx;
             loggedInUser = user;
+
+            appointmentsDal = new AppointmentsDal(_ctx);
         }
 
         private void ChangeControlsFont()
         {
             foreach (Control control in panelAdmin.Controls)
             {
-                //control.Font = new Font(panelAdmin.Font.FontFamily, 9, FontStyle.Regular);
-
                 control.Font = new Font("Impact", control.Font.Size);
             }
         }
@@ -54,9 +58,22 @@ namespace HealthClinic.Forms__Views_
         private void btnValidateAppointments_Click(object sender, EventArgs e)
         {
             var appointments = UseExcel.GetAppointmentsFromExcel();
-            //ValidateAppointmentsForm appointmentsForm = new ValidateAppointmentsForm(_ctx, this, loggedInUser);
-            //appointmentsForm.Show();
-            //this.Hide();
+
+            if (appointments.Count == 0)
+            {
+                MessageBox.Show(res.GetString("NoAppointmentsInExcel"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (appointmentsDal.SaveAppointmentsToDb(appointments))
+                {
+                    MessageBox.Show(res.GetString("AppointmentsSaved"), res.GetString("Success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(res.GetString("AppointmentsCouldNotBeSaved"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void btnProcessInvoices_Click(object sender, EventArgs e)
@@ -101,11 +118,6 @@ namespace HealthClinic.Forms__Views_
             EditNoticeForm editNotice = new EditNoticeForm(_ctx, this, loggedInUser);
             editNotice.Show();
             this.Hide();
-        }
-
-        private void btnDeleteNotice_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

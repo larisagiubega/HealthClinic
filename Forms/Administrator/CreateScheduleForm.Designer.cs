@@ -134,7 +134,6 @@ namespace HealthClinic.Forms__Views_.Administrator
             this.cbPickUser.Name = "cbPickUser";
             this.cbPickUser.Size = new System.Drawing.Size(305, 28);
             this.cbPickUser.TabIndex = 1;
-            this.cbPickUser.SelectionChangeCommitted += new System.EventHandler(this.cbPickUser_SelectionChangeCommitted);
             // 
             // btnBack
             // 

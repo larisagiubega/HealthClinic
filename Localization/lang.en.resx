@@ -826,7 +826,7 @@
     <value />
   </data>
   <data name="btnCheckAppointments" xml:space="preserve">
-    <value>Check/validate appointments</value>
+    <value>Save appointments</value>
   </data>
   <data name="btnCreateSchedule" xml:space="preserve">
     <value>Create schedule</value>
@@ -928,7 +928,7 @@
     <value>Schedule on Wednesday</value>
   </data>
   <data name="btnEditNotice" xml:space="preserve">
-    <value>Save notice</value>
+    <value>Save changes</value>
   </data>
   <data name="lblSelectNotice" xml:space="preserve">
     <value>Select notice</value>
@@ -1018,7 +1018,7 @@
     <value>Appointment hour</value>
   </data>
   <data name="PleasePickAValidDate" xml:space="preserve">
-    <value>Please pick a valid date!</value>
+    <value>Please pick a valid date! (The earliest you can make an appointment is 24 hours from now)</value>
   </data>
   <data name="PleaseInsertAValidFirstName" xml:space="preserve">
     <value>Please insert a valid first name!</value>
@@ -1028,5 +1028,20 @@
   </data>
   <data name="PleaseInsertAValidPhoneNo" xml:space="preserve">
     <value>Please insert a valid phone number!</value>
+  </data>
+  <data name="NoAppointmentsInExcel" xml:space="preserve">
+    <value>There are no new appointments!</value>
+  </data>
+  <data name="AppointmentsCouldNotBeSaved" xml:space="preserve">
+    <value>The appointments could not be saved!</value>
+  </data>
+  <data name="AppointmentsSaved" xml:space="preserve">
+    <value>The appointments have been saved!</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="PlaseSelectDoctor" xml:space="preserve">
+    <value>Please select a doctor!</value>
   </data>
 </root>

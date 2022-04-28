@@ -75,35 +75,24 @@ namespace HealthClinic.Forms__Views_.Administrator
         private void FillUserCombobox()
         {
             cbPickUser.Items.Clear();
-            cbPickUser.Items.Add(res.GetString("PleaseSelectUser"));
+
+            cbPickUser.Text = res.GetString("PleaseSelectUser");
 
             var medicalPersonnelFullNames = schedulePresenter.GetAllMedicalPersonnelFullNames();
 
             cbPickUser.Items.AddRange(medicalPersonnelFullNames);
-
-            cbPickUser.SelectedItem = cbPickUser.Items[0];
-
-        }
-
-        private void cbPickUser_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            if (Convert.ToString(cbPickUser.Items[0]).Contains(res.GetString("PleaseSelectUser")))
-            {
-                cbPickUser.Items.RemoveAt(0);
-            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             var selectedUser = Convert.ToString(cbPickUser.SelectedItem);
 
-            if (selectedUser.Contains(res.GetString("PleaseSelectUser")))
+            if (string.IsNullOrEmpty(selectedUser))
             {
                 MessageBox.Show(res.GetString("PleaseSelectUser"), res.GetString("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                //var selectedDay = Localization.Localization.GetResourceNameByValue(res, Convert.ToString(cbDaysOfWeek.SelectedItem));
                 var selectedDayValue = cbDaysOfWeek.SelectedIndex;
 
                 var selectedShift = Convert.ToString(cbPickShift.SelectedItem);

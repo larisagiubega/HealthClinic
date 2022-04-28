@@ -61,7 +61,7 @@ namespace HealthClinic.Forms__Views_.Administrator
 
             cbNotices.Items.Clear();
 
-            cbNotices.Items.Add(res.GetString("PleaseSelectNotice"));
+            cbNotices.Text = res.GetString("PleaseSelectNotice");
 
             int noticeNumber = 1;
 
@@ -69,8 +69,6 @@ namespace HealthClinic.Forms__Views_.Administrator
             {
                 cbNotices.Items.Add($"{res.GetString("Notice")} {noticeNumber++}");
             }
-
-            cbNotices.SelectedIndex = 0;
         }
 
         private void FillInNoticeBoard()
@@ -111,7 +109,7 @@ namespace HealthClinic.Forms__Views_.Administrator
         {
             var selectedNoticeNo = Convert.ToString(cbNotices.SelectedItem);
 
-            if (selectedNoticeNo.Contains(res.GetString("PleaseSelectNotice")))
+            if (string.IsNullOrEmpty(selectedNoticeNo))
             {
                 MessageBox.Show(res.GetString("PleaseSelectNotice"), res.GetString("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -146,7 +144,7 @@ namespace HealthClinic.Forms__Views_.Administrator
                         FillTextbox();
                         HideButtons();
 
-                        cbNotices.SelectedIndex = 0;
+                        cbNotices.Text = res.GetString("PleaseSelectNotice");
                     }
                 }
             }
@@ -199,7 +197,7 @@ namespace HealthClinic.Forms__Views_.Administrator
 
         private void btnShowAllNotices_Click(object sender, EventArgs e)
         {
-            cbNotices.SelectedItem = cbNotices.Items[0];
+            cbNotices.Text = res.GetString("PleaseSelectNotice");
             rtbNotices.ReadOnly = true;
             FillTextbox();
             HideButtons();
@@ -216,12 +214,11 @@ namespace HealthClinic.Forms__Views_.Administrator
 
             if (success)
             {
-                //noticesDict.Remove(noticeNumber);
                 FillInNoticeBoard();
                 FillNoticesDropdown();
                 HideButtons();
 
-                cbNotices.SelectedIndex = 0;
+                cbNotices.Text = res.GetString("PleaseSelectNotice");
             }
         }
     }

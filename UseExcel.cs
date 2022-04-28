@@ -2,14 +2,11 @@
 namespace HealthClinic
 {
     using Excel = Microsoft.Office.Interop.Excel;
-    using System.Reflection;
     using System;
-    using System.Text;
     using System.Collections.Generic;
     using HealthClinic.DTOs;
     using System.Linq;
     using HealthClinic.Interfaces;
-    using HealthClinic.DAL;
 
     public static class UseExcel
     {
@@ -20,6 +17,12 @@ namespace HealthClinic
         private static Excel.Range range;
 
         private static object misValue = System.Reflection.Missing.Value;
+
+        #region other variables
+        //public static IUserDal userDal;
+
+        public static IAppointmentsPresenter appointmentsPresenter; //initialized in MainForm
+        #endregion
 
         #region appointments constants
         //must be the same order as the excel's columns
@@ -57,8 +60,46 @@ namespace HealthClinic
             return appointments;
         }
 
-        public static bool SaveAppointmentToExcel(AppointmentDto appointment) {
-            return true;
+        public static bool SaveAppointmentToExcel(AppointmentDto appointment)
+        {
+            var success = false;
+            string[] appointmentDetails = new string[5]; //string corresponding to the values inside the object
+
+            appointmentDetails[0] = appointment.FirstName;
+            appointmentDetails[1] = appointment.LastName;
+            appointmentDetails[2] = appointment.PhoneNumber;
+            appointmentDetails[3] = String.Format("{0:dd/MM/yyyy HH:mm}", appointment.Date);
+            appointmentDetails[4] = $"{appointment.Doctor.FirstName} {appointment.Doctor.LastName}";
+
+            try
+            {
+                StartExcelAndGetObjects(pathForAppointments, visible: false);
+
+                foreach (Excel.Worksheet worksheet in worksheets)
+                {
+                    if (worksheet.Name.ToLower().Equals(APPOINTMENTS))
+                    {
+                        var currentRange = worksheet.UsedRange;
+
+                        char lastColumnLetter = GetLetterByNumber(currentRange.Columns.Count - 1);
+                        int lastRow = currentRange.Rows.Count == 1 ? 2 : currentRange.Rows.Count;
+
+                        worksheet.get_Range($"A{lastRow}", $"{lastColumnLetter}{lastRow}").Value = appointmentDetails;
+                        success = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                success = false;
+                Logger.Log(ex.Message);
+            }
+            finally
+            {
+                CloseExcelAndReleaseObjects();
+            }
+
+            return success;
         }
 
         #endregion
@@ -69,21 +110,31 @@ namespace HealthClinic
         {
             StartExcelAndGetObjects(pathForAppointments);
 
-            foreach (Excel.Worksheet worksheet in worksheets)
+            try
             {
-                if (worksheet.Name.ToLower().Equals(APPOINTMENTS))
+                foreach (Excel.Worksheet worksheet in worksheets)
                 {
-                    var currentRange = worksheet.UsedRange;
+                    if (worksheet.Name.ToLower().Equals(APPOINTMENTS))
+                    {
+                        var currentRange = worksheet.UsedRange;
 
-                    int lastColumn = currentRange.Columns.Count;
-                    int lastRow = currentRange.Rows.Count;
+                        int lastColumn = currentRange.Columns.Count;
+                        int lastRow = currentRange.Rows.Count;
 
-                    GetContentsFrom(worksheet, lastColumn, lastRow);
-                    DeleteContentsFromSheet(worksheet);
-                    FilllHeaderOfSheet(worksheet, APPOINTMENTS);
+                        GetContentsFrom(worksheet, lastColumn, lastRow);
+                        DeleteContentsFromSheet(worksheet);
+                        FilllHeaderOfSheet(worksheet, APPOINTMENTS);
+                    }
                 }
-                ConvertContentToAppointments();
 
+                ConvertContentToAppointments();
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(ex.Message);
+            }
+            finally
+            {
                 CloseExcelAndReleaseObjects();
             }
         }
@@ -127,12 +178,7 @@ namespace HealthClinic
                         LastName = lastNameList[i],
                         PhoneNumber = phoneNoList[i],
                         Date = Convert.ToDateTime(dateList[i]),
-                        Doctor = new UserDto
-                        {
-                            FirstName = doctorNameList[i].Split(' ')[0],
-                            LastName = doctorNameList[i].Split(' ')[1]
-                            //todo: get username by first and last name in Presenter
-                        }
+                        Doctor = appointmentsPresenter.GetDoctorByFullName($"{doctorNameList[i]}")
                     };
 
                     appointments.Add(appointment);
@@ -151,11 +197,16 @@ namespace HealthClinic
 
             for (int column = 0; column <= lastColumn; column++)
             {
-                columnLetter = (char)(column + 65);
+                columnLetter = GetLetterByNumber(column);
                 var content = worksheet.get_Range($"{columnLetter}1", $"{columnLetter}{lastRow}").Value;
 
                 GetColumnContentsAccordingly(columnLetter, content);
             }
+        }
+
+        private static char GetLetterByNumber(int column)
+        {
+            return (char)(column + 65);
         }
 
         private static void GetColumnContentsAccordingly(char columnLetter, dynamic content)
@@ -181,10 +232,10 @@ namespace HealthClinic
             }
         }
 
-        private static void StartExcelAndGetObjects(string path)
+        private static void StartExcelAndGetObjects(string path, bool visible = true)
         {
             application = new Excel.Application();
-            application.Visible = true;
+            application.Visible = visible;
 
             workbook = application.Workbooks.Open(path);
             worksheets = application.Sheets;
@@ -194,7 +245,6 @@ namespace HealthClinic
             workbook.Close(true, misValue, misValue);
             application.Quit();
 
-            //releaseObject(sheet);
             releaseObject(workbook);
             releaseObject(application);
         }

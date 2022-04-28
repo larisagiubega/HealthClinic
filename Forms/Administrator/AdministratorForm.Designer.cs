@@ -153,6 +153,8 @@ namespace HealthClinic.Forms__Views_
             // btnCheckAppointments
             // 
             this.btnCheckAppointments.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckAppointments.BackgroundImage = global::HealthClinic.Properties.Resources.appointment;
+            this.btnCheckAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCheckAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCheckAppointments.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
             this.btnCheckAppointments.Location = new System.Drawing.Point(0, 286);
@@ -160,7 +162,7 @@ namespace HealthClinic.Forms__Views_
             this.btnCheckAppointments.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnCheckAppointments.Size = new System.Drawing.Size(470, 130);
             this.btnCheckAppointments.TabIndex = 6;
-            this.btnCheckAppointments.Text = "Check/validate appointments";
+            this.btnCheckAppointments.Text = "Save appointments";
             this.btnCheckAppointments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckAppointments.UseVisualStyleBackColor = false;
             this.btnCheckAppointments.Click += new System.EventHandler(this.btnValidateAppointments_Click);

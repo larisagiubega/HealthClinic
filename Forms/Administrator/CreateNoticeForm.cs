@@ -68,8 +68,7 @@ namespace HealthClinic.Forms.Administrator
 
             MessageBox.Show(noticePresenter.GetAddNoticeMessage(success), noticePresenter.GetAddNoticeTitle(success), MessageBoxButtons.OK, success ? MessageBoxIcon.Information : MessageBoxIcon.Error);
 
-            if (!success)
-                tbNotice.Text = string.Empty;
+            tbNotice.Text = string.Empty;
         }
 
         private void CreateNoticeForm_Load(object sender, EventArgs e)

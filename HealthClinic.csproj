@@ -169,8 +169,10 @@
     <Compile Include="APPOINTMENTS.cs">
       <DependentUpon>HealthClinicModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\AppointmentsDal.cs" />
     <Compile Include="DTOs\AppointmentDto.cs" />
     <Compile Include="DTOs\PersonDto.cs" />
+    <Compile Include="Interfaces\IAppointmentsDal.cs" />
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
     <Compile Include="UseExcel.cs" />
@@ -236,12 +238,6 @@
     </Compile>
     <Compile Include="Forms\Administrator\ProcessInvoices.Designer.cs">
       <DependentUpon>ProcessInvoices.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Administrator\ValidateAppointmentsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Administrator\ValidateAppointmentsForm.Designer.cs">
-      <DependentUpon>ValidateAppointmentsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MedicalPersonnel\ScheduleForm.cs">
       <SubType>Form</SubType>
@@ -367,9 +363,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\ProcessInvoices.resx">
       <DependentUpon>ProcessInvoices.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\ValidateAppointmentsForm.resx">
-      <DependentUpon>ValidateAppointmentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MedicalPersonnel\ScheduleForm.resx">
       <DependentUpon>ScheduleForm.cs</DependentUpon>

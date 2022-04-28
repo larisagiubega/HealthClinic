@@ -1,5 +1,7 @@
-﻿using HealthClinic.Forms;
+﻿using HealthClinic.DAL;
+using HealthClinic.Forms;
 using HealthClinic.Localization;
+using HealthClinic.Presenters;
 using System;
 using System.Collections;
 using System.Drawing;
@@ -22,6 +24,7 @@ namespace HealthClinic
             InitializeComponent();
 
             _ctx = ctx;
+            UseExcel.appointmentsPresenter = new AppointmentsPresenter(_ctx);
         }
 
         private void FillLanguageCombobox()

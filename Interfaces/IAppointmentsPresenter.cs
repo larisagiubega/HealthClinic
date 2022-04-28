@@ -11,6 +11,7 @@ namespace HealthClinic.Interfaces
         bool IsNameCorrect(string name);
         bool IsPhoneNumberCorrect(string phoneNo);
 
+        DateTime RoundTime(DateTime dateTime);
         List<UserDto> GetAllDoctors();
         UserDto GetDoctorByFullName(string fullName);
     }
