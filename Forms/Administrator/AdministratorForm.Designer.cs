@@ -123,6 +123,7 @@ namespace HealthClinic.Forms__Views_
             // btnProcessInvoices
             // 
             this.btnProcessInvoices.BackColor = System.Drawing.Color.Transparent;
+            this.btnProcessInvoices.BackgroundImage = global::HealthClinic.Properties.Resources.invoice;
             this.btnProcessInvoices.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProcessInvoices.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
             this.btnProcessInvoices.Location = new System.Drawing.Point(0, 417);
@@ -138,8 +139,11 @@ namespace HealthClinic.Forms__Views_
             // btnMedications
             // 
             this.btnMedications.BackColor = System.Drawing.Color.Transparent;
+            this.btnMedications.BackgroundImage = global::HealthClinic.Properties.Resources.medicine;
+            this.btnMedications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMedications.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMedications.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
+            this.btnMedications.ForeColor = System.Drawing.Color.Black;
             this.btnMedications.Location = new System.Drawing.Point(1, 548);
             this.btnMedications.Name = "btnMedications";
             this.btnMedications.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);

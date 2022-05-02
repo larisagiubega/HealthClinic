@@ -1,6 +1,4 @@
-﻿
-
-namespace HealthClinic.DAL
+﻿namespace HealthClinic.DAL
 {
     using HealthClinic.DTOs;
     using HealthClinic.Interfaces;

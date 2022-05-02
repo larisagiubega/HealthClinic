@@ -1044,4 +1044,22 @@
   <data name="PlaseSelectDoctor" xml:space="preserve">
     <value>Vă rugăm selectați un doctor!</value>
   </data>
+  <data name="btnProcessMedications" xml:space="preserve">
+    <value>Procesare medicamente</value>
+  </data>
+  <data name="LastBillingDate" xml:space="preserve">
+    <value>Ultima dată de facturare</value>
+  </data>
+  <data name="lblInsufficientStock" xml:space="preserve">
+    <value>* Fundalul roșu indică stoc insuficient.</value>
+  </data>
+  <data name="MedicineForm" xml:space="preserve">
+    <value>Ține evidența medicamentelor</value>
+  </data>
+  <data name="MedicineName" xml:space="preserve">
+    <value>Numele medicamentului</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Cantitate (cutii)</value>
+  </data>
 </root>

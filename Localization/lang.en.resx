@@ -1044,4 +1044,22 @@
   <data name="PlaseSelectDoctor" xml:space="preserve">
     <value>Please select a doctor!</value>
   </data>
+  <data name="btnProcessMedications" xml:space="preserve">
+    <value>Process medication</value>
+  </data>
+  <data name="LastBillingDate" xml:space="preserve">
+    <value>Last billing date</value>
+  </data>
+  <data name="lblInsufficientStock" xml:space="preserve">
+    <value>*The red background means insufficient stock.</value>
+  </data>
+  <data name="MedicineForm" xml:space="preserve">
+    <value>Keep track of medications</value>
+  </data>
+  <data name="MedicineName" xml:space="preserve">
+    <value>Medicine name</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity (boxes)</value>
+  </data>
 </root>

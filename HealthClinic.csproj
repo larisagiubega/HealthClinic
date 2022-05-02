@@ -170,10 +170,12 @@
       <DependentUpon>HealthClinicModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\AppointmentsDal.cs" />
+    <Compile Include="DAL\MedicineDal.cs" />
     <Compile Include="DTOs\AppointmentDto.cs" />
     <Compile Include="DTOs\PersonDto.cs" />
     <Compile Include="Interfaces\IAppointmentsDal.cs" />
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
+    <Compile Include="Interfaces\IMedicineDal.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
     <Compile Include="UseExcel.cs" />
     <Compile Include="Interfaces\IDiseasesSymptomsPresenter.cs" />
@@ -426,6 +428,8 @@
       <DependentUpon>HealthClinicModel.edmx</DependentUpon>
       <LastGenOutput>HealthClinicModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\invoice.png" />
+    <None Include="Resources\medicine.png" />
     <None Include="Resources\appointment.png" />
     <None Include="Resources\create_schedule.png" />
     <None Include="Resources\edit_notice_board.png" />
