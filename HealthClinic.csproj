@@ -177,6 +177,7 @@
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
     <Compile Include="Interfaces\IMedicineDal.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
+    <Compile Include="UseEmail.cs" />
     <Compile Include="UseExcel.cs" />
     <Compile Include="Interfaces\IDiseasesSymptomsPresenter.cs" />
     <Compile Include="Interfaces\INoticePresenter.cs" />
@@ -241,11 +242,11 @@
     <Compile Include="Forms\Administrator\ProcessInvoices.Designer.cs">
       <DependentUpon>ProcessInvoices.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MedicalPersonnel\ScheduleForm.cs">
+    <Compile Include="Forms\MedicalPersonnel\AppointmentsScheduleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MedicalPersonnel\ScheduleForm.Designer.cs">
-      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    <Compile Include="Forms\MedicalPersonnel\AppointmentsScheduleForm.Designer.cs">
+      <DependentUpon>AppointmentsScheduleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Patient\AppointmentsForm.cs">
       <SubType>Form</SubType>
@@ -366,8 +367,8 @@
     <EmbeddedResource Include="Forms\Administrator\ProcessInvoices.resx">
       <DependentUpon>ProcessInvoices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MedicalPersonnel\ScheduleForm.resx">
-      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MedicalPersonnel\AppointmentsScheduleForm.resx">
+      <DependentUpon>AppointmentsScheduleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patient\AppointmentsForm.resx">
       <DependentUpon>AppointmentsForm.cs</DependentUpon>
@@ -473,7 +474,12 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EmailLibrary\EmailClassLibrary.csproj">
+      <Project>{bfc67615-65c4-497f-8bbd-25376c65b20c}</Project>
+      <Name>EmailClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

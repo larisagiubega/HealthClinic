@@ -841,7 +841,7 @@
     <value>Check/ validate invoices</value>
   </data>
   <data name="btnSchedule" xml:space="preserve">
-    <value>Check schedule</value>
+    <value>Check appointments' schedule</value>
   </data>
   <data name="WelcomePatient" xml:space="preserve">
     <value>Welcome, patient!</value>
@@ -1061,5 +1061,23 @@
   </data>
   <data name="Quantity" xml:space="preserve">
     <value>Quantity (boxes)</value>
+  </data>
+  <data name="lblSelectScheduleDay" xml:space="preserve">
+    <value>Please select a day of the following week</value>
+  </data>
+  <data name="lblYourAppointments" xml:space="preserve">
+    <value>Your appointments for the selected day:</value>
+  </data>
+  <data name="atHour" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="NoAppointmentsForDay" xml:space="preserve">
+    <value>You have no appointments on </value>
+  </data>
+  <data name="EmptyStock" xml:space="preserve">
+    <value>Empty stock for medication</value>
+  </data>
+  <data name="InsufficientStockFor" xml:space="preserve">
+    <value>There is an insufficient stock for the following:</value>
   </data>
 </root>

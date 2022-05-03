@@ -841,7 +841,7 @@
     <value>Verificați/ validați facturi</value>
   </data>
   <data name="btnSchedule" xml:space="preserve">
-    <value>Verificați programul</value>
+    <value>Verificați calendarul programărilor</value>
   </data>
   <data name="WelcomePatient" xml:space="preserve">
     <value>Bine ați venit, pacient!</value>
@@ -1061,5 +1061,23 @@
   </data>
   <data name="Quantity" xml:space="preserve">
     <value>Cantitate (cutii)</value>
+  </data>
+  <data name="lblSelectScheduleDay" xml:space="preserve">
+    <value>Vă rugăm selectați o zi a săptămânii următoare</value>
+  </data>
+  <data name="lblYourAppointments" xml:space="preserve">
+    <value>Programările dv. pentru ziua selectată:</value>
+  </data>
+  <data name="atHour" xml:space="preserve">
+    <value>la ora</value>
+  </data>
+  <data name="NoAppointmentsForDay" xml:space="preserve">
+    <value>Nu aveți nicio programare pe data de</value>
+  </data>
+  <data name="EmptyStock" xml:space="preserve">
+    <value>Stoc gol</value>
+  </data>
+  <data name="InsufficientStockFor" xml:space="preserve">
+    <value>Stocul este insuficient pentru următoarele medicamente:</value>
   </data>
 </root>

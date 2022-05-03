@@ -1,6 +1,7 @@
 ﻿namespace HealthClinic.Forms__Views_.Administrator
 {
     using HealthClinic.DAL;
+    using HealthClinic.DTOs;
     using HealthClinic.Interfaces;
     using HealthClinic.Localization;
     using System;
@@ -16,16 +17,19 @@
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
         private string language = HealthClinicLocalization.GetLanguage();
 
+        private UserDto loggedInUser = null;
+
         Form prevForm;
 
         private IMedicineDal medicineDal;
 
-        public MedicineForm(HealthClinicEntities ctx, Form prevForm)
+        public MedicineForm(HealthClinicEntities ctx, Form prevForm, UserDto loggedInUser)
         {
             InitializeComponent();
 
             _ctx = ctx;
             this.prevForm = prevForm;
+            this.loggedInUser = loggedInUser;
 
             medicineDal = new MedicineDal(_ctx);
         }
@@ -84,10 +88,9 @@
                 listMedications.Items.Add(medicineItem);
             }
 
-        //TODO: SEND EMAIL FOR INSUFFICIENT STOCKS
-            if (insufficientStock.Count > 0)
+            if (insufficientStock.Count > 0 && UseEmail.CanSendEmail(DateTime.Now))
             {
-                //MessageBox.Show($"Insufficient stock for the following: \n {string.Join(" \n", insufficientStock.ToArray())}");
+                UseEmail.SendEmail($"{loggedInUser.Username}@healthclinic.com", $"{res.GetString("EmptyStock")}", $"{res.GetString("InsufficientStockFor")}\r\n{string.Join("\n", insufficientStock.ToArray())}");
             }
 
         }

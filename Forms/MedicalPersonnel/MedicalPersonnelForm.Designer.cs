@@ -86,7 +86,7 @@ namespace HealthClinic.Forms__Views_
             this.btnSchedule.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnSchedule.Size = new System.Drawing.Size(948, 250);
             this.btnSchedule.TabIndex = 4;
-            this.btnSchedule.Text = "Check schedule";
+            this.btnSchedule.Text = "Check appointments\' schedule";
             this.btnSchedule.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSchedule.UseVisualStyleBackColor = true;
             this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);

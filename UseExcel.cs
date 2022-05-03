@@ -168,7 +168,7 @@ namespace HealthClinic
             var listSizes = new List<int> { firstNameList.Count, lastNameList.Count, phoneNoList.Count, dateList.Count, doctorNameList.Count };
             int minSize = listSizes.Min();
 
-            if (minSize > 1) //the columns' first row is always the column's name
+            if (minSize > 0)
             {
                 for (int i = 0; i < minSize; i++)
                 {
@@ -186,7 +186,6 @@ namespace HealthClinic
             }
             else //if any column has no data
             {
-                CloseExcelAndReleaseObjects();
                 throw new Exception();
             }
         }

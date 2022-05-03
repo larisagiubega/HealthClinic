@@ -142,6 +142,32 @@ namespace HealthClinic.DAL
             return today.AddDays(-(int)today.DayOfWeek).AddDays(1); //add 1 day because of ISO
         }
 
+        public List<AppointmentDto> GetAppointmentsForUserByUsernameAndDay(string username, DateTime day)
+        {
+            List<AppointmentDto> allAppointmentsForToday = new List<AppointmentDto>();
 
+            DateTime nextDay = day.AddDays(1);
+
+            try
+            {
+                allAppointmentsForToday = _ctx.APPOINTMENTS.Where(x => x.APPOINTMENT_DATE >= day.Date && x.APPOINTMENT_DATE < nextDay && x.DOCTOR_USERNAME.Trim().ToLower().Equals(username.Trim().ToLower())).Select(y => new AppointmentDto
+                {
+                    FirstName = y.FIRST_NAME,
+                    LastName = y.LAST_NAME,
+                    PhoneNumber = y.PHONE_NUMBER,
+                    Date = y.APPOINTMENT_DATE,
+                    Doctor = new UserDto
+                    {
+                        Username = username
+                    }
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.Log("Exception");
+            }
+
+            return allAppointmentsForToday;
+        }
     }
 }

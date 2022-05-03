@@ -17,7 +17,7 @@ namespace HealthClinic
         public int APPOINTMENT_ID { get; set; }
         public string FIRST_NAME { get; set; }
         public string LAST_NAME { get; set; }
-        public Nullable<System.DateTime> APPOINTMENT_DATE { get; set; }
+        public System.DateTime APPOINTMENT_DATE { get; set; }
         public string PHONE_NUMBER { get; set; }
         public string DOCTOR_USERNAME { get; set; }
     

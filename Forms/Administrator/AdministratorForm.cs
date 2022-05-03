@@ -85,7 +85,7 @@ namespace HealthClinic.Forms__Views_
 
         private void btnMedications_Click(object sender, EventArgs e)
         {
-            MedicineForm medicineForm = new MedicineForm(_ctx, this);
+            MedicineForm medicineForm = new MedicineForm(_ctx, this, loggedInUser);
             medicineForm.Show();
             this.Hide();
         }
