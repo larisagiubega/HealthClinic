@@ -16,7 +16,6 @@ namespace HealthClinic.Presenters
         HealthClinicEntities _ctx = new HealthClinicEntities();
 
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
-        private string language = HealthClinicLocalization.GetLanguage();
 
         private readonly IUserDal userDal;
         private readonly IScheduleDal scheduleDal;

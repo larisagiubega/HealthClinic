@@ -1,15 +1,10 @@
-﻿using HealthClinic.Forms__Views_;
+﻿using HealthClinic.Forms.Patient;
+using HealthClinic.Forms__Views_;
 using HealthClinic.Forms__Views_.Patient;
 using HealthClinic.Localization;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HealthClinic.Forms
@@ -77,6 +72,13 @@ namespace HealthClinic.Forms
 
             ChangeControlsFont();
             HealthClinicLocalization.FillControlsByLanguage(res, language, panelPatient);
+        }
+
+        private void btnCheckSchedules_Click(object sender, EventArgs e)
+        {
+            CheckDoctorsSchedule checkDoctorsSchedule = new CheckDoctorsSchedule(_ctx, this);
+            checkDoctorsSchedule.Show();
+            this.Hide();
         }
     }
 }

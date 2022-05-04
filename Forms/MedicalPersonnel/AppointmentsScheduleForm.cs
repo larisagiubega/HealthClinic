@@ -22,6 +22,7 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
         static UserDto loggedInUser = null;
 
         private readonly IScheduleDal scheduleDal;
+        private readonly IAppointmentsDal appointmentsDal;
 
         Form prevForm;
         public ScheduleForm(HealthClinicEntities ctx, Form prevForm, UserDto user)
@@ -30,6 +31,7 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
 
             _ctx = ctx;
             scheduleDal = new ScheduleDal(_ctx);
+            appointmentsDal = new AppointmentsDal(_ctx);
             this.prevForm = prevForm;
             loggedInUser = user;
         }
@@ -86,7 +88,7 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
 
             var selectedDay = firstDayOfNextWeek.AddDays(cbDaysOfWeek.SelectedIndex); //cbDaysOfWeek.SelectedIndex equals to selected day of week
 
-            var allApointmentsForDay = scheduleDal.GetAppointmentsForUserByUsernameAndDay(loggedInUser.Username, selectedDay);
+            var allApointmentsForDay = appointmentsDal.GetAppointmentsForUserByUsernameAndDay(loggedInUser.Username, selectedDay);
 
             if (allApointmentsForDay.Count == 0)
             {

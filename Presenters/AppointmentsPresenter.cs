@@ -14,7 +14,6 @@ namespace HealthClinic.Presenters
     public class AppointmentsPresenter : IAppointmentsPresenter
     {
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
-        private string language = HealthClinicLocalization.GetLanguage();
 
         private HealthClinicEntities _ctx = new HealthClinicEntities();
 

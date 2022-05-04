@@ -1,14 +1,19 @@
 ﻿using HealthClinic.DTOs;
 using HealthClinic.Exceptions;
 using HealthClinic.Interfaces;
+using HealthClinic.Localization;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
 
 namespace HealthClinic.DAL
 {
     public class NoticeBoardDal : INoticeBoardDal
     {
         HealthClinicEntities _ctx;
+
+        private ResourceManager res = HealthClinicLocalization.GetResourceManager();
+
         public NoticeBoardDal(HealthClinicEntities ctx)
         {
             _ctx = ctx;
@@ -33,7 +38,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new AddNoticeException().Message));
             }
 
             return success;
@@ -52,7 +57,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new DeleteNoticeException().Message));
             }
 
             return success;
@@ -74,7 +79,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new EditNoticeException().Message));
             }
             return success;
         }
@@ -95,7 +100,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllNoticesException().Message));
                 return new List<NoticeBoardDto>();
             }
         }
@@ -112,7 +117,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new LastWeekNoticesException().Message));
                 return new List<NoticeBoardDto>();
             }
         }

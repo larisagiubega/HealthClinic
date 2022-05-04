@@ -2,6 +2,7 @@
 namespace HealthClinic.DAL
 {
     using HealthClinic.DTOs;
+    using HealthClinic.Exceptions;
     using HealthClinic.Interfaces;
     using HealthClinic.Localization;
     using System.Collections.Generic;
@@ -33,7 +34,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllSymptomsException().Message));
                 return new List<SymptomsDto>();
             }
         }
@@ -46,7 +47,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new OrderSymptomsException().Message));
                 return new List<SymptomsDto>();
             }
 
@@ -84,7 +85,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllDiseasesException().Message));
                 return new List<DiseaseDto>();
             }
         }

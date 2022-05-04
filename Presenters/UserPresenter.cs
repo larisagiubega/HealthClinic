@@ -3,17 +3,22 @@ namespace HealthClinic.Presenters
 {
     using HealthClinic.DAL;
     using HealthClinic.DTOs;
+    using HealthClinic.Exceptions;
     using HealthClinic.Interfaces;
+    using HealthClinic.Localization;
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Resources;
     using System.Security.Cryptography;
     using System.Text;
 
     public class UserPresenter : IUserPresenter
     {
         private HealthClinicEntities _ctx = new HealthClinicEntities();
+
+        private ResourceManager res = HealthClinicLocalization.GetResourceManager();
 
         private readonly IUserDal userDal;
         public UserPresenter(HealthClinicEntities ctx)
@@ -57,7 +62,7 @@ namespace HealthClinic.Presenters
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new EncryptionException().Message));
             }
 
             return string.Empty;
@@ -94,7 +99,7 @@ namespace HealthClinic.Presenters
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new DecryptionException().Message));
             }
 
             return string.Empty;

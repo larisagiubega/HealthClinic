@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HealthClinic.Exceptions;
+using System;
 using System.Collections;
 using System.Globalization;
 using System.IO;
@@ -14,11 +15,12 @@ namespace HealthClinic.Localization
     public static class HealthClinicLocalization
     {
         private static string path = @"D:\FACULTATE\Licenta\HealthClinicSolution\HealthClinic\lang.txt";
+        private static ResourceManager resourceManager;
 
         #region Resource Manager
         public static ResourceManager GetResourceManager()
         {
-            ResourceManager resourceManager = new ResourceManager("HealthClinic.Localization.lang", Assembly.GetExecutingAssembly());
+            resourceManager = new ResourceManager("HealthClinic.Localization.lang", Assembly.GetExecutingAssembly());
 
             string lang = GetLanguage();
 
@@ -47,7 +49,7 @@ namespace HealthClinic.Localization
             catch
             {
                 language = string.Empty;
-                Logger.Log("Exception");
+                Logger.Log(resourceManager.GetString(new GetLanguageException().Message));
 
             }
 
@@ -68,7 +70,7 @@ namespace HealthClinic.Localization
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(resourceManager.GetString(new SetLanguageException().Message));
             }
         }
 
@@ -123,7 +125,7 @@ namespace HealthClinic.Localization
             catch
             {
                 content = string.Empty;
-                Logger.Log("Exception");
+                Logger.Log(resourceManager.GetString(new ReadLanguageException().Message));
             }
 
             return content.Trim();
@@ -159,7 +161,7 @@ namespace HealthClinic.Localization
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(new FillByLanguageException().Message);
             }
 
             #endregion

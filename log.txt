@@ -1,7 +1,0 @@
-ReadAppointments from class UseExcel: 02.05.2022 19:25:15 	 Exception of type 'System.Exception' was thrown. 
-ReadAppointments from class UseExcel: 02.05.2022 19:27:02 	 The string was not recognized as a valid DateTime. There is an unknown word starting at index 0. 
-ReadAppointments from class UseExcel: 02.05.2022 19:37:22 	 The string was not recognized as a valid DateTime. There is an unknown word starting at index 0. 
-ReadAppointments from class UseExcel: 02.05.2022 19:38:08 	 The string was not recognized as a valid DateTime. There is an unknown word starting at index 0. 
-ReadAppointments from class UseExcel: 02.05.2022 19:40:21 	 Exception of type 'System.Exception' was thrown. 
-ReadAppointments from class UseExcel: 02.05.2022 19:47:36 	 The string was not recognized as a valid DateTime. There is an unknown word starting at index 0. 
-GetAppointmentsForUserByUsernameAndDay from class ScheduleDal: 02.05.2022 19:50:36 	 Exception 

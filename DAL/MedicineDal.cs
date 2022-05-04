@@ -2,14 +2,20 @@
 namespace HealthClinic.DAL
 {
     using HealthClinic.DTOs;
+    using HealthClinic.Exceptions;
     using HealthClinic.Interfaces;
+    using HealthClinic.Localization;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Resources;
 
     public class MedicineDal : IMedicineDal
     {
         HealthClinicEntities _ctx;
+
+        private ResourceManager res = HealthClinicLocalization.GetResourceManager();
+
         public MedicineDal(HealthClinicEntities ctx)
         {
             _ctx = ctx;
@@ -28,10 +34,10 @@ namespace HealthClinic.DAL
                     Quantity = x.QUANTITY
                 }).ToList();
             }
-            catch (Exception ex)
+            catch
             {
                 allMedicine = null;
-                Logger.Log(ex.Message);
+                Logger.Log(res.GetString(new GetAllMedicineException().Message));
             }
 
             return allMedicine;

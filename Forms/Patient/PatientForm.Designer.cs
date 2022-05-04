@@ -30,6 +30,7 @@ namespace HealthClinic.Forms
         private void InitializeComponent()
         {
             this.panelPatient = new System.Windows.Forms.Panel();
+            this.btnCheckSchedules = new System.Windows.Forms.Button();
             this.HealthClinic = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnNoticeBoard = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@ namespace HealthClinic.Forms
             // panelPatient
             // 
             this.panelPatient.BackgroundImage = global::HealthClinic.Properties.Resources.background_logo_up;
+            this.panelPatient.Controls.Add(this.btnCheckSchedules);
             this.panelPatient.Controls.Add(this.HealthClinic);
             this.panelPatient.Controls.Add(this.btnBack);
             this.panelPatient.Controls.Add(this.btnNoticeBoard);
@@ -50,6 +52,21 @@ namespace HealthClinic.Forms
             this.panelPatient.Name = "panelPatient";
             this.panelPatient.Size = new System.Drawing.Size(945, 680);
             this.panelPatient.TabIndex = 0;
+            // 
+            // btnCheckSchedules
+            // 
+            this.btnCheckSchedules.BackgroundImage = global::HealthClinic.Properties.Resources.check_schedule;
+            this.btnCheckSchedules.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCheckSchedules.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
+            this.btnCheckSchedules.Location = new System.Drawing.Point(-2, 557);
+            this.btnCheckSchedules.Name = "btnCheckSchedules";
+            this.btnCheckSchedules.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnCheckSchedules.Size = new System.Drawing.Size(948, 130);
+            this.btnCheckSchedules.TabIndex = 13;
+            this.btnCheckSchedules.Text = "Check doctors\' schedule";
+            this.btnCheckSchedules.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckSchedules.UseVisualStyleBackColor = true;
+            this.btnCheckSchedules.Click += new System.EventHandler(this.btnCheckSchedules_Click);
             // 
             // HealthClinic
             // 
@@ -81,12 +98,12 @@ namespace HealthClinic.Forms
             // btnNoticeBoard
             // 
             this.btnNoticeBoard.BackgroundImage = global::HealthClinic.Properties.Resources.notice_board;
-            this.btnNoticeBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnNoticeBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNoticeBoard.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
-            this.btnNoticeBoard.Location = new System.Drawing.Point(2, 515);
+            this.btnNoticeBoard.Location = new System.Drawing.Point(-2, 431);
             this.btnNoticeBoard.Name = "btnNoticeBoard";
             this.btnNoticeBoard.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnNoticeBoard.Size = new System.Drawing.Size(948, 170);
+            this.btnNoticeBoard.Size = new System.Drawing.Size(948, 130);
             this.btnNoticeBoard.TabIndex = 2;
             this.btnNoticeBoard.Text = "Check notice board";
             this.btnNoticeBoard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -98,10 +115,10 @@ namespace HealthClinic.Forms
             this.btnAppointments.BackgroundImage = global::HealthClinic.Properties.Resources.appointment;
             this.btnAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAppointments.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
-            this.btnAppointments.Location = new System.Drawing.Point(0, 348);
+            this.btnAppointments.Location = new System.Drawing.Point(0, 304);
             this.btnAppointments.Name = "btnAppointments";
             this.btnAppointments.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnAppointments.Size = new System.Drawing.Size(948, 170);
+            this.btnAppointments.Size = new System.Drawing.Size(948, 130);
             this.btnAppointments.TabIndex = 1;
             this.btnAppointments.Text = "Make an appointment";
             this.btnAppointments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,10 +129,10 @@ namespace HealthClinic.Forms
             // 
             this.btnCheckSymptoms.BackgroundImage = global::HealthClinic.Properties.Resources.check_symptoms;
             this.btnCheckSymptoms.Font = new System.Drawing.Font("Impact", 26F, System.Drawing.FontStyle.Bold);
-            this.btnCheckSymptoms.Location = new System.Drawing.Point(4, 181);
+            this.btnCheckSymptoms.Location = new System.Drawing.Point(0, 177);
             this.btnCheckSymptoms.Name = "btnCheckSymptoms";
             this.btnCheckSymptoms.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.btnCheckSymptoms.Size = new System.Drawing.Size(948, 170);
+            this.btnCheckSymptoms.Size = new System.Drawing.Size(948, 130);
             this.btnCheckSymptoms.TabIndex = 0;
             this.btnCheckSymptoms.Text = "Check symptoms";
             this.btnCheckSymptoms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,5 +168,6 @@ namespace HealthClinic.Forms
         private System.Windows.Forms.Button btnAppointments;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label HealthClinic;
+        private System.Windows.Forms.Button btnCheckSchedules;
     }
 }

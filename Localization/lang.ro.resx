@@ -868,7 +868,7 @@
     <value>Alegeți utilizator</value>
   </data>
   <data name="lblPickDayOfWeek" xml:space="preserve">
-    <value>Alegeți ziua din săptămâna curentă</value>
+    <value>Alegeți ziua din săptămâna următoare</value>
   </data>
   <data name="lblPickShift" xml:space="preserve">
     <value>Alegeți orele schimbului</value>
@@ -951,13 +951,13 @@
   <data name="PleaseEditNotice" xml:space="preserve">
     <value>Nu puteți salva un anunț nemodificat. Vă rugăm modificați anunțul, iar apoi salvați-l.</value>
   </data>
-  <data name="AddingUnsuccessful" xml:space="preserve">
-    <value>Adăugarea nu a putut avea loc!</value>
+  <data name="AddingNoticeUnsuccessful" xml:space="preserve">
+    <value>Adăugarea anunțului nu a putut avea loc!</value>
   </data>
-  <data name="DeletingUnsuccessful" xml:space="preserve">
+  <data name="DeletingNoticeUnsuccessful" xml:space="preserve">
     <value>Anunțul nu a putut fi șters!</value>
   </data>
-  <data name="EditingUnsuccessful" xml:space="preserve">
+  <data name="EditingNoticeUnsuccessful" xml:space="preserve">
     <value>Anunțul nu a putut fi editat!</value>
   </data>
   <data name="SomethingWentWrong" xml:space="preserve">
@@ -1079,5 +1079,98 @@
   </data>
   <data name="InsufficientStockFor" xml:space="preserve">
     <value>Stocul este insuficient pentru următoarele medicamente:</value>
+  </data>
+  <data name="lblSelectDoctor" xml:space="preserve">
+    <value>Vă rugăm selectați doctorul pentru care doriți o programare</value>
+  </data>
+  <data name="btnCheckSchedules1" xml:space="preserve">
+    <value>Vizualizați programul doctorilor</value>
+  </data>
+  <data name="CannotGetAllMedicine" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre medicamente din baza de date!</value>
+  </data>
+  <data name="CannotFillByLanguage" xml:space="preserve">
+    <value>Elementele panel-ului nu au putut fi traduse!</value>
+  </data>
+  <data name="CannotGetAllAccounts" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre conturile utilizatorilor din baza de date!</value>
+  </data>
+  <data name="CannotGetAllAdminsAccounts" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre conturile administratorilor din baza de date!</value>
+  </data>
+  <data name="CannotGetAllDiseases" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre boli din baza de date!</value>
+  </data>
+  <data name="CannotGetAllDoctorsAccounts" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre conturile cadrelor medicale din baza de date!</value>
+  </data>
+  <data name="CannotGetAllNotices" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre anunțuri din baza de date!</value>
+  </data>
+  <data name="CannotGetAllShifts" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre schimburi din baza de date!</value>
+  </data>
+  <data name="CannotGetAllShiftsForUser" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre schimburile unui anumit utilizator din baza de date!</value>
+  </data>
+  <data name="CannotGetAllSymptoms" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre simptome din baza de date!</value>
+  </data>
+  <data name="CannotGetAppointmentsForUser" xml:space="preserve">
+    <value>Nu au putut fi obținute programările utilizatorului după numele de utilizator și zi!</value>
+  </data>
+  <data name="CannotGetFullName" xml:space="preserve">
+    <value>Nu a putut fi obținut numele întreg al utilizatorului după numele său de utilizator!</value>
+  </data>
+  <data name="CannotGetLanguage" xml:space="preserve">
+    <value>Limba nu a putut fi recuperată!</value>
+  </data>
+  <data name="CannotGetLastWeekNotices" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre anunțurile de săptămâna trecută din baza de date!</value>
+  </data>
+  <data name="CannotGetRight" xml:space="preserve">
+    <value>Nu a putut fi obținut dreptul după ID din baza de date!</value>
+  </data>
+  <data name="CannotGetSchedule" xml:space="preserve">
+    <value>Nu a putut fi obținut programul din baza de date!</value>
+  </data>
+  <data name="CannotGetShiftsByHour" xml:space="preserve">
+    <value>Nu au putut fi obținute informațiile despre schimb după un anumit interval orar din baza de date!</value>
+  </data>
+  <data name="CannotGetStartEndHour" xml:space="preserve">
+    <value>Nu au putut fi obținute începutul și sfârșitul de schimb dupa ID-ul schimbului!</value>
+  </data>
+  <data name="CannotGetUserByName" xml:space="preserve">
+    <value>Nu a putut fi obținut utilizatorul după numele său complet!</value>
+  </data>
+  <data name="CannotGetUserByUsername" xml:space="preserve">
+    <value>Nu a putut fi obținut utilizatorul din baza de date după numele de utilizator!</value>
+  </data>
+  <data name="CannotOrderSymptoms" xml:space="preserve">
+    <value>Simptomele nu au putut fi ordonate după nume!</value>
+  </data>
+  <data name="CannotReadLanguage" xml:space="preserve">
+    <value>Limba nu a putut fi obținută din fișier!</value>
+  </data>
+  <data name="CannotSetLanguage" xml:space="preserve">
+    <value>Nu a putut fi setată limba!</value>
+  </data>
+  <data name="ScheduleCannotBeCreated" xml:space="preserve">
+    <value>Programul nu a putut fi salvat!</value>
+  </data>
+  <data name="CannotDecrypt" xml:space="preserve">
+    <value>Textul nu a putut fi decriptat!</value>
+  </data>
+  <data name="CannotEncrypt" xml:space="preserve">
+    <value>Textul nu a putut fi criptat!</value>
+  </data>
+  <data name="CannotReadAppointments" xml:space="preserve">
+    <value>Programările nu au putut fi citite din Excel!</value>
+  </data>
+  <data name="CannotSendEmail" xml:space="preserve">
+    <value>Nu s-a putut trimite e-mailul!</value>
+  </data>
+  <data name="NoDataInColumn" xml:space="preserve">
+    <value>Există cel puțin o coloană al cărei conținut este zero!</value>
   </data>
 </root>

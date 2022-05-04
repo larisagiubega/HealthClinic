@@ -7,9 +7,14 @@ namespace HealthClinic
     using HealthClinic.DTOs;
     using System.Linq;
     using HealthClinic.Interfaces;
+    using HealthClinic.Exceptions;
+    using System.Resources;
+    using HealthClinic.Localization;
 
     public static class UseExcel
     {
+        private static ResourceManager res = HealthClinicLocalization.GetResourceManager();
+
         private static Excel.Application application;
         private static Excel._Workbook workbook;
         private static Excel.Sheets worksheets;
@@ -89,10 +94,10 @@ namespace HealthClinic
                     }
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 success = false;
-                Logger.Log(ex.Message);
+                Logger.Log(res.GetString(new SaveAppointmentsException().Message));
             }
             finally
             {
@@ -129,9 +134,9 @@ namespace HealthClinic
 
                 ConvertContentToAppointments();
             }
-            catch (Exception ex)
+            catch
             {
-                Logger.Log(ex.Message);
+                Logger.Log(res.GetString(new ReadAppointmentsException().Message));
             }
             finally
             {
@@ -186,7 +191,7 @@ namespace HealthClinic
             }
             else //if any column has no data
             {
-                throw new Exception();
+                throw new NoDataException();
             }
         }
 
@@ -330,7 +335,7 @@ namespace HealthClinic
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
                 obj = null;
             }
-            catch (Exception ex)
+            catch
             {
                 obj = null;
             }

@@ -173,10 +173,18 @@
     <Compile Include="DAL\MedicineDal.cs" />
     <Compile Include="DTOs\AppointmentDto.cs" />
     <Compile Include="DTOs\PersonDto.cs" />
+    <Compile Include="Forms\Patient\CheckDoctorsSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patient\CheckDoctorsSchedule.Designer.cs">
+      <DependentUpon>CheckDoctorsSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IAppointmentsDal.cs" />
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
+    <Compile Include="Interfaces\ICheckDoctorsSchedulePresenter.cs" />
     <Compile Include="Interfaces\IMedicineDal.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
+    <Compile Include="Presenters\CheckDoctorsSchedulePresenter.cs" />
     <Compile Include="UseEmail.cs" />
     <Compile Include="UseExcel.cs" />
     <Compile Include="Interfaces\IDiseasesSymptomsPresenter.cs" />
@@ -373,6 +381,9 @@
     <EmbeddedResource Include="Forms\Patient\AppointmentsForm.resx">
       <DependentUpon>AppointmentsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\CheckDoctorsSchedule.resx">
+      <DependentUpon>CheckDoctorsSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patient\CheckSymptomsForm.resx">
       <DependentUpon>CheckSymptomsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,6 +440,7 @@
       <DependentUpon>HealthClinicModel.edmx</DependentUpon>
       <LastGenOutput>HealthClinicModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\check_schedule.png" />
     <None Include="Resources\invoice.png" />
     <None Include="Resources\medicine.png" />
     <None Include="Resources\appointment.png" />

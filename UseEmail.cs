@@ -1,9 +1,15 @@
 ﻿
 namespace HealthClinic
 {
+    using HealthClinic.Exceptions;
+    using HealthClinic.Localization;
     using System;
+    using System.Resources;
+
     public static class UseEmail
     {
+        private static ResourceManager res = HealthClinicLocalization.GetResourceManager();
+
         private const string EMAIL_FROM = "no-reply@healthclinic.com";
         private static DateTime lastEmailSent;
 
@@ -16,10 +22,11 @@ namespace HealthClinic
                 EmailLibrary.EmailLibrary.SendEmail(EMAIL_FROM, to, subject, body);
                 lastEmailSent = DateTime.Now;
             }
-            catch (Exception ex)
+            catch
             {
                 success = false;
-                Logger.Log(ex.Message);
+
+                Logger.Log(res.GetString(new SendEmailException().Message));
             }
 
             return success;

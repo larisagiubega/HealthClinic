@@ -2,13 +2,20 @@
 namespace HealthClinic.DAL
 {
     using HealthClinic.DTOs;
+    using HealthClinic.Exceptions;
     using HealthClinic.Interfaces;
+    using HealthClinic.Localization;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Resources;
+
     public class UserDal : IUserDal
     {
-        HealthClinicEntities _ctx = new HealthClinicEntities();
+        HealthClinicEntities _ctx = new HealthClinicEntities(); 
+        
+        private ResourceManager res = HealthClinicLocalization.GetResourceManager();
+
         public UserDal(HealthClinicEntities ctx)
         {
             _ctx = ctx;
@@ -34,7 +41,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllAccountsException().Message));
                 return new List<UserDto>();
             }
         }
@@ -59,7 +66,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetUserByUsernameException().Message));
                 return new UserDto();
             }
         }
@@ -80,7 +87,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetRightException().Message));
                 return new RightDto();
             }
         }
@@ -96,7 +103,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetFullNameException().Message));
                 return string.Empty;
             }
         }
@@ -109,7 +116,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetFullNameException().Message));
                 return string.Empty;
             }
         }
@@ -124,7 +131,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllDoctorsAccountsException().Message));
                 return new List<UserDto>();
             }
         }
@@ -139,7 +146,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetAllAdminsAccountsException().Message));
                 return new List<UserDto>();
             }
         }
@@ -169,7 +176,7 @@ namespace HealthClinic.DAL
             }
             catch
             {
-                Logger.Log("Exception");
+                Logger.Log(res.GetString(new GetUserByNameException().Message));
                 return new UserDto();
             }
         }

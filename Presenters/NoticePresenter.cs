@@ -3,6 +3,7 @@ namespace HealthClinic.Presenters
 {
     using HealthClinic.DAL;
     using HealthClinic.DTOs;
+    using HealthClinic.Exceptions;
     using HealthClinic.Interfaces;
     using HealthClinic.Localization;
     using System.Collections.Generic;
@@ -15,7 +16,6 @@ namespace HealthClinic.Presenters
         private readonly IUserDal userDal;
 
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
-        private string language = HealthClinicLocalization.GetLanguage();
 
         private static UserDto loggedInUser = null;
 
@@ -30,15 +30,7 @@ namespace HealthClinic.Presenters
 
         public bool AddNotice(NoticeBoardDto notice)
         {
-            bool success = false;
-            try
-            {
-                success = noticeBoardDal.AddNotice(notice);
-            }
-            catch
-            {
-                Logger.Log("Exception");
-            }
+            bool success = noticeBoardDal.AddNotice(notice);
 
             return success;
         }
@@ -50,7 +42,7 @@ namespace HealthClinic.Presenters
 
         public string GetAddNoticeMessage(bool success)
         {
-            return success ? res.GetString("SuccessfullySaved") : res.GetString("AddingUnsuccessful");
+            return success ? res.GetString("SuccessfullySaved") : res.GetString("AddingNoticeUnsuccessful");
         }
 
         public List<NoticeBoardDto> GetAllNoticesFromLastWeek()
@@ -86,7 +78,7 @@ namespace HealthClinic.Presenters
 
         public string GetEditNoticeMessage(bool success)
         {
-            return success ? res.GetString("SuccessfullyEdited") : res.GetString("EditingUnsuccessful");
+            return success ? res.GetString("SuccessfullyEdited") : res.GetString("EditingNoticeUnsuccessful");
         }
 
         public bool DeleteNoticeById(int noticeId)
@@ -101,7 +93,7 @@ namespace HealthClinic.Presenters
 
         public string GetDeleteNoticeMessage(bool success)
         {
-            return success ? res.GetString("SuccessfullyDeleted") : res.GetString("DeletingUnsuccessful");
+            return success ? res.GetString("SuccessfullyDeleted") : res.GetString("DeletingNoticeUnsuccessful");
         }
 
         public string GetNoticesForTextboxFromList(List<NoticeBoardDto> notices)
