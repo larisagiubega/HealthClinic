@@ -12,6 +12,7 @@ namespace HealthClinic.Forms__Views_
     using HealthClinic.DTOs;
     using HealthClinic.Interfaces;
     using HealthClinic.DAL;
+    using HealthClinic.Exceptions;
 
     public partial class AdministratorForm : Form
     {
@@ -21,6 +22,8 @@ namespace HealthClinic.Forms__Views_
         private string language = HealthClinicLocalization.GetLanguage();
 
         private IAppointmentsDal appointmentsDal;
+        private IMedicineDal medicineDal;
+        private IInvoiceDal invoiceDal;
 
         static UserDto loggedInUser = null;
         public AdministratorForm(HealthClinicEntities ctx, UserDto user)
@@ -31,6 +34,8 @@ namespace HealthClinic.Forms__Views_
             loggedInUser = user;
 
             appointmentsDal = new AppointmentsDal(_ctx);
+            medicineDal = new MedicineDal(_ctx);
+            invoiceDal = new InvoiceDal(_ctx);
         }
 
         private void ChangeControlsFont()
@@ -78,9 +83,53 @@ namespace HealthClinic.Forms__Views_
 
         private void btnProcessInvoices_Click(object sender, EventArgs e)
         {
-            ProcessInvoices invoicesForm = new ProcessInvoices(_ctx, this, loggedInUser);
-            invoicesForm.Show();
-            this.Hide();
+            bool success = true;
+            try
+            {
+                var invoices = UsePDF.GetValidatedInvoices(loggedInUser.Username);
+
+                if (invoices.Count > 0)
+                {
+                    foreach (var invoice in invoices)
+                    {
+                       success = success && SaveInvoiceAndMedicineToDatabase(invoice);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(res.GetString("NoValidInvoices"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                if (success)
+                {
+                    MessageBox.Show(res.GetString("InvoicesSaved"), res.GetString("Success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show(res.GetString("AtLeastOneInvalidInvoice"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Log(res.GetString(new CannotProcessInvoicesException().Message));
+            }
+        }
+
+        public bool SaveInvoiceAndMedicineToDatabase(InvoiceDto invoice)
+        {
+            bool success = true;
+
+            var medicineList = invoice.MedicineList;
+
+            foreach (var medicine in medicineList)
+            {
+                success = success && medicineDal.SaveMedicineToDatabase(medicine);
+            }
+
+            success = success && invoiceDal.SaveInvoiceToDatabase(invoice);
+
+            return success;
         }
 
         private void btnMedications_Click(object sender, EventArgs e)

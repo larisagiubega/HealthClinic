@@ -35,11 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -170,6 +176,7 @@
       <DependentUpon>HealthClinicModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\AppointmentsDal.cs" />
+    <Compile Include="DAL\InvoiceDal.cs" />
     <Compile Include="DAL\MedicineDal.cs" />
     <Compile Include="DTOs\AppointmentDto.cs" />
     <Compile Include="DTOs\PersonDto.cs" />
@@ -182,6 +189,7 @@
     <Compile Include="Interfaces\IAppointmentsDal.cs" />
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
     <Compile Include="Interfaces\ICheckDoctorsSchedulePresenter.cs" />
+    <Compile Include="Interfaces\IInvoiceDal.cs" />
     <Compile Include="Interfaces\IMedicineDal.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
     <Compile Include="Presenters\CheckDoctorsSchedulePresenter.cs" />
@@ -243,12 +251,6 @@
     </Compile>
     <Compile Include="Forms\Administrator\MedicineForm.Designer.cs">
       <DependentUpon>MedicineForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Administrator\ProcessInvoices.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Administrator\ProcessInvoices.Designer.cs">
-      <DependentUpon>ProcessInvoices.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MedicalPersonnel\AppointmentsScheduleForm.cs">
       <SubType>Form</SubType>
@@ -354,6 +356,7 @@
     <Compile Include="SYMPTOMS.cs">
       <DependentUpon>HealthClinicModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="UsePDF.cs" />
     <Compile Include="USER.cs">
       <DependentUpon>HealthClinicModel.tt</DependentUpon>
     </Compile>
@@ -371,9 +374,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrator\MedicineForm.resx">
       <DependentUpon>MedicineForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Administrator\ProcessInvoices.resx">
-      <DependentUpon>ProcessInvoices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MedicalPersonnel\AppointmentsScheduleForm.resx">
       <DependentUpon>AppointmentsScheduleForm.cs</DependentUpon>

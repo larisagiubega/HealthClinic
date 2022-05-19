@@ -33,7 +33,6 @@ namespace HealthClinic.Forms__Views_.Administrator
             this.HealthClinic = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panelMedicine = new System.Windows.Forms.Panel();
-            this.btnProcessMedications = new System.Windows.Forms.Button();
             this.lblInsufficientStock = new System.Windows.Forms.Label();
             this.panelMedicine.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +80,6 @@ namespace HealthClinic.Forms__Views_.Administrator
             // 
             this.panelMedicine.BackgroundImage = global::HealthClinic.Properties.Resources.background_logo_up;
             this.panelMedicine.Controls.Add(this.lblInsufficientStock);
-            this.panelMedicine.Controls.Add(this.btnProcessMedications);
             this.panelMedicine.Controls.Add(this.HealthClinic);
             this.panelMedicine.Controls.Add(this.btnBack);
             this.panelMedicine.Controls.Add(this.listMedications);
@@ -89,19 +87,6 @@ namespace HealthClinic.Forms__Views_.Administrator
             this.panelMedicine.Name = "panelMedicine";
             this.panelMedicine.Size = new System.Drawing.Size(945, 680);
             this.panelMedicine.TabIndex = 17;
-            // 
-            // btnProcessMedications
-            // 
-            this.btnProcessMedications.BackColor = System.Drawing.Color.Transparent;
-            this.btnProcessMedications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnProcessMedications.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProcessMedications.Font = new System.Drawing.Font("Impact", 12F);
-            this.btnProcessMedications.Location = new System.Drawing.Point(798, 107);
-            this.btnProcessMedications.Name = "btnProcessMedications";
-            this.btnProcessMedications.Size = new System.Drawing.Size(125, 52);
-            this.btnProcessMedications.TabIndex = 17;
-            this.btnProcessMedications.Text = "Process medications";
-            this.btnProcessMedications.UseVisualStyleBackColor = false;
             // 
             // lblInsufficientStock
             // 
@@ -140,7 +125,6 @@ namespace HealthClinic.Forms__Views_.Administrator
         private System.Windows.Forms.Label HealthClinic;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panelMedicine;
-        private System.Windows.Forms.Button btnProcessMedications;
         private System.Windows.Forms.Label lblInsufficientStock;
     }
 }

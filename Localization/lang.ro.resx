@@ -835,10 +835,10 @@
     <value>Delogare</value>
   </data>
   <data name="btnMedications" xml:space="preserve">
-    <value>Tineți evidența medicamentelor</value>
+    <value>Vizualizați medicamentele</value>
   </data>
   <data name="btnProcessInvoices" xml:space="preserve">
-    <value>Verificați/ validați facturi</value>
+    <value>Procesați facturi</value>
   </data>
   <data name="btnSchedule" xml:space="preserve">
     <value>Verificați calendarul programărilor</value>
@@ -1172,5 +1172,32 @@
   </data>
   <data name="NoDataInColumn" xml:space="preserve">
     <value>Există cel puțin o coloană al cărei conținut este zero!</value>
+  </data>
+  <data name="CannotUsePdf" xml:space="preserve">
+    <value>PDF-ul nu poate fi utilizat: spre exemplu, acesta nu poate fi deschis.</value>
+  </data>
+  <data name="CheckLog" xml:space="preserve">
+    <value>Vă rugăm să verificați logger-ul pentru erori potențiale.</value>
+  </data>
+  <data name="NoValidInvoices" xml:space="preserve">
+    <value>Nu există facturi valide!</value>
+  </data>
+  <data name="CannotGetMedicinebyName" xml:space="preserve">
+    <value>Medicamentul nu a putut fi adus din baza de date pe baza numelui său!</value>
+  </data>
+  <data name="CannotSaveMedicine" xml:space="preserve">
+    <value>Medicamentul nu a putut fi salvat în baza de date!</value>
+  </data>
+  <data name="CannotUpdateMedicine" xml:space="preserve">
+    <value>Medicamentul nu poate fi modificat în baza de date!</value>
+  </data>
+  <data name="CannotProcessInvoices" xml:space="preserve">
+    <value>Facturile nu au putut fi procesate!</value>
+  </data>
+  <data name="AtLeastOneInvalidInvoice" xml:space="preserve">
+    <value>Există cel puțin o factură invalidă!</value>
+  </data>
+  <data name="InvoicesSaved" xml:space="preserve">
+    <value>Facturile au fost salvate!</value>
   </data>
 </root>

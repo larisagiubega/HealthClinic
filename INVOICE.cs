@@ -18,5 +18,9 @@ namespace HealthClinic
         public string SUPPLIER_NAME { get; set; }
         public System.DateTime BILLING_DATE { get; set; }
         public System.DateTime REGISTRATION_DATE { get; set; }
+        public string VALIDATED_BY { get; set; }
+        public string INVOICE_NUMBER { get; set; }
+    
+        public virtual USER USER { get; set; }
     }
 }

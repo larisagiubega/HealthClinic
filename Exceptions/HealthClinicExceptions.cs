@@ -63,6 +63,18 @@ namespace HealthClinic.Exceptions
     #endregion
 
     #region INVOICE
+
+    public class CannotProcessInvoicesException : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotProcessInvoices";
+            }
+        }
+    }
+
     #endregion
 
     #region MEDICINE
@@ -74,6 +86,38 @@ namespace HealthClinic.Exceptions
             get
             {
                 return "CannotGetAllMedicine";
+            }
+        }
+    }
+
+    public class GetMedicineByItsNameException : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotGetMedicinebyName";
+            }
+        }
+    }
+    public class CannotUpdateMedicine : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotUpdateMedicine";
+            }
+        }
+    }
+
+    public class CannotSaveMedicine : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotSaveMedicine";
             }
         }
     }
@@ -378,6 +422,18 @@ namespace HealthClinic.Exceptions
             get
             {
                 return "CannotReadAppointments";
+            }
+        }
+    }
+
+
+    public class UsePDFException : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotUsePdf";
             }
         }
     }

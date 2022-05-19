@@ -835,10 +835,10 @@
     <value>Log out</value>
   </data>
   <data name="btnMedications" xml:space="preserve">
-    <value>Keep track of medications</value>
+    <value>See medications</value>
   </data>
   <data name="btnProcessInvoices" xml:space="preserve">
-    <value>Check/ validate invoices</value>
+    <value>Process invoices</value>
   </data>
   <data name="btnSchedule" xml:space="preserve">
     <value>Check appointments' schedule</value>
@@ -1172,5 +1172,32 @@
   </data>
   <data name="NoDataInColumn" xml:space="preserve">
     <value>There is at least one column where there is no data!</value>
+  </data>
+  <data name="CannotUsePdf" xml:space="preserve">
+    <value>The PDF cannot be used: for example, it cannot be opened.</value>
+  </data>
+  <data name="CheckLog" xml:space="preserve">
+    <value>Please check logger file for potential errors.</value>
+  </data>
+  <data name="NoValidInvoices" xml:space="preserve">
+    <value>There are no valid invoices!</value>
+  </data>
+  <data name="CannotGetMedicinebyName" xml:space="preserve">
+    <value>The medicine could not be retrieved from the database based on its name!</value>
+  </data>
+  <data name="CannotSaveMedicine" xml:space="preserve">
+    <value>The medicine could not be saved in the database!</value>
+  </data>
+  <data name="CannotUpdateMedicine" xml:space="preserve">
+    <value>Cannot update medicine in the database!</value>
+  </data>
+  <data name="CannotProcessInvoices" xml:space="preserve">
+    <value>The invoices cannot be processed!</value>
+  </data>
+  <data name="AtLeastOneInvalidInvoice" xml:space="preserve">
+    <value>There is at least one invalid invoice!</value>
+  </data>
+  <data name="InvoicesSaved" xml:space="preserve">
+    <value>The invoices have been saved!</value>
   </data>
 </root>

@@ -20,6 +20,7 @@ namespace HealthClinic
             this.NOTICE_BOARD = new HashSet<NOTICE_BOARD>();
             this.SCHEDULE = new HashSet<SCHEDULE>();
             this.SCHEDULE1 = new HashSet<SCHEDULE>();
+            this.INVOICE = new HashSet<INVOICE>();
         }
     
         public string USERNAME { get; set; }
@@ -33,5 +34,6 @@ namespace HealthClinic
         public virtual RIGHT RIGHT { get; set; }
         public virtual ICollection<SCHEDULE> SCHEDULE { get; set; }
         public virtual ICollection<SCHEDULE> SCHEDULE1 { get; set; }
+        public virtual ICollection<INVOICE> INVOICE { get; set; }
     }
 }

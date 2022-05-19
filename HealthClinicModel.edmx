@@ -39,6 +39,8 @@
           <Property Name="SUPPLIER_NAME" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="BILLING_DATE" Type="datetime" Nullable="false" />
           <Property Name="REGISTRATION_DATE" Type="datetime" Nullable="false" />
+          <Property Name="VALIDATED_BY" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="INVOICE_NUMBER" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="MEDICINE">
           <Key>
@@ -160,6 +162,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_INVOICE_USER">
+          <End Role="USER" Type="Self.USER" Multiplicity="1" />
+          <End Role="INVOICE" Type="Self.INVOICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="INVOICE">
+              <PropertyRef Name="VALIDATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_NOTICE_BOARD_ADD_BY">
           <End Role="USER" Type="Self.USER" Multiplicity="1" />
           <End Role="NOTICE_BOARD" Type="Self.NOTICE_BOARD" Multiplicity="*" />
@@ -228,6 +242,10 @@
             <End Role="DISEASES" EntitySet="DISEASES" />
             <End Role="DISEASES_SYMPTOMS" EntitySet="DISEASES_SYMPTOMS" />
           </AssociationSet>
+          <AssociationSet Name="FK_INVOICE_USER" Association="Self.FK_INVOICE_USER">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="INVOICE" EntitySet="INVOICE" />
+          </AssociationSet>
           <AssociationSet Name="FK_NOTICE_BOARD_ADD_BY" Association="Self.FK_NOTICE_BOARD_ADD_BY">
             <End Role="USER" EntitySet="USER" />
             <End Role="NOTICE_BOARD" EntitySet="NOTICE_BOARD" />
@@ -289,6 +307,10 @@
             <End Role="USER" EntitySet="USER" />
             <End Role="SCHEDULE" EntitySet="SCHEDULE" />
           </AssociationSet>
+          <AssociationSet Name="FK_INVOICE_USER" Association="HealthClinicDBModel.FK_INVOICE_USER">
+            <End Role="USER" EntitySet="USER" />
+            <End Role="INVOICE" EntitySet="INVOICE" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="DISEASES">
           <Key>
@@ -316,6 +338,9 @@
           <Property Name="SUPPLIER_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="BILLING_DATE" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="REGISTRATION_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VALIDATED_BY" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="USER" Relationship="HealthClinicDBModel.FK_INVOICE_USER" FromRole="INVOICE" ToRole="USER" />
+          <Property Name="INVOICE_NUMBER" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="MEDICINE">
           <Key>
@@ -436,6 +461,7 @@
           <NavigationProperty Name="RIGHT" Relationship="HealthClinicDBModel.FK_PERSON_RIGHT1" FromRole="USER" ToRole="RIGHT" />
           <NavigationProperty Name="SCHEDULE" Relationship="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY" FromRole="USER" ToRole="SCHEDULE" />
           <NavigationProperty Name="SCHEDULE1" Relationship="HealthClinicDBModel.FK_CLOCKING_PERSON" FromRole="USER" ToRole="SCHEDULE" />
+          <NavigationProperty Name="INVOICE" Relationship="HealthClinicDBModel.FK_INVOICE_USER" FromRole="USER" ToRole="INVOICE" />
         </EntityType>
         <Association Name="FK_APPOINTMENTS_USER">
           <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
@@ -497,6 +523,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_INVOICE_USER">
+          <End Type="HealthClinicDBModel.USER" Role="USER" Multiplicity="1" />
+          <End Type="HealthClinicDBModel.INVOICE" Role="INVOICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USER">
+              <PropertyRef Name="USERNAME" />
+            </Principal>
+            <Dependent Role="INVOICE">
+              <PropertyRef Name="VALIDATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -523,6 +561,8 @@
           <EntitySetMapping Name="INVOICE">
             <EntityTypeMapping TypeName="HealthClinicDBModel.INVOICE">
               <MappingFragment StoreEntitySet="INVOICE">
+                <ScalarProperty Name="INVOICE_NUMBER" ColumnName="INVOICE_NUMBER" />
+                <ScalarProperty Name="VALIDATED_BY" ColumnName="VALIDATED_BY" />
                 <ScalarProperty Name="REGISTRATION_DATE" ColumnName="REGISTRATION_DATE" />
                 <ScalarProperty Name="BILLING_DATE" ColumnName="BILLING_DATE" />
                 <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />

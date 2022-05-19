@@ -24,6 +24,7 @@
         <AssociationConnector Association="HealthClinicDBModel.FK_PERSON_RIGHT1" />
         <AssociationConnector Association="HealthClinicDBModel.FK_CLOCKING_CHANGED_BY" />
         <AssociationConnector Association="HealthClinicDBModel.FK_CLOCKING_PERSON" />
+        <AssociationConnector Association="HealthClinicDBModel.FK_INVOICE_USER" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

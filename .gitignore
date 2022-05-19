@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Documents/Processed invoices
+/Documents/Invoice #SB204019.pdf
+/Documents/Invoice #BM0998.pdf

@@ -131,7 +131,7 @@ namespace HealthClinic.Forms__Views_
             this.btnProcessInvoices.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnProcessInvoices.Size = new System.Drawing.Size(470, 130);
             this.btnProcessInvoices.TabIndex = 8;
-            this.btnProcessInvoices.Text = "Check/validate invoices";
+            this.btnProcessInvoices.Text = "Process invoices";
             this.btnProcessInvoices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProcessInvoices.UseVisualStyleBackColor = false;
             this.btnProcessInvoices.Click += new System.EventHandler(this.btnProcessInvoices_Click);
@@ -149,7 +149,7 @@ namespace HealthClinic.Forms__Views_
             this.btnMedications.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnMedications.Size = new System.Drawing.Size(470, 130);
             this.btnMedications.TabIndex = 7;
-            this.btnMedications.Text = "Keep track of medications";
+            this.btnMedications.Text = "See medications";
             this.btnMedications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedications.UseVisualStyleBackColor = false;
             this.btnMedications.Click += new System.EventHandler(this.btnMedications_Click);
