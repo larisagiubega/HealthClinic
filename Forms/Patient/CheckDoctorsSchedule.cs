@@ -9,6 +9,7 @@ namespace HealthClinic.Forms.Patient
     using System;
     using System.Collections.Generic;
     using System.Drawing;
+    using System.Linq;
     using System.Resources;
     using System.Windows.Forms;
 
@@ -82,6 +83,13 @@ namespace HealthClinic.Forms.Patient
         {
             var firstDayOfNextWeek = presenter.GetFirstDayOfFollowingWeek(); // always Monday
 
+            doctorsSchedule = doctorsSchedule.Where(x => x.Date >= firstDayOfNextWeek).ToList();
+
+            if (doctorsSchedule.Count == 0) //if the doctor has no schedule for the following week
+            {
+                FillNoSchedules();
+            }
+
             foreach (var schedule in doctorsSchedule)
             {
                 var dayOfWeek = (int)schedule.Date.DayOfWeek - 1; //subtract 1 because of ISO
@@ -133,6 +141,17 @@ namespace HealthClinic.Forms.Patient
             foreach (Control dayTextbox in panelCardSchedule.Controls)
             {
                 if (dayTextbox is TextBox && string.IsNullOrEmpty(((TextBox)dayTextbox).Text))
+                {
+                    ((TextBox)dayTextbox).Text = res.GetString("Free");
+                }
+            }
+        }
+
+        private void FillNoSchedules()
+        {
+            foreach (Control dayTextbox in panelCardSchedule.Controls)
+            {
+                if (dayTextbox is TextBox)
                 {
                     ((TextBox)dayTextbox).Text = res.GetString("Free");
                 }

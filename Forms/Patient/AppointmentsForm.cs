@@ -222,13 +222,20 @@ namespace HealthClinic.Forms__Views_.Patient
                         PhoneNumber = tbPhoneNumber.Text
                     };
 
-                    if (UseExcel.SaveAppointmentToExcel(appointment))
+                    if (IsDoctorAvailable(appointment.Doctor.Username, date))
                     {
-                        MessageBox.Show(res.GetString("AppointmentSaved"), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (UseExcel.SaveAppointmentToExcel(appointment))
+                        {
+                            MessageBox.Show(res.GetString("AppointmentSaved"), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show(res.GetString("ErrorSavingAppointment"), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show(res.GetString("ErrorSavingAppointment"), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(res.GetString("DoctorUnavailable"), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else
@@ -254,6 +261,11 @@ namespace HealthClinic.Forms__Views_.Patient
                     }
                 }
             }
+        }
+
+        private bool IsDoctorAvailable(string username, DateTime appointmentDate)
+        {
+            return presenter.IsDoctorAvailable(username, appointmentDate);
         }
     }
 }

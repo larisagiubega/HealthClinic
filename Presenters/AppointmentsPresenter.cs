@@ -18,12 +18,14 @@ namespace HealthClinic.Presenters
         private HealthClinicEntities _ctx = new HealthClinicEntities();
 
         private readonly IUserDal userDal;
+        private readonly IScheduleDal scheduleDal;
 
         public AppointmentsPresenter(HealthClinicEntities ctx)
         {
             _ctx = ctx;
 
             userDal = new UserDal(_ctx);
+            scheduleDal = new ScheduleDal(_ctx);
         }
 
         public bool IsDateCorrect(string day, string month, string year, string hour, out DateTime date)
@@ -77,6 +79,11 @@ namespace HealthClinic.Presenters
                 return new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, dateTime.Hour, 0, 0);
             }
 
+        }
+
+        public bool IsDoctorAvailable(string username, DateTime appointmentDate)
+        {
+            return scheduleDal.IsDoctorAvailable(username, appointmentDate);
         }
     }
 }

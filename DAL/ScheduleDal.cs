@@ -146,5 +146,43 @@ namespace HealthClinic.DAL
         {
             return today.AddDays(-(int)today.DayOfWeek).AddDays(1); //add 1 day because of ISO
         }
+
+        public bool IsDoctorAvailable(string username, DateTime appointmentDate)
+        {
+            bool hasAppointment = false;
+            bool isInSchedule = true;
+
+            try
+            {
+                var shiftIdByHour = GetShiftIdByHour(appointmentDate);
+
+                hasAppointment = _ctx.APPOINTMENTS.Any(x => x.DOCTOR_USERNAME.Equals(username) && DateTime.Equals(x.APPOINTMENT_DATE, appointmentDate));
+                isInSchedule = _ctx.SCHEDULE.Any(x => x.USERNAME.Equals(username) && x.ID_SHIFT == shiftIdByHour);
+            }
+            catch(Exception ex)
+            {
+                hasAppointment = true;
+                isInSchedule = false;
+                Logger.Log(res.GetString(new CheckDoctorScheduleException().Message));
+            }
+
+            return !hasAppointment && isInSchedule;
+        }
+
+        public int GetShiftIdByHour(DateTime appointmentDate)
+        {
+            var allShifts = GetAllShiftHours();
+
+            var allShiftsHoursAsInt = allShifts.Select(x => new
+            {
+                Id = x.Id,
+                ShiftStartInt = Convert.ToInt32(x.ShiftStart.Split(':')[0]),
+                ShiftEndInt = Convert.ToInt32(x.ShiftEnd.Split(':')[0])
+            }).ToList();
+
+            var shiftId = allShiftsHoursAsInt.FirstOrDefault(x => x.ShiftStartInt <= appointmentDate.Hour && x.ShiftEndInt >= appointmentDate.Hour).Id;
+
+            return shiftId;
+        }
     }
 }

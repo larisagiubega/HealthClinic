@@ -85,6 +85,7 @@ namespace HealthClinic.Forms.Patient
             // 
             this.panelCardSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(161)))), ((int)(((byte)(180)))));
             this.panelCardSchedule.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelCardSchedule.Controls.Add(this.btnAppointments);
             this.panelCardSchedule.Controls.Add(this.tbSunday);
             this.panelCardSchedule.Controls.Add(this.tbSaturday);
             this.panelCardSchedule.Controls.Add(this.tbFriday);
@@ -99,15 +100,15 @@ namespace HealthClinic.Forms.Patient
             this.panelCardSchedule.Controls.Add(this.lblThursday);
             this.panelCardSchedule.Controls.Add(this.lblTuesday);
             this.panelCardSchedule.Controls.Add(this.lblMonday);
-            this.panelCardSchedule.Location = new System.Drawing.Point(54, 218);
+            this.panelCardSchedule.Location = new System.Drawing.Point(54, 217);
             this.panelCardSchedule.Name = "panelCardSchedule";
-            this.panelCardSchedule.Size = new System.Drawing.Size(293, 462);
+            this.panelCardSchedule.Size = new System.Drawing.Size(830, 370);
             this.panelCardSchedule.TabIndex = 14;
             // 
             // tbSunday
             // 
             this.tbSunday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbSunday.Location = new System.Drawing.Point(32, 421);
+            this.tbSunday.Location = new System.Drawing.Point(324, 249);
             this.tbSunday.Name = "tbSunday";
             this.tbSunday.Size = new System.Drawing.Size(175, 27);
             this.tbSunday.TabIndex = 30;
@@ -115,7 +116,7 @@ namespace HealthClinic.Forms.Patient
             // tbSaturday
             // 
             this.tbSaturday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbSaturday.Location = new System.Drawing.Point(30, 355);
+            this.tbSaturday.Location = new System.Drawing.Point(409, 177);
             this.tbSaturday.Name = "tbSaturday";
             this.tbSaturday.Size = new System.Drawing.Size(175, 27);
             this.tbSaturday.TabIndex = 29;
@@ -123,7 +124,7 @@ namespace HealthClinic.Forms.Patient
             // tbFriday
             // 
             this.tbFriday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbFriday.Location = new System.Drawing.Point(32, 292);
+            this.tbFriday.Location = new System.Drawing.Point(409, 113);
             this.tbFriday.Name = "tbFriday";
             this.tbFriday.Size = new System.Drawing.Size(175, 27);
             this.tbFriday.TabIndex = 28;
@@ -131,7 +132,7 @@ namespace HealthClinic.Forms.Patient
             // tbThursday
             // 
             this.tbThursday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbThursday.Location = new System.Drawing.Point(32, 226);
+            this.tbThursday.Location = new System.Drawing.Point(409, 51);
             this.tbThursday.Name = "tbThursday";
             this.tbThursday.Size = new System.Drawing.Size(175, 27);
             this.tbThursday.TabIndex = 27;
@@ -139,7 +140,7 @@ namespace HealthClinic.Forms.Patient
             // tbWednesday
             // 
             this.tbWednesday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbWednesday.Location = new System.Drawing.Point(29, 160);
+            this.tbWednesday.Location = new System.Drawing.Point(228, 177);
             this.tbWednesday.Name = "tbWednesday";
             this.tbWednesday.Size = new System.Drawing.Size(175, 27);
             this.tbWednesday.TabIndex = 26;
@@ -147,7 +148,7 @@ namespace HealthClinic.Forms.Patient
             // tbTuesday
             // 
             this.tbTuesday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbTuesday.Location = new System.Drawing.Point(29, 96);
+            this.tbTuesday.Location = new System.Drawing.Point(228, 113);
             this.tbTuesday.Name = "tbTuesday";
             this.tbTuesday.Size = new System.Drawing.Size(175, 27);
             this.tbTuesday.TabIndex = 25;
@@ -155,7 +156,7 @@ namespace HealthClinic.Forms.Patient
             // tbMonday
             // 
             this.tbMonday.Font = new System.Drawing.Font("Impact", 12F);
-            this.tbMonday.Location = new System.Drawing.Point(29, 34);
+            this.tbMonday.Location = new System.Drawing.Point(228, 51);
             this.tbMonday.Name = "tbMonday";
             this.tbMonday.Size = new System.Drawing.Size(175, 27);
             this.tbMonday.TabIndex = 24;
@@ -165,7 +166,7 @@ namespace HealthClinic.Forms.Patient
             this.lblSunday.AutoSize = true;
             this.lblSunday.BackColor = System.Drawing.Color.Transparent;
             this.lblSunday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblSunday.Location = new System.Drawing.Point(28, 398);
+            this.lblSunday.Location = new System.Drawing.Point(320, 226);
             this.lblSunday.Name = "lblSunday";
             this.lblSunday.Size = new System.Drawing.Size(56, 20);
             this.lblSunday.TabIndex = 23;
@@ -176,7 +177,7 @@ namespace HealthClinic.Forms.Patient
             this.lblSaturday.AutoSize = true;
             this.lblSaturday.BackColor = System.Drawing.Color.Transparent;
             this.lblSaturday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblSaturday.Location = new System.Drawing.Point(28, 332);
+            this.lblSaturday.Location = new System.Drawing.Point(409, 154);
             this.lblSaturday.Name = "lblSaturday";
             this.lblSaturday.Size = new System.Drawing.Size(67, 20);
             this.lblSaturday.TabIndex = 22;
@@ -187,7 +188,7 @@ namespace HealthClinic.Forms.Patient
             this.lblFriday.AutoSize = true;
             this.lblFriday.BackColor = System.Drawing.Color.Transparent;
             this.lblFriday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblFriday.Location = new System.Drawing.Point(28, 269);
+            this.lblFriday.Location = new System.Drawing.Point(405, 90);
             this.lblFriday.Name = "lblFriday";
             this.lblFriday.Size = new System.Drawing.Size(48, 20);
             this.lblFriday.TabIndex = 21;
@@ -198,7 +199,7 @@ namespace HealthClinic.Forms.Patient
             this.lblWednesday.AutoSize = true;
             this.lblWednesday.BackColor = System.Drawing.Color.Transparent;
             this.lblWednesday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblWednesday.Location = new System.Drawing.Point(25, 137);
+            this.lblWednesday.Location = new System.Drawing.Point(224, 154);
             this.lblWednesday.Name = "lblWednesday";
             this.lblWednesday.Size = new System.Drawing.Size(85, 20);
             this.lblWednesday.TabIndex = 20;
@@ -209,7 +210,7 @@ namespace HealthClinic.Forms.Patient
             this.lblThursday.AutoSize = true;
             this.lblThursday.BackColor = System.Drawing.Color.Transparent;
             this.lblThursday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblThursday.Location = new System.Drawing.Point(28, 203);
+            this.lblThursday.Location = new System.Drawing.Point(405, 28);
             this.lblThursday.Name = "lblThursday";
             this.lblThursday.Size = new System.Drawing.Size(69, 20);
             this.lblThursday.TabIndex = 19;
@@ -220,7 +221,7 @@ namespace HealthClinic.Forms.Patient
             this.lblTuesday.AutoSize = true;
             this.lblTuesday.BackColor = System.Drawing.Color.Transparent;
             this.lblTuesday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblTuesday.Location = new System.Drawing.Point(25, 73);
+            this.lblTuesday.Location = new System.Drawing.Point(224, 90);
             this.lblTuesday.Name = "lblTuesday";
             this.lblTuesday.Size = new System.Drawing.Size(63, 20);
             this.lblTuesday.TabIndex = 18;
@@ -231,7 +232,7 @@ namespace HealthClinic.Forms.Patient
             this.lblMonday.AutoSize = true;
             this.lblMonday.BackColor = System.Drawing.Color.Transparent;
             this.lblMonday.Font = new System.Drawing.Font("Impact", 12F);
-            this.lblMonday.Location = new System.Drawing.Point(25, 11);
+            this.lblMonday.Location = new System.Drawing.Point(224, 28);
             this.lblMonday.Name = "lblMonday";
             this.lblMonday.Size = new System.Drawing.Size(59, 20);
             this.lblMonday.TabIndex = 17;
@@ -240,7 +241,6 @@ namespace HealthClinic.Forms.Patient
             // panelCheckDoctorsSchedule
             // 
             this.panelCheckDoctorsSchedule.BackgroundImage = global::HealthClinic.Properties.Resources.background_logo_up;
-            this.panelCheckDoctorsSchedule.Controls.Add(this.btnAppointments);
             this.panelCheckDoctorsSchedule.Controls.Add(this.panelCardSchedule);
             this.panelCheckDoctorsSchedule.Controls.Add(this.cbDoctors);
             this.panelCheckDoctorsSchedule.Controls.Add(this.HealthClinic);
@@ -256,7 +256,7 @@ namespace HealthClinic.Forms.Patient
             this.btnAppointments.BackColor = System.Drawing.Color.Transparent;
             this.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAppointments.Font = new System.Drawing.Font("Impact", 12F);
-            this.btnAppointments.Location = new System.Drawing.Point(489, 595);
+            this.btnAppointments.Location = new System.Drawing.Point(309, 319);
             this.btnAppointments.Name = "btnAppointments";
             this.btnAppointments.Size = new System.Drawing.Size(209, 42);
             this.btnAppointments.TabIndex = 17;

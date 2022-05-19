@@ -217,6 +217,16 @@ namespace HealthClinic.Exceptions
             }
         }
     }
+    public class CheckDoctorScheduleException : Exception
+    {
+        public override string Message
+        {
+            get
+            {
+                return "CannotCheckDoctorSchedule";
+            }
+        }
+    }
 
     #endregion
 

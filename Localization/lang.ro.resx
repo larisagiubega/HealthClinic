@@ -1083,7 +1083,7 @@
   <data name="lblSelectDoctor" xml:space="preserve">
     <value>Vă rugăm selectați doctorul pentru care doriți o programare</value>
   </data>
-  <data name="btnCheckSchedules1" xml:space="preserve">
+  <data name="btnCheckSchedules" xml:space="preserve">
     <value>Vizualizați programul doctorilor</value>
   </data>
   <data name="CannotGetAllMedicine" xml:space="preserve">
@@ -1199,5 +1199,11 @@
   </data>
   <data name="InvoicesSaved" xml:space="preserve">
     <value>Facturile au fost salvate!</value>
+  </data>
+  <data name="CannotCheckDoctorSchedule" xml:space="preserve">
+    <value>Nu se pot obține din baza de date informații despre doctorul sau data aleasă pentru programare.</value>
+  </data>
+  <data name="DoctorUnavailable" xml:space="preserve">
+    <value>Doctorul pe care l-ați ales nu este disponibil în intervalul specificat! Vă rugăm să consultați programul doctorilor înainte de a face o programare. Alegeți alt doctor sau altă dată/oră pentru această programare sau apăsați butonul Înapoi.</value>
   </data>
 </root>

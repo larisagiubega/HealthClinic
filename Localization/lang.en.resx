@@ -1083,7 +1083,7 @@
   <data name="lblSelectDoctor" xml:space="preserve">
     <value>Select the doctor you wish to make an appointment to</value>
   </data>
-  <data name="btnCheckSchedules1" xml:space="preserve">
+  <data name="btnCheckSchedules" xml:space="preserve">
     <value>Check doctors' schedules</value>
   </data>
   <data name="CannotGetAllMedicine" xml:space="preserve">
@@ -1199,5 +1199,11 @@
   </data>
   <data name="InvoicesSaved" xml:space="preserve">
     <value>The invoices have been saved!</value>
+  </data>
+  <data name="CannotCheckDoctorSchedule" xml:space="preserve">
+    <value>Cannot retrieve from the database data about the doctor and the date you picked for the appointment.</value>
+  </data>
+  <data name="DoctorUnavailable" xml:space="preserve">
+    <value>The doctor you picked is unavailable in the specified time interval! Please check the doctors' schedule before making an appointment. Choose another doctor or another date/ hour for this appointment or go back.</value>
   </data>
 </root>
