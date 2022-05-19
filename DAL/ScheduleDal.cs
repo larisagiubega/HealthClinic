@@ -7,6 +7,7 @@ namespace HealthClinic.DAL
     using HealthClinic.Localization;
     using System;
     using System.Collections.Generic;
+    using System.Data.Entity.Core.Objects;
     using System.Linq;
     using System.Resources;
 
@@ -157,9 +158,9 @@ namespace HealthClinic.DAL
                 var shiftIdByHour = GetShiftIdByHour(appointmentDate);
 
                 hasAppointment = _ctx.APPOINTMENTS.Any(x => x.DOCTOR_USERNAME.Equals(username) && DateTime.Equals(x.APPOINTMENT_DATE, appointmentDate));
-                isInSchedule = _ctx.SCHEDULE.Any(x => x.USERNAME.Equals(username) && x.ID_SHIFT == shiftIdByHour);
+                isInSchedule = _ctx.SCHEDULE.Any(x => x.USERNAME.Equals(username) && x.ID_SHIFT == shiftIdByHour && EntityFunctions.TruncateTime(x.DATE) == appointmentDate.Date);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 hasAppointment = true;
                 isInSchedule = false;

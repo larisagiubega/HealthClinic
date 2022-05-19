@@ -41,7 +41,7 @@ namespace HealthClinic.Localization
             {
                 language = ReadLanguage();
 
-                if (!language.ToUpper().Equals("EN") && !language.ToUpper().Equals("RO") && !language.ToUpper().Equals("FR"))
+                if (!language.ToUpper().Equals("EN") && !language.ToUpper().Equals("RO") && !language.ToUpper().Equals("DE"))
                 {
                     language = "en";
                 }
@@ -82,7 +82,8 @@ namespace HealthClinic.Localization
                     return "Romanian";
                 case "EN":
                     return "English";
-                //case "FR": -- to-do
+                case "DE":
+                    return "German";
                 default: return string.Empty;
             }
         }
@@ -95,7 +96,8 @@ namespace HealthClinic.Localization
                     return "ro";
                 case "ENGLISH":
                     return "en";
-                //case "FR": -- to-do
+                case "GERMAN":
+                    return "de";
                 default: return string.Empty;
             }
         }

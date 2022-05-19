@@ -402,6 +402,7 @@
     <EmbeddedResource Include="Forms\Patient\PatientForm.resx">
       <DependentUpon>PatientForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Localization\lang.de.resx" />
     <EmbeddedResource Include="Localization\lang.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>lang.en.Designer.cs</LastGenOutput>

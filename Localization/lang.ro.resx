@@ -399,7 +399,7 @@
   <data name="TummyPain" xml:space="preserve">
     <value>Diaree sau dureri abdominale</value>
   </data>
-  <data name="UnderactiveThyroids" xml:space="preserve">
+  <data name="UnderactiveThyroid" xml:space="preserve">
     <value>Tiroidă subactivă</value>
   </data>
   <data name="Unwell" xml:space="preserve">
@@ -782,6 +782,9 @@
   </data>
   <data name="Romanian" xml:space="preserve">
     <value>Română</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Germană</value>
   </data>
   <data name="btnContinueAsPatient" xml:space="preserve">
     <value>Continuați ca pacient</value>
@@ -1179,8 +1182,8 @@
   <data name="CheckLog" xml:space="preserve">
     <value>Vă rugăm să verificați logger-ul pentru erori potențiale.</value>
   </data>
-  <data name="NoValidInvoices" xml:space="preserve">
-    <value>Nu există facturi valide!</value>
+  <data name="NoInvoices" xml:space="preserve">
+    <value>Nu există facturi de procesat!</value>
   </data>
   <data name="CannotGetMedicinebyName" xml:space="preserve">
     <value>Medicamentul nu a putut fi adus din baza de date pe baza numelui său!</value>
@@ -1205,5 +1208,8 @@
   </data>
   <data name="DoctorUnavailable" xml:space="preserve">
     <value>Doctorul pe care l-ați ales nu este disponibil în intervalul specificat! Vă rugăm să consultați programul doctorilor înainte de a face o programare. Alegeți alt doctor sau altă dată/oră pentru această programare sau apăsați butonul Înapoi.</value>
+  </data>
+  <data name="IdiopathicPulmonaryFibrosis" xml:space="preserve">
+    <value>Fibroza pulmonară idiopatică</value>
   </data>
 </root>

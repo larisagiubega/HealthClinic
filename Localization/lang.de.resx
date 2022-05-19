@@ -118,181 +118,181 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AbdomenBulge" xml:space="preserve">
-    <value>Bulge in the abdomen</value>
+    <value>Beule im Bauch</value>
   </data>
   <data name="AbdomenDiscomfort" xml:space="preserve">
     <value>Discomfort in your upper abdomen</value>
   </data>
   <data name="AbdominalAorticAneurysm" xml:space="preserve">
-    <value>Abdominal aortic aneurysm</value>
+    <value>Beschwerden im Oberbauch</value>
   </data>
   <data name="AbdominalPain" xml:space="preserve">
-    <value>Abdominal pain</value>
+    <value>Bauchschmerzen</value>
   </data>
   <data name="AchingMuscles" xml:space="preserve">
-    <value>Aching muscles</value>
+    <value>Muskelkater</value>
   </data>
   <data name="AcuteCholecystitis" xml:space="preserve">
-    <value>Acute cholecystitis</value>
+    <value>Akuten Cholezystitis</value>
   </data>
   <data name="AcutePancreatitis" xml:space="preserve">
-    <value>Acute pancreatitis</value>
+    <value>Akute Pankreatitis</value>
   </data>
   <data name="AddisonsDisease" xml:space="preserve">
-    <value>Addison's disease</value>
+    <value>Addison-Krankheit</value>
   </data>
   <data name="AlcoholDisease" xml:space="preserve">
-    <value>Alcohol-related liver disease</value>
+    <value>Alkoholbedingte Lebererkrankung</value>
   </data>
   <data name="Allergies" xml:space="preserve">
-    <value>Allergies</value>
+    <value>Allergien</value>
   </data>
   <data name="Anaphylaxis" xml:space="preserve">
-    <value>Anaphylaxis</value>
+    <value>Anaphylaxie</value>
   </data>
   <data name="Anxiety" xml:space="preserve">
-    <value>Anxiety</value>
+    <value>Angst</value>
   </data>
   <data name="Appendicitis" xml:space="preserve">
-    <value>Appendicitis</value>
+    <value>Appendizitis</value>
   </data>
   <data name="Asthma" xml:space="preserve">
     <value>Asthma</value>
   </data>
   <data name="BackAbdominalPain" xml:space="preserve">
-    <value>Back or abdominal pain</value>
+    <value>Rücken-oder Bauchschmerzen</value>
   </data>
   <data name="BeingSick" xml:space="preserve">
-    <value>Being sick</value>
+    <value>Krank sein</value>
   </data>
   <data name="BladderProblem" xml:space="preserve">
-    <value>Bladder problems</value>
+    <value>Blasenprobleme</value>
   </data>
   <data name="Bloating" xml:space="preserve">
-    <value>Bloating</value>
+    <value>Blähungen</value>
   </data>
   <data name="BlockedNose" xml:space="preserve">
-    <value>Blocked nose</value>
+    <value>Verstopfte Nase</value>
   </data>
   <data name="BloodyCough" xml:space="preserve">
-    <value>Coughing up blood or blood-stained phlegm</value>
+    <value>Husten von Blut oder blutbeflecktem Schleim</value>
   </data>
   <data name="BloodyDiarrhoea" xml:space="preserve">
-    <value>Diarrhoea, which may contain blood or mucus</value>
+    <value>Durchfall, der Blut oder Schleim enthalten kann</value>
   </data>
   <data name="BlurredVision" xml:space="preserve">
-    <value>Blurred vision</value>
+    <value>Verschwommene Sicht</value>
   </data>
   <data name="BodyRash" xml:space="preserve">
-    <value>Body rash</value>
+    <value>Hautausschlag</value>
   </data>
   <data name="BowelProblems" xml:space="preserve">
-    <value>Bowel problems</value>
+    <value>Darmprobleme</value>
   </data>
   <data name="BrittleHairNails" xml:space="preserve">
-    <value>Brittle hair and nails</value>
+    <value>Brüchige Haare und Nägel</value>
   </data>
   <data name="Bronchiectasis" xml:space="preserve">
-    <value>Bronchiectasis</value>
+    <value>Bronchiektasen</value>
   </data>
   <data name="Bronchitis" xml:space="preserve">
     <value>Bronchitis</value>
   </data>
   <data name="CapsLockOn" xml:space="preserve">
-    <value>Caps lock is on.</value>
+    <value>Die Feststelltaste ist aktiviert.</value>
   </data>
   <data name="lblSymptomsWarning" xml:space="preserve">
-    <value>*Disclaimer: this tool is not intended to be a substitute for qualified medical advice, diagnosis, or treatment.</value>
+    <value>*Haftungsausschluss: Dieses Tool ist kein Ersatz für qualifizierte medizinische Beratung, Diagnose oder Behandlung.</value>
   </data>
   <data name="ChestPain" xml:space="preserve">
-    <value>Chest pain</value>
+    <value>Brustschmerzen</value>
   </data>
   <data name="Chills" xml:space="preserve">
-    <value>Chills</value>
+    <value>Schüttelfrost</value>
   </data>
   <data name="ChokingSensation" xml:space="preserve">
-    <value>Choking sensation</value>
+    <value>Erstickungsgefühl</value>
   </data>
   <data name="ChurningStomach" xml:space="preserve">
-    <value>Churning stomach</value>
+    <value>Aufgewühlter Magen</value>
   </data>
   <data name="ColdAndFlu" xml:space="preserve">
-    <value>Cold and flu</value>
+    <value>Erkältung und Grippe</value>
   </data>
   <data name="ColdSensitivity" xml:space="preserve">
-    <value>Being sensitive to cold</value>
+    <value>Kälteempfindlich sein</value>
   </data>
   <data name="CollapseAndUnconsciousness" xml:space="preserve">
-    <value>Collapse and unconsciousness</value>
+    <value>Kollaps und Bewusstlosigkeit</value>
   </data>
   <data name="Confusion" xml:space="preserve">
-    <value>Confusion</value>
+    <value>Verwechslung</value>
   </data>
   <data name="Constipation" xml:space="preserve">
-    <value>Constipation</value>
+    <value>Verstopfung</value>
   </data>
   <data name="ConstipationDiarrhoea" xml:space="preserve">
-    <value>Constipation or diarrhoea</value>
+    <value>Verstopfung oder Durchfall</value>
   </data>
   <data name="Cough" xml:space="preserve">
-    <value>Cough</value>
+    <value>Husten</value>
   </data>
   <data name="DarkColouredUrine" xml:space="preserve">
-    <value>Dark-coloured urine</value>
+    <value>Dunkel gefärbter Urin</value>
   </data>
   <data name="Dehydration" xml:space="preserve">
-    <value>Dehydration</value>
+    <value>Austrocknung</value>
   </data>
   <data name="Depression" xml:space="preserve">
     <value>Depression</value>
   </data>
   <data name="DepressionAnxiety" xml:space="preserve">
-    <value>Depression and anxiety</value>
+    <value>Depression und Angst</value>
   </data>
   <data name="DifficultyConcentrating" xml:space="preserve">
-    <value>Difficulty concentrating</value>
+    <value>Konzentrationsschwierigkeiten</value>
   </data>
   <data name="DifficultySleeping" xml:space="preserve">
-    <value>Difficulty sleeping</value>
+    <value>Schwieriges Schlafen</value>
   </data>
   <data name="DisorderlyBehaviour" xml:space="preserve">
-    <value>Disorderly or irrational behaviour, which may be mistaken for drunkenness</value>
+    <value>Ungeordnetes oder irrationales Verhalten, das mit Trunkenheit verwechselt werden kann</value>
   </data>
   <data name="Ebola" xml:space="preserve">
     <value>Ebola</value>
   </data>
   <data name="Fever" xml:space="preserve">
-    <value>Fever</value>
+    <value>Fieber</value>
   </data>
   <data name="FingertipsClubbed" xml:space="preserve">
-    <value>Clubbing of the fingertips – the tissue beneath the nail thickens and the fingertips become rounded and bulbous</value>
+    <value>Clubbing der Fingerspitzen – das Gewebe unter dem Nagel verdickt sich und die Fingerspitzen werden rund und knollig</value>
   </data>
   <data name="Flatulence" xml:space="preserve">
-    <value>Belching or flatulence(passing wind)</value>
+    <value>Aufstoßen oder Blähungen (Blähungen)</value>
   </data>
   <data name="Flu" xml:space="preserve">
-    <value>Flu</value>
+    <value>Grippe</value>
   </data>
   <data name="FoodPoisoning" xml:space="preserve">
-    <value>Food poisoning</value>
+    <value>Lebensmittelvergiftung</value>
   </data>
   <data name="ForgottenPassword" xml:space="preserve">
-    <value>Have you forgotten your password?</value>
+    <value>Hast du dein Passwort vergessen?</value>
   </data>
   <data name="ForgottenUsername" xml:space="preserve">
-    <value>Have you forgotten your username?</value>
+    <value>Haben Sie Ihren Benutzernamen vergessen?</value>
   </data>
   <data name="GlandularFever" xml:space="preserve">
-    <value>Glandular fever</value>
+    <value>Drüsenfieber</value>
   </data>
   <data name="Halitosis" xml:space="preserve">
-    <value>Bad breath (halitosis)</value>
+    <value>Mundgeruch (Mundgeruch)</value>
   </data>
   <data name="HayFever" xml:space="preserve">
-    <value>Hay fever</value>
+    <value>Heuschnupfen</value>
   </data>
   <data name="Headache" xml:space="preserve">
-    <value>Headache</value>
+    <value>Kopfschmerzen</value>
   </data>
   <data name="HepatitisA" xml:space="preserve">
     <value>Hepatitis A</value>
@@ -304,912 +304,912 @@
     <value>HIV</value>
   </data>
   <data name="Hives" xml:space="preserve">
-    <value>Raised, itchy rash (hives)</value>
+    <value>Erhabener, juckender Ausschlag (Quaddeln)</value>
   </data>
   <data name="lblFormTitle" xml:space="preserve">
-    <value>How are you feeling?*</value>
+    <value>Wie fühlen Sie sich?*</value>
   </data>
   <data name="Hypoglycaemia" xml:space="preserve">
-    <value>Hypoglycaemia</value>
+    <value>Hypoglykämie</value>
   </data>
   <data name="Indigestion" xml:space="preserve">
-    <value>Indigestion</value>
+    <value>Verdauungsstörungen</value>
   </data>
   <data name="ItchyFace" xml:space="preserve">
-    <value>An itchy throat, mouth, nose and ears</value>
+    <value>Ein juckender Hals, Mund, Nase und Ohren</value>
   </data>
   <data name="KidneyInfection" xml:space="preserve">
-    <value>Kidney infection</value>
+    <value>Niereninfektion</value>
   </data>
   <data name="lblAccount" xml:space="preserve">
-    <value>* You can only log in if you have a predefined account. Otherwise please continue as a patient.</value>
+    <value>* Sie können sich nur anmelden, wenn Sie ein vordefiniertes Konto haben. Ansonsten bleiben Sie bitte Patient.</value>
   </data>
   <data name="Measles" xml:space="preserve">
-    <value>Measles</value>
+    <value>Maser</value>
   </data>
   <data name="Migraine" xml:space="preserve">
-    <value>Migraine</value>
+    <value>Migräne</value>
   </data>
   <data name="MS" xml:space="preserve">
-    <value>Multiple sclerosis (MS)</value>
+    <value>Multiple Sklerose (MS)</value>
   </data>
   <data name="Mumps" xml:space="preserve">
     <value>Mumps</value>
   </data>
   <data name="NeedToUrinate" xml:space="preserve">
-    <value>Need to urinate more often than usual</value>
+    <value>Sie müssen häufiger als gewöhnlich urinieren</value>
   </data>
   <data name="NoSymptomsChecked" xml:space="preserve">
-    <value>No symptoms checked</value>
+    <value>Keine Symptome geprüft</value>
   </data>
   <data name="PanicDisorder" xml:space="preserve">
-    <value>Panic disorder</value>
+    <value>Panikstörung</value>
   </data>
   <data name="PolymyalgiaRheumatica" xml:space="preserve">
     <value>Polymyalgia rheumatica</value>
   </data>
   <data name="PossibleDisease" xml:space="preserve">
-    <value>Based on the symptoms you provided, you may have</value>
+    <value>Basierend auf den von Ihnen angegebenen Symptomen haben Sie möglicherweise</value>
   </data>
   <data name="PotentialHeartAttack" xml:space="preserve">
-    <value>Potential heart attack</value>
+    <value>Möglicher Herzinfarkt</value>
   </data>
   <data name="ProvidePassword" xml:space="preserve">
-    <value>Please provide a password!</value>
+    <value>Bitte geben Sie ein Passwort ein!</value>
   </data>
   <data name="ProvideUsername" xml:space="preserve">
-    <value>Please provide a username!</value>
+    <value>Bitte geben Sie einen Benutzernamen an!</value>
   </data>
   <data name="ReducedSmell" xml:space="preserve">
-    <value>Reduced sense of smell</value>
+    <value>Reduzierter Geruchssinn</value>
   </data>
   <data name="Reflux" xml:space="preserve">
-    <value>Bringing food or fluid back up from your stomach (reflux)</value>
+    <value>Rückfluss von Nahrung oder Flüssigkeit aus dem Magen (Reflux)</value>
   </data>
   <data name="ResultInconclusive" xml:space="preserve">
-    <value>Your result was inconclusive. We recommend that you visit your family doctor.</value>
+    <value>Ihr Ergebnis war nicht schlüssig. Wir empfehlen Ihnen, Ihren Hausarzt aufzusuchen.</value>
   </data>
   <data name="SaltyCravings" xml:space="preserve">
-    <value>Craving for salty foods</value>
+    <value>Verlangen nach salzigen Speisen</value>
   </data>
   <data name="SickleCellDisease" xml:space="preserve">
-    <value>Sickle cell disease</value>
+    <value>Sichelzellenanämie</value>
   </data>
   <data name="Sinusitis" xml:space="preserve">
     <value>Sinusitis</value>
   </data>
   <data name="StiffNeckHeadache" xml:space="preserve">
-    <value>Severe headache, stiff neck, or dizziness</value>
+    <value>Starke Kopfschmerzen, steifer Nacken oder Schwindel</value>
   </data>
   <data name="TenderSwollenTummy" xml:space="preserve">
-    <value>Tender or swollen tummy</value>
+    <value>Zarter oder geschwollener Bauch</value>
   </data>
   <data name="ThreeSymptomsRequired" xml:space="preserve">
-    <value>Please check at least three symptoms!</value>
+    <value>Bitte prüfen Sie mindestens drei Symptome!</value>
   </data>
   <data name="TightChest" xml:space="preserve">
-    <value>Tight chest</value>
+    <value>Enge Brust</value>
   </data>
   <data name="TinglingFingers" xml:space="preserve">
-    <value>Tingling sensation in your fingers</value>
+    <value>Kribbeln in den Fingern</value>
   </data>
   <data name="Tonsillitis" xml:space="preserve">
-    <value>Tonsillitis</value>
+    <value>Mandelentzündung</value>
   </data>
   <data name="Tuberculosis" xml:space="preserve">
-    <value>Tuberculosis</value>
+    <value>Tuberkulose</value>
   </data>
   <data name="TummyPain" xml:space="preserve">
-    <value>Diarrhoea or abdominal pain</value>
+    <value>Durchfall oder Bauchschmerzen</value>
   </data>
   <data name="UnderactiveThyroid" xml:space="preserve">
-    <value>Underactive thyroid</value>
+    <value>Unterfunktion der Schilddrüse</value>
   </data>
   <data name="Unwell" xml:space="preserve">
-    <value>General sense of feeling unwell</value>
+    <value>Allgemeines Unwohlsein</value>
   </data>
   <data name="UrinaryTractInfection" xml:space="preserve">
-    <value>Urinary tract infection</value>
+    <value>Harnwegsinfekt</value>
   </data>
   <data name="VB12Deficiency" xml:space="preserve">
-    <value>Vitamin B12 (folate deficiency)</value>
+    <value>Vitamin B12 (Folatmangel)</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>Herzlich willkommen</value>
   </data>
   <data name="Dizziness" xml:space="preserve">
-    <value>Dizziness or light-headedness</value>
+    <value>Schwindel oder Benommenheit</value>
   </data>
   <data name="Drowsiness" xml:space="preserve">
-    <value>Drowsiness, confusion, or slurred speech</value>
+    <value>Schläfrigkeit, Verwirrung oder undeutliche Sprache</value>
   </data>
   <data name="DryScalySkin" xml:space="preserve">
-    <value>Dry and scaly skin</value>
+    <value>Trockene und schuppige Haut</value>
   </data>
   <data name="DryMouth" xml:space="preserve">
-    <value>Dry mouth</value>
+    <value>Trockener Mund</value>
   </data>
   <data name="DryFace" xml:space="preserve">
-    <value>Dry mouth, lips and eyes</value>
+    <value>Trockener Mund, Lippen und Augen</value>
   </data>
   <data name="SuddenlyStomachAche" xml:space="preserve">
-    <value>Dull pain around the top of your stomach that develops suddenly</value>
+    <value>Plötzlich auftretender dumpfer Schmerz im Oberbauch</value>
   </data>
   <data name="Earache" xml:space="preserve">
-    <value>Earache</value>
+    <value>Ohrenschmerzen</value>
   </data>
   <data name="Fatigue" xml:space="preserve">
-    <value>More intense pain and fatigue</value>
+    <value>Intensivere Schmerzen und Müdigkeit</value>
   </data>
   <data name="EyeIrritation" xml:space="preserve">
-    <value>Eye irritation</value>
+    <value>Augen Irritation</value>
   </data>
   <data name="FeelingAndBeingSick" xml:space="preserve">
-    <value>Feeling and being sick</value>
+    <value>Sich krank fühlen und sein</value>
   </data>
   <data name="UnableToEmptyBladder" xml:space="preserve">
-    <value>Feeling as though you're unable to empty your bladder fully</value>
+    <value>Gefühl, dass Sie Ihre Blase nicht vollständig entleeren können</value>
   </data>
   <data name="FeelingFaint" xml:space="preserve">
-    <value>Feeling lightheaded or faint</value>
+    <value>Schwindel oder Ohnmacht</value>
   </data>
   <data name="FeelingUnwell" xml:space="preserve">
-    <value>Feeling generally unwell</value>
+    <value>Allgemeines Unwohlsein</value>
   </data>
   <data name="FeelingHungry" xml:space="preserve">
-    <value>Feeling hungry</value>
+    <value>Hungrig sein</value>
   </data>
   <data name="FeelingOrBeingSick" xml:space="preserve">
-    <value>Feeling or being sick</value>
+    <value>Sich krank fühlen oder krank sein</value>
   </data>
   <data name="FeelingTired" xml:space="preserve">
-    <value>Feeling tired</value>
+    <value>Sich müde fühlen</value>
   </data>
   <data name="FeelingFull" xml:space="preserve">
-    <value>Feeling uncomfortably full or heavy</value>
+    <value>Unangenehmes Völle- oder Schweregefühl</value>
   </data>
   <data name="FeelingWeak" xml:space="preserve">
-    <value>Feeling very weak or tired</value>
+    <value>Sich sehr schwach oder müde fühlen</value>
   </data>
   <data name="Seizures" xml:space="preserve">
-    <value>Fits (seizures)</value>
+    <value>Anfälle</value>
   </data>
   <data name="FrequentSneezing" xml:space="preserve">
-    <value>Frequent sneezing</value>
+    <value>Häufiges Niesen</value>
   </data>
   <data name="GeneralPains" xml:space="preserve">
-    <value>General aches and pains</value>
+    <value>Allgemeine Beschwerden und Schmerzen</value>
   </data>
   <data name="GoingPale" xml:space="preserve">
-    <value>Going pale</value>
+    <value>Allgemeine Beschwerden und Schmerzen</value>
   </data>
   <data name="HackingCough" xml:space="preserve">
-    <value>Hacking cough</value>
+    <value>Hackender Husten</value>
   </data>
   <data name="Tinnitus" xml:space="preserve">
-    <value>Hearing sounds coming from inside the body, rather than from an outside source (tinnitus)</value>
+    <value>Hören von Geräuschen, die aus dem Inneren des Körpers kommen, anstatt von einer äußeren Quelle (Tinnitus)</value>
   </data>
   <data name="HotFlushes" xml:space="preserve">
-    <value>Hot flushes</value>
+    <value>Hitzewallungen</value>
   </data>
   <data name="IncreasedSensitivity" xml:space="preserve">
-    <value>Increased sensitivity to light and sound</value>
+    <value>Erhöhte Licht- und Geräuschempfindlichkeit</value>
   </data>
   <data name="IncreasedThirst" xml:space="preserve">
-    <value>Increased thirst</value>
+    <value>Erhöhter Durst</value>
   </data>
   <data name="InflamedItchyNoseThroat" xml:space="preserve">
-    <value>Inflamed, itchy nose and throat</value>
+    <value>Entzündete, juckende Nase und Rachen</value>
   </data>
   <data name="IntenseHeadache" xml:space="preserve">
-    <value>Intense headache</value>
+    <value>Starke Kopfschmerzen</value>
   </data>
   <data name="IrregularHeavyPeriods" xml:space="preserve">
-    <value>Irregular periods or heavy periods</value>
+    <value>Unregelmäßige Perioden oder starke Perioden</value>
   </data>
   <data name="Irritability" xml:space="preserve">
-    <value>Irritability</value>
+    <value>Reizbarkeit</value>
   </data>
   <data name="ItchySkinRash" xml:space="preserve">
-    <value>Itchy skin or a raised, red skin rash</value>
+    <value>Juckende Haut oder erhabener, roter Hautausschlag</value>
   </data>
   <data name="AllergicConjunctivitis" xml:space="preserve">
-    <value>Itchy, red or watery eyes (allergic conjunctivitis)</value>
+    <value>Juckende, rote oder tränende Augen (allergische Konjunktivitis)</value>
   </data>
   <data name="Jaundice" xml:space="preserve">
-    <value>Jaundice (yellowing of the skin and whites of the eyes)</value>
+    <value>Gelbsucht (Gelbfärbung der Haut und des Augenweißes)</value>
   </data>
   <data name="JointPain" xml:space="preserve">
-    <value>Joint pain</value>
+    <value>Gelenkschmerzen</value>
   </data>
   <data name="LackOfAppetite" xml:space="preserve">
-    <value>Lack of appetite and weight loss</value>
+    <value>Appetitlosigkeit und Gewichtsverlust</value>
   </data>
   <data name="Lethargy" xml:space="preserve">
-    <value>Lack of energy (lethargy)</value>
+    <value>Energiemangel (Lethargie)</value>
   </data>
   <data name="LimbJointPain" xml:space="preserve">
-    <value>Limb or joint pain</value>
+    <value>Glieder-oder Gelenkschmerzen</value>
   </data>
   <data name="AppetiteLoss" xml:space="preserve">
-    <value>Loss of appetite</value>
+    <value>Verlust von Appetit</value>
   </data>
   <data name="VoiceLossOrChanges" xml:space="preserve">
-    <value>Loss of voice or changes to your voice</value>
+    <value>Verlust der Stimme oder Veränderungen Ihrer Stimme</value>
   </data>
   <data name="MildDepression" xml:space="preserve">
-    <value>Low mood (mild depression) or irritability</value>
+    <value>Niedergeschlagenheit (leichte Depression) oder Reizbarkeit</value>
   </data>
   <data name="MildAbdominalPain" xml:space="preserve">
-    <value>Mild abdominal pain</value>
+    <value>Leichte Bauchschmerzen</value>
   </data>
   <data name="MobilityProblems" xml:space="preserve">
-    <value>Mobility problems</value>
+    <value>Mobilitätsprobleme</value>
   </data>
   <data name="SevereDryCough" xml:space="preserve">
-    <value>More severe, often dry cough</value>
+    <value>Stärkerer, oft trockener Husten</value>
   </data>
   <data name="MuscleAchesWeakness" xml:space="preserve">
-    <value>Muscle aches and weakness</value>
+    <value>Muskelschmerzen und Schwäche</value>
   </data>
   <data name="MuscleCramps" xml:space="preserve">
-    <value>Muscle cramps</value>
+    <value>Muskelkrämpfe</value>
   </data>
   <data name="MusclePain" xml:space="preserve">
-    <value>Muscle pain</value>
+    <value>Muskelschmerzen</value>
   </data>
   <data name="MuscleSpams" xml:space="preserve">
-    <value>Muscle spasms, stiffness and weakness</value>
+    <value>Muskelkrämpfe, Steifheit und Schwäche</value>
   </data>
   <data name="MuscleWeakness" xml:space="preserve">
-    <value>Muscle weakness</value>
+    <value>Muskelschwäche</value>
   </data>
   <data name="Nausea" xml:space="preserve">
-    <value>Nausea</value>
+    <value>Brechreiz</value>
   </data>
   <data name="NauseaOrVomiting" xml:space="preserve">
-    <value>Nausea (feeling sick) or vomiting</value>
+    <value>Übelkeit oder Erbrechen</value>
   </data>
   <data name="NauseaAndVomiting" xml:space="preserve">
-    <value>Nausea and vomiting</value>
+    <value>Übelkeit und Erbrechen</value>
   </data>
   <data name="NightSweats" xml:space="preserve">
-    <value>Night sweats</value>
+    <value>Nachtschweiß</value>
   </data>
   <data name="NumbnessTingling" xml:space="preserve">
-    <value>Numbness and tingling</value>
+    <value>Taubheit und Kribbeln</value>
   </data>
   <data name="Numbness" xml:space="preserve">
-    <value>Numbness or pins and needles</value>
+    <value>Taubheit oder Kribbeln</value>
   </data>
   <data name="Pain" xml:space="preserve">
-    <value>Pain</value>
+    <value>Schmerz</value>
   </data>
   <data name="GenitalsPain" xml:space="preserve">
-    <value>Pain and discomfort in your side, lower back or around your genitals</value>
+    <value>Schmerzen und Beschwerden in Ihrer Seite, im unteren Rücken oder um Ihre Genitalien herum</value>
   </data>
   <data name="HeadPain" xml:space="preserve">
-    <value>Pain and tenderness around your cheeks, eyes or forehead</value>
+    <value>Schmerzen und Empfindlichkeit um Ihre Wangen, Augen oder Stirn</value>
   </data>
   <data name="BehindEyesPain" xml:space="preserve">
-    <value>Pain around or behind your eyes</value>
+    <value>Schmerzen um oder hinter den Augen</value>
   </data>
   <data name="UpperAbdomenPain" xml:space="preserve">
-    <value>Pain in the upper-right part of your tummy</value>
+    <value>Schmerzen im oberen rechten Teil Ihres Bauches</value>
   </data>
   <data name="LowerTummyPain" xml:space="preserve">
-    <value>Pain low down in your tummy</value>
+    <value>Schmerzen tief unten in deinem Bauch</value>
   </data>
   <data name="DiscomfortUrinating" xml:space="preserve">
-    <value>Pain or discomfort when peeing</value>
+    <value>Schmerzen oder Beschwerden beim Pinkeln</value>
   </data>
   <data name="CarpalTunnelSyndrome" xml:space="preserve">
-    <value>Pain, numbness and a tingling sensation in the hand and fingers (carpal tunnel syndrome)</value>
+    <value>Schmerzen, Taubheitsgefühl und Kribbeln in der Hand und den Fingern (Karpaltunnelsyndrom)</value>
   </data>
   <data name="PaleSkin" xml:space="preserve">
-    <value>Pale skin</value>
+    <value>Blasse Haut</value>
   </data>
   <data name="Palpitations" xml:space="preserve">
-    <value>Palpitations</value>
+    <value>Herzklopfen</value>
   </data>
   <data name="InfrequentlyPassingUrine" xml:space="preserve">
-    <value>Passing small amounts of urine infrequently (less than three or four times a day)</value>
+    <value>Unregelmäßiges Ablassen kleiner Urinmengen (weniger als drei- oder viermal am Tag)</value>
   </data>
   <data name="PersistentAbdominalPain" xml:space="preserve">
-    <value>Persistent abdominal pain</value>
+    <value>Anhaltende Bauchschmerzen</value>
   </data>
   <data name="PersistentBackPain" xml:space="preserve">
-    <value>Persistent back pain</value>
+    <value>Anhaltende Rückenschmerzen</value>
   </data>
   <data name="ProblemsBreathing" xml:space="preserve">
-    <value>Problems breathing</value>
+    <value>Probleme beim Atmen</value>
   </data>
   <data name="ProblemsConcentrating" xml:space="preserve">
-    <value>Problems with thinking, learning and planning</value>
+    <value>Probleme beim Denken, Lernen und Planen</value>
   </data>
   <data name="PuffyWateryEyes" xml:space="preserve">
-    <value>Puffy, watery eyes</value>
+    <value>Geschwollene, tränende Augen</value>
   </data>
   <data name="EarsRinging" xml:space="preserve">
-    <value>Ringing in your ears</value>
+    <value>Klingeln in deinen Ohren</value>
   </data>
   <data name="RunnyNose" xml:space="preserve">
-    <value>Runny nose</value>
+    <value>Laufende Nase</value>
   </data>
   <data name="RunnyBlockedNose" xml:space="preserve">
-    <value>Runny or blocked nose</value>
+    <value>Laufende oder verstopfte Nase</value>
   </data>
   <data name="SeriousUnrespondingPain" xml:space="preserve">
-    <value>Serious pain that isn't responding to treatments at home</value>
+    <value>Schwere Schmerzen, die nicht auf Behandlungen zu Hause ansprechen</value>
   </data>
   <data name="SevereMuscleWeakness" xml:space="preserve">
-    <value>Severe muscle weakness</value>
+    <value>Schwere Muskelschwäche</value>
   </data>
   <data name="Shaking" xml:space="preserve">
-    <value>Shaking</value>
+    <value>Schütteln</value>
   </data>
   <data name="Shivering" xml:space="preserve">
-    <value>Shivering or chills</value>
+    <value>Zittern oder Schüttelfrost</value>
   </data>
   <data name="BreathShortness" xml:space="preserve">
-    <value>Shortness of breath</value>
+    <value>Kurzatmigkeit</value>
   </data>
   <data name="PaleSkinLips" xml:space="preserve">
-    <value>Skin or lips that are very pale</value>
+    <value>Haut oder Lippen, die sehr blass sind</value>
   </data>
   <data name="SlowMovementsAndThoughts" xml:space="preserve">
-    <value>Slow movements and thoughts</value>
+    <value>Langsame Bewegungen und Gedanken</value>
   </data>
   <data name="WhiteSpotsInMouth" xml:space="preserve">
-    <value>Small greyish-white spots in the mouth</value>
+    <value>Kleine grauweiße Flecken im Mund</value>
   </data>
   <data name="PurpleSpotsInMouth" xml:space="preserve">
-    <value>Small red or purple spots on the roof of your mouth</value>
+    <value>Kleine rote oder violette Flecken auf dem Gaumen</value>
   </data>
   <data name="Sneezing" xml:space="preserve">
-    <value>Sneezing</value>
+    <value>Niesen</value>
   </data>
   <data name="SoreThroat" xml:space="preserve">
-    <value>Sore throat</value>
+    <value>Halsschmerzen</value>
   </data>
   <data name="SoreSensitiveEyes" xml:space="preserve">
-    <value>Sore, red eyes that may be sensitive to light</value>
+    <value>Wunde, rote Augen, die lichtempfindlich sein können</value>
   </data>
   <data name="SpeechSwallowingDifficulties" xml:space="preserve">
-    <value>Speech and swallowing difficulties</value>
+    <value>Sprach- und Schluckbeschwerden</value>
   </data>
   <data name="StomachCrampsAbdominalPain" xml:space="preserve">
-    <value>Stomach cramps and abdominal pain</value>
+    <value>Magenkrämpfe und Bauchschmerzen</value>
   </data>
   <data name="StuffyNose" xml:space="preserve">
-    <value>Stuffy nose</value>
+    <value>Verstopfte Nase</value>
   </data>
   <data name="SuddenTummySwelling" xml:space="preserve">
-    <value>Sudden swelling in the abdomen</value>
+    <value>Plötzliche Schwellung im Bauch</value>
   </data>
   <data name="SuddenUrgesToUrinate" xml:space="preserve">
-    <value>Sudden urges to urinate</value>
+    <value>Plötzlicher Harndrang</value>
   </data>
   <data name="SuddenVisionLoss" xml:space="preserve">
-    <value>Sudden vision loss, or changes in your vision</value>
+    <value>Plötzlicher Sehverlust oder Veränderungen Ihres Sehvermögens</value>
   </data>
   <data name="Sweating" xml:space="preserve">
-    <value>Sweating</value>
+    <value>Schwitzen</value>
   </data>
   <data name="MouthSwelling" xml:space="preserve">
-    <value>Swelling of the mouth, throat or tongue, which can cause breathing and swallowing difficulties</value>
+    <value>Schwellung von Mund, Rachen oder Zunge, die Atem- und Schluckbeschwerden verursachen kann</value>
   </data>
   <data name="EyesSwelling" xml:space="preserve">
-    <value>Swelling or 'puffiness' around your eyes</value>
+    <value>Schwellungen oder Schwellungen um Ihre Augen</value>
   </data>
   <data name="EyelidsSwelling" xml:space="preserve">
-    <value>Swollen eyelids</value>
+    <value>Geschwollene Augenlider</value>
   </data>
   <data name="SwollenEyesLipsHandsFeet" xml:space="preserve">
-    <value>Swollen eyes, lips, hands and feet</value>
+    <value>Geschwollene Augen, Lippen, Hände und Füße</value>
   </data>
   <data name="SwollenGlands" xml:space="preserve">
-    <value>Swollen glands in your neck and possibly in other parts of your body, such as under your armpits</value>
+    <value>Geschwollene Drüsen in Ihrem Hals und möglicherweise in anderen Teilen Ihres Körpers, wie z. B. unter Ihren Achseln</value>
   </data>
   <data name="SwollenTonsils" xml:space="preserve">
-    <value>Swollen tonsils and adenoids (small lumps of tissue at the back of the nose), which may affect your breathing</value>
+    <value>Geschwollene Mandeln und Adenoide (kleine Gewebeklumpen im Nasenrücken), die Ihre Atmung beeinträchtigen können</value>
   </data>
   <data name="SwollenLymphGlands" xml:space="preserve">
-    <value>Swollen, painful lymph glands in your neck</value>
+    <value>Geschwollene, schmerzhafte Lymphdrüsen im Nacken</value>
   </data>
   <data name="TummyTenderness" xml:space="preserve">
-    <value>Tenderness or swelling of the abdomen</value>
+    <value>Zärtlichkeit oder Schwellung des Bauches</value>
   </data>
   <data name="RedThroat" xml:space="preserve">
-    <value>The inside of your throat to become very red and ooze fluid</value>
+    <value>Das Innere Ihres Rachens wird sehr rot und sickert aus</value>
   </data>
   <data name="FrequentUrination" xml:space="preserve">
-    <value>The need to urinate frequently</value>
+    <value>Die Notwendigkeit, häufig zu urinieren</value>
   </data>
   <data name="TinglingLips" xml:space="preserve">
-    <value>Tingling lips</value>
+    <value>Prickelnde Lippen</value>
   </data>
   <data name="Tiredness" xml:space="preserve">
-    <value>Tiredness</value>
+    <value>Müdigkeit</value>
   </data>
   <data name="Toothache" xml:space="preserve">
-    <value>Toothache</value>
+    <value>Zahnschmerzen</value>
   </data>
   <data name="TremblingOrShakiness" xml:space="preserve">
-    <value>Trembling or shakiness</value>
+    <value>Zittern oder Zittern</value>
   </data>
   <data name="TroubleSleeping" xml:space="preserve">
-    <value>Trouble sleeping</value>
+    <value>Schlafstörungen</value>
   </data>
   <data name="CloudyUrine" xml:space="preserve">
-    <value>Urine that's cloudy, foul-smelling or contains blood</value>
+    <value>Urin, der trüb ist, übel riecht oder Blut enthält</value>
   </data>
   <data name="VisionProblems" xml:space="preserve">
-    <value>Vision problems</value>
+    <value>Sichtprobleme</value>
   </data>
   <data name="Vomiting" xml:space="preserve">
-    <value>Vomiting</value>
+    <value>Erbrechen</value>
   </data>
   <data name="WateryEyes" xml:space="preserve">
-    <value>Watery eyes</value>
+    <value>Wässrige Augen</value>
   </data>
   <data name="WeaknessInBody" xml:space="preserve">
-    <value>Weakness on one or both sides of your body</value>
+    <value>Schwäche auf einer oder beiden Seiten Ihres Körpers</value>
   </data>
   <data name="WeightGain" xml:space="preserve">
-    <value>Weight gain</value>
+    <value>Gewichtszunahme</value>
   </data>
   <data name="WeightLoss" xml:space="preserve">
-    <value>Weight loss</value>
+    <value>Gewichtsverlust</value>
   </data>
   <data name="Wheezing" xml:space="preserve">
-    <value>Wheezing</value>
+    <value>Keuchen</value>
   </data>
   <data name="AchesAndPains" xml:space="preserve">
-    <value>Aches and pains</value>
+    <value>Beschwerden und Schmerzen</value>
   </data>
   <data name="NeedToUrinateMoreFrequently" xml:space="preserve">
     <value>A need to urinate more often than usual</value>
   </data>
   <data name="SinusHeadache" xml:space="preserve">
-    <value>A sinus headache</value>
+    <value>Ein Nebenhöhlenkopfschmerz</value>
   </data>
   <data name="FeelingOfDread" xml:space="preserve">
-    <value>Feeling of dread or a fear of dying</value>
+    <value>Angstgefühle oder Todesangst</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Schließen</value>
   </data>
   <data name="English" xml:space="preserve">
-    <value>English</value>
+    <value>Englisch</value>
   </data>
   <data name="Romanian" xml:space="preserve">
-    <value>Romanian</value>
+    <value>Rumänisch</value>
   </data>
   <data name="German" xml:space="preserve">
-    <value>German</value>
+    <value>Deutsch</value>
   </data>
   <data name="btnContinueAsPatient" xml:space="preserve">
-    <value>Continue as patient</value>
+    <value>Fahren Sie als Patient fort</value>
   </data>
   <data name="btnLogin" xml:space="preserve">
-    <value>Log in</value>
+    <value>Einloggen</value>
   </data>
   <data name="lblSelectLanguage" xml:space="preserve">
-    <value>Select language</value>
+    <value>Sprache auswählen</value>
   </data>
   <data name="cbPasswordVisible" xml:space="preserve">
-    <value>Password visible</value>
+    <value>Passwort sichtbar</value>
   </data>
   <data name="lblOr" xml:space="preserve">
-    <value>...or...</value>
+    <value>...oder...</value>
   </data>
   <data name="lblPassword" xml:space="preserve">
-    <value>Password</value>
+    <value>Passwort</value>
   </data>
   <data name="lblUsername" xml:space="preserve">
-    <value>Username</value>
+    <value>Nutzername</value>
   </data>
   <data name="lblWarning" xml:space="preserve">
     <value> </value>
   </data>
   <data name="btnNoticeBoard" xml:space="preserve">
-    <value>Check notice board</value>
+    <value>Hinweistafel prüfen</value>
   </data>
   <data name="btnAppointments" xml:space="preserve">
-    <value>Make an appointment</value>
+    <value>Einen Termin machen</value>
   </data>
   <data name="btnBack" xml:space="preserve">
-    <value>Back</value>
+    <value>Zurück</value>
   </data>
   <data name="btnCheckSymptoms" xml:space="preserve">
-    <value>Check symptoms</value>
+    <value>Symptome prüfen</value>
   </data>
   <data name="lblDisease" xml:space="preserve">
     <value />
   </data>
   <data name="btnCheckAppointments" xml:space="preserve">
-    <value>Save appointments</value>
+    <value>Termine speichern</value>
   </data>
   <data name="btnCreateSchedule" xml:space="preserve">
-    <value>Create schedule</value>
+    <value>Zeitplan erstellen</value>
   </data>
   <data name="btnLogOut" xml:space="preserve">
-    <value>Log out</value>
+    <value>Ausloggen</value>
   </data>
   <data name="btnMedications" xml:space="preserve">
-    <value>See medications</value>
+    <value>Siehe Medikamente</value>
   </data>
   <data name="btnProcessInvoices" xml:space="preserve">
-    <value>Process invoices</value>
+    <value>Rechnungen bearbeiten</value>
   </data>
   <data name="btnSchedule" xml:space="preserve">
-    <value>Check appointments' schedule</value>
+    <value>Überprüfen Sie den Zeitplan der Termine</value>
   </data>
   <data name="WelcomePatient" xml:space="preserve">
-    <value>Welcome, patient!</value>
+    <value>Willkommen, Patient!</value>
   </data>
   <data name="btnCreateNotice" xml:space="preserve">
-    <value>Create notice</value>
+    <value>Hinweis erstellen</value>
   </data>
   <data name="btnEditDeleteNotice" xml:space="preserve">
-    <value>Edit/ Delete notice</value>
+    <value>Hinweis bearbeiten/löschen</value>
   </data>
   <data name="btnSave" xml:space="preserve">
-    <value>Save</value>
+    <value>Speichern</value>
   </data>
   <data name="CreatedBy" xml:space="preserve">
-    <value>Created by</value>
+    <value>Erstellt von</value>
   </data>
   <data name="ApplicationWillRestart" xml:space="preserve">
-    <value>The application will restart for changes to take place.</value>
+    <value>Die Anwendung wird neu gestartet, damit Änderungen vorgenommen werden.</value>
   </data>
   <data name="HealthClinic" xml:space="preserve">
-    <value>Health clinic</value>
+    <value>Gesundheitsklinik</value>
   </data>
   <data name="lblPickUser" xml:space="preserve">
-    <value>Pick user</value>
+    <value>Benutzer auswählen</value>
   </data>
   <data name="lblPickDayOfWeek" xml:space="preserve">
-    <value>Pick day of the following week</value>
+    <value>Wählen Sie den Tag der folgenden Woche aus</value>
   </data>
   <data name="lblPickShift" xml:space="preserve">
-    <value>Pick shift hours</value>
+    <value>Wählen Sie Schichtzeiten</value>
   </data>
   <data name="PleaseSelectUser" xml:space="preserve">
-    <value>Please select user</value>
+    <value>Bitte Benutzer auswählen</value>
   </data>
   <data name="Friday" xml:space="preserve">
-    <value>Friday</value>
+    <value>Freitag</value>
   </data>
   <data name="Monday" xml:space="preserve">
-    <value>Monday</value>
+    <value>Montag</value>
   </data>
   <data name="Saturday" xml:space="preserve">
-    <value>Saturday</value>
+    <value>Samstag</value>
   </data>
   <data name="Sunday" xml:space="preserve">
-    <value>Sunday</value>
+    <value>Sonntag</value>
   </data>
   <data name="Thursday" xml:space="preserve">
-    <value>Thursday</value>
+    <value>Donnerstag</value>
   </data>
   <data name="Tuesday" xml:space="preserve">
-    <value>Tuesday</value>
+    <value>Dienstag</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Warning</value>
+    <value>Warnung</value>
   </data>
   <data name="Wednesday" xml:space="preserve">
-    <value>Wednesday</value>
+    <value>Mittwoch</value>
   </data>
   <data name="MultipleShiftsPerDayNotPossible" xml:space="preserve">
-    <value>A person cannot work multiple shifts on the same day!</value>
+    <value>Eine Person kann nicht mehrere Schichten am selben Tag arbeiten!</value>
   </data>
   <data name="ScheduleSaved" xml:space="preserve">
-    <value>Schedule has been saved!</value>
+    <value>Zeitplan wurde gespeichert!</value>
   </data>
   <data name="lblFriday" xml:space="preserve">
-    <value>Schedule on Friday</value>
+    <value>Zeitplan am Freitag</value>
   </data>
   <data name="lblMonday" xml:space="preserve">
-    <value>Schedule on Monday</value>
+    <value>Termin am Montag</value>
   </data>
   <data name="lblSaturday" xml:space="preserve">
-    <value>Schedule on Saturday</value>
+    <value>Zeitplan am Samstag</value>
   </data>
   <data name="lblSunday" xml:space="preserve">
-    <value>Schedule on Sunday</value>
+    <value>Zeitplan am Sonntag</value>
   </data>
   <data name="lblThursday" xml:space="preserve">
-    <value>Schedule on Thursday</value>
+    <value>Zeitplan am Donnerstag</value>
   </data>
   <data name="lblTuesday" xml:space="preserve">
-    <value>Schedule on Tuesday</value>
+    <value>Zeitplan am Dienstag</value>
   </data>
   <data name="lblWednesday" xml:space="preserve">
-    <value>Schedule on Wednesday</value>
+    <value>Zeitplan am Mittwoch</value>
   </data>
   <data name="btnEditNotice" xml:space="preserve">
-    <value>Save changes</value>
+    <value>Änderungen speichern</value>
   </data>
   <data name="lblSelectNotice" xml:space="preserve">
-    <value>Select notice</value>
+    <value>Hinweis auswählen</value>
   </data>
   <data name="Notice" xml:space="preserve">
-    <value>Notice</value>
+    <value>Notiz</value>
   </data>
   <data name="PleaseSelectNotice" xml:space="preserve">
-    <value>Please select notice.</value>
+    <value>Bitte Hinweis auswählen.</value>
   </data>
   <data name="PleaseMakeAnAppointment" xml:space="preserve">
-    <value>Please make an appointment.</value>
+    <value>Bitte vereinbaren Sie einen Termin.</value>
   </data>
   <data name="btnDeleteNotice" xml:space="preserve">
-    <value>Delete notice</value>
+    <value>Hinweis löschen</value>
   </data>
   <data name="btnShowAllNotices" xml:space="preserve">
-    <value>Show all notices</value>
+    <value>Alle Hinweise anzeigen</value>
   </data>
   <data name="PleaseEditNotice" xml:space="preserve">
-    <value>You cannot save an unmodified notice. Please edit it and save it afterwards.</value>
+    <value>Sie können eine unveränderte Benachrichtigung nicht speichern. Bitte bearbeiten Sie es und speichern Sie es anschließend.</value>
   </data>
   <data name="AddingNoticeUnsuccessful" xml:space="preserve">
-    <value>The notice could not be saved!</value>
+    <value>Der Hinweis konnte nicht gespeichert werden!</value>
   </data>
   <data name="DeletingNoticeUnsuccessful" xml:space="preserve">
-    <value>The notice could not be deleted!</value>
+    <value>Der Hinweis konnte nicht gelöscht werden!</value>
   </data>
   <data name="EditingNoticeUnsuccessful" xml:space="preserve">
-    <value>The notice could not be edited!</value>
+    <value>Der Hinweis konnte nicht bearbeitet werden!</value>
   </data>
   <data name="SomethingWentWrong" xml:space="preserve">
-    <value>Error</value>
+    <value>Fehler</value>
   </data>
   <data name="SuccessfullyDeleted" xml:space="preserve">
-    <value>The notice was successfully deleted!</value>
+    <value>Der Hinweis wurde erfolgreich gelöscht!</value>
   </data>
   <data name="SuccessfullyEdited" xml:space="preserve">
-    <value>The notice was successfully edited!</value>
+    <value>Der Hinweis wurde erfolgreich bearbeitet!</value>
   </data>
   <data name="SuccessfullySaved" xml:space="preserve">
-    <value>The notice was successfully saved!</value>
+    <value>Die Benachrichtigung wurde erfolgreich gespeichert!</value>
   </data>
   <data name="lblContactAdministrator" xml:space="preserve">
-    <value>* Please contact administrator for eventual changes.</value>
+    <value>* Bitte kontaktieren Sie den Administrator für eventuelle Änderungen.</value>
   </data>
   <data name="Free" xml:space="preserve">
-    <value>Free</value>
+    <value>Frei</value>
   </data>
   <data name="AppointmentSaved" xml:space="preserve">
-    <value>The appointment has been saved!</value>
+    <value>Der Termin wurde gespeichert!</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Error!</value>
+    <value>Fehler!</value>
   </data>
   <data name="ErrorSavingAppointment" xml:space="preserve">
-    <value>The appointment could not be saved!</value>
+    <value>Der Termin konnte nicht gespeichert werden!</value>
   </data>
   <data name="lblAppointmentDate" xml:space="preserve">
-    <value>Appointment date</value>
+    <value>Termin</value>
   </data>
   <data name="lblDoctorName" xml:space="preserve">
-    <value>Doctor's name</value>
+    <value>Name des Arztes</value>
   </data>
   <data name="lblFirstName" xml:space="preserve">
-    <value>First name</value>
+    <value>Vorname</value>
   </data>
   <data name="lblLastName" xml:space="preserve">
-    <value>Last name</value>
+    <value>Familienname</value>
   </data>
   <data name="lblPhoneNo" xml:space="preserve">
-    <value>Phone number</value>
+    <value>Telefonnummer</value>
   </data>
   <data name="PleaseInsertFirstName" xml:space="preserve">
-    <value>Please insert your first name!</value>
+    <value>Bitte geben Sie Ihren Vornamen ein!</value>
   </data>
   <data name="PleaseInsertLastName" xml:space="preserve">
-    <value>Please insert your last name!</value>
+    <value>Bitte geben Sie Ihren Nachnamen ein!</value>
   </data>
   <data name="PleaseInsertPhoneNumber" xml:space="preserve">
-    <value>Please insert your phone number!</value>
+    <value>Bitte geben Sie Ihre Telefonnummer ein!</value>
   </data>
   <data name="PleasePickADoctor" xml:space="preserve">
-    <value>Please pick a doctor!</value>
+    <value>Bitte suchen Sie sich einen Arzt aus!</value>
   </data>
   <data name="lblAppointmentHour" xml:space="preserve">
-    <value>Appointment hour</value>
+    <value>Sprechstunde</value>
   </data>
   <data name="PleasePickAValidDate" xml:space="preserve">
-    <value>Please pick a valid date! (The earliest you can make an appointment is 24 hours from now)</value>
+    <value>Bitte wählen Sie ein gültiges Datum! (Sie können frühestens in 24 Stunden einen Termin vereinbaren)</value>
   </data>
   <data name="PleaseInsertAValidFirstName" xml:space="preserve">
-    <value>Please insert a valid first name!</value>
+    <value>Bitte geben Sie einen gültigen Vornamen ein!</value>
   </data>
   <data name="PleaseInsertAValidLastName" xml:space="preserve">
-    <value>Please insert a valid last name!</value>
+    <value>Bitte geben Sie einen gültigen Nachnamen ein!</value>
   </data>
   <data name="PleaseInsertAValidPhoneNo" xml:space="preserve">
-    <value>Please insert a valid phone number!</value>
+    <value>Bitte geben Sie eine gültige Telefonnummer ein!</value>
   </data>
   <data name="NoAppointmentsInExcel" xml:space="preserve">
-    <value>There are no new appointments!</value>
+    <value>Es gibt keine neuen Termine!</value>
   </data>
   <data name="AppointmentsCouldNotBeSaved" xml:space="preserve">
-    <value>The appointments could not be saved!</value>
+    <value>Die Termine konnten nicht gespeichert werden!</value>
   </data>
   <data name="AppointmentsSaved" xml:space="preserve">
-    <value>The appointments have been saved!</value>
+    <value>Die Termine wurden gespeichert!</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>Success</value>
+    <value>Erfolg</value>
   </data>
   <data name="PlaseSelectDoctor" xml:space="preserve">
-    <value>Please select a doctor!</value>
+    <value>Bitte Arzt auswählen!</value>
   </data>
   <data name="btnProcessMedications" xml:space="preserve">
-    <value>Process medication</value>
+    <value>Medikamente verarbeiten</value>
   </data>
   <data name="LastBillingDate" xml:space="preserve">
-    <value>Last billing date</value>
+    <value>Letztes Abrechnungsdatum</value>
   </data>
   <data name="lblInsufficientStock" xml:space="preserve">
-    <value>*The red background means insufficient stock.</value>
+    <value>*Der rote Hintergrund bedeutet, dass der Vorrat nicht ausreicht.</value>
   </data>
   <data name="MedicineForm" xml:space="preserve">
-    <value>Keep track of medications</value>
+    <value>Behalten Sie den Überblick über Medikamente</value>
   </data>
   <data name="MedicineName" xml:space="preserve">
-    <value>Medicine name</value>
+    <value>Arzneimittelname</value>
   </data>
   <data name="Quantity" xml:space="preserve">
-    <value>Quantity (boxes)</value>
+    <value>Menge (Kartons)</value>
   </data>
   <data name="lblSelectScheduleDay" xml:space="preserve">
-    <value>Please select a day of the following week</value>
+    <value>Bitte wählen Sie einen Tag der Folgewoche aus</value>
   </data>
   <data name="lblYourAppointments" xml:space="preserve">
-    <value>Your appointments for the selected day:</value>
+    <value>Ihre Termine für den ausgewählten Tag:</value>
   </data>
   <data name="atHour" xml:space="preserve">
-    <value>at</value>
+    <value>beim</value>
   </data>
   <data name="NoAppointmentsForDay" xml:space="preserve">
-    <value>You have no appointments on </value>
+    <value>Sie haben keine Termine </value>
   </data>
   <data name="EmptyStock" xml:space="preserve">
-    <value>Empty stock for medication</value>
+    <value>Leerer Vorrat für Medikamente</value>
   </data>
   <data name="InsufficientStockFor" xml:space="preserve">
-    <value>There is an insufficient stock for the following:</value>
+    <value>Für Folgendes ist kein Bestand vorhanden:</value>
   </data>
   <data name="lblSelectDoctor" xml:space="preserve">
-    <value>Select the doctor you wish to make an appointment to</value>
+    <value>Wählen Sie den Arzt aus, bei dem Sie einen Termin vereinbaren möchten</value>
   </data>
   <data name="btnCheckSchedules" xml:space="preserve">
-    <value>Check doctors' schedules</value>
+    <value>Überprüfen Sie die Zeitpläne der Ärzte</value>
   </data>
   <data name="CannotGetAllMedicine" xml:space="preserve">
-    <value>The data regarding medicine could not be retrieved from the database!</value>
+    <value>Die Daten zum Medikament konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotFillByLanguage" xml:space="preserve">
-    <value>Cannot fill the panel by language!</value>
+    <value>Das Panel kann nicht nach Sprache gefüllt werden!</value>
   </data>
   <data name="CannotGetAllAccounts" xml:space="preserve">
-    <value>The data regarding the users' accounts could not be retrieved from the database!</value>
+    <value>Die Daten zu den Benutzerkonten konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllAdminsAccounts" xml:space="preserve">
-    <value>The data regarding the admins' accounts could not be retrieved from the database!</value>
+    <value>Die Daten zu den Konten der Admins konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllDiseases" xml:space="preserve">
-    <value>The data regarding the diseases could not be retrieved from the database!</value>
+    <value>Die Daten zu den Krankheiten konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllDoctorsAccounts" xml:space="preserve">
-    <value>The data regarding the medical personnel's accounts could not be retrieved from the database!</value>
+    <value>Die Daten zu den Konten des medizinischen Personals konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllNotices" xml:space="preserve">
-    <value>The data regarding the notices could not be retrieved from the database!</value>
+    <value>Die Daten zu den Bescheiden konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllShifts" xml:space="preserve">
-    <value>The data regarding the shifts could not be retrieved from the database!</value>
+    <value>Die Daten zu den Schichten konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllShiftsForUser" xml:space="preserve">
-    <value>The data regarding the shifts for a certain user could not be retrieved from the database!</value>
+    <value>Die Daten zu den Schichten eines bestimmten Benutzers konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAllSymptoms" xml:space="preserve">
-    <value>The data regarding the symptoms could not be retrieved from the database!</value>
+    <value>Die Daten zu den Symptomen konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetAppointmentsForUser" xml:space="preserve">
-    <value>Cannot retrieve appointment for user by their username and day!</value>
+    <value>Der Termin für den Benutzer kann nicht anhand seines Benutzernamens und Tages abgerufen werden!</value>
   </data>
   <data name="CannotGetFullName" xml:space="preserve">
-    <value>Cannot get user's full name by their username!</value>
+    <value>Der vollständige Name des Benutzers kann nicht anhand seines Benutzernamens abgerufen werden!</value>
   </data>
   <data name="CannotGetLanguage" xml:space="preserve">
-    <value>The language could not be retrieved!</value>
+    <value>Die Sprache konnte nicht abgerufen werden!</value>
   </data>
   <data name="CannotGetLastWeekNotices" xml:space="preserve">
-    <value>The data regarding the notices from the previous week could not be retrieved from the database!</value>
+    <value>Die Daten zu den Bescheiden der Vorwoche konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetRight" xml:space="preserve">
-    <value>Cannot retrieve right by its ID from the database!</value>
+    <value>Kann nicht direkt anhand seiner ID aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetSchedule" xml:space="preserve">
-    <value>The schedule could not be retrieved from the database!</value>
+    <value>Der Zeitplan konnte nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetShiftsByHour" xml:space="preserve">
-    <value>The data regarding the shifts by a certain hour could not be retrieved from the database!</value>
+    <value>Die Daten zu den Schichten um eine bestimmte Stunde konnten nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotGetStartEndHour" xml:space="preserve">
-    <value>Cannot get start and end hour of a shift based on its ID!</value>
+    <value>Start- und Endzeit einer Schicht kann nicht anhand ihrer ID ermittelt werden!</value>
   </data>
   <data name="CannotGetUserByName" xml:space="preserve">
-    <value>Cannot retrieve user by their full name!</value>
+    <value>Der Benutzer kann nicht mit seinem vollständigen Namen abgerufen werden!</value>
   </data>
   <data name="CannotGetUserByUsername" xml:space="preserve">
-    <value>The user cannot be retrieved by their username from the database!</value>
+    <value>Der Benutzer kann nicht anhand seines Benutzernamens aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotOrderSymptoms" xml:space="preserve">
-    <value>The symptoms could not be ordered by their names!</value>
+    <value>Die Symptome konnten nicht nach Namen sortiert werden!</value>
   </data>
   <data name="CannotReadLanguage" xml:space="preserve">
-    <value>Cannot read language from the file!</value>
+    <value>Sprache kann nicht aus der Datei gelesen werden!</value>
   </data>
   <data name="CannotSetLanguage" xml:space="preserve">
-    <value>The language could not be set!</value>
+    <value>Die Sprache konnte nicht eingestellt werden!</value>
   </data>
   <data name="ScheduleCannotBeCreated" xml:space="preserve">
-    <value>The schedule could not be created!</value>
+    <value>Der Zeitplan konnte nicht erstellt werden!</value>
   </data>
   <data name="CannotDecrypt" xml:space="preserve">
-    <value>Cannot decrypt the text!</value>
+    <value>Der Text kann nicht entschlüsselt werden!</value>
   </data>
   <data name="CannotEncrypt" xml:space="preserve">
-    <value>Cannot encrypt the text!</value>
+    <value>Der Text kann nicht verschlüsselt werden!</value>
   </data>
   <data name="CannotReadAppointments" xml:space="preserve">
-    <value>Cannot read appointments from Excel!</value>
+    <value>Kann keine Termine aus Excel lesen!</value>
   </data>
   <data name="CannotSendEmail" xml:space="preserve">
-    <value>The e-mail could not be sent!</value>
+    <value>Die E-Mail konnte nicht versendet werden!</value>
   </data>
   <data name="NoDataInColumn" xml:space="preserve">
-    <value>There is at least one column where there is no data!</value>
+    <value>Es gibt mindestens eine Spalte, in der keine Daten vorhanden sind!</value>
   </data>
   <data name="CannotUsePdf" xml:space="preserve">
-    <value>The PDF cannot be used: for example, it cannot be opened.</value>
+    <value>Das PDF kann nicht verwendet werden: Es kann beispielsweise nicht geöffnet werden.</value>
   </data>
   <data name="CheckLog" xml:space="preserve">
-    <value>Please check logger file for potential errors.</value>
+    <value>Bitte überprüfen Sie die Logger-Datei auf mögliche Fehler.</value>
   </data>
   <data name="NoInvoices" xml:space="preserve">
-    <value>There are no invoices to be processed!</value>
+    <value>Es sind keine Rechnungen zu bearbeiten!</value>
   </data>
   <data name="CannotGetMedicinebyName" xml:space="preserve">
-    <value>The medicine could not be retrieved from the database based on its name!</value>
+    <value>Das Medikament konnte anhand seines Namens nicht aus der Datenbank abgerufen werden!</value>
   </data>
   <data name="CannotSaveMedicine" xml:space="preserve">
-    <value>The medicine could not be saved in the database!</value>
+    <value>Das Medikament konnte nicht in der Datenbank gespeichert werden!</value>
   </data>
   <data name="CannotUpdateMedicine" xml:space="preserve">
-    <value>Cannot update medicine in the database!</value>
+    <value>Medikamente können nicht in der Datenbank aktualisiert werden!</value>
   </data>
   <data name="CannotProcessInvoices" xml:space="preserve">
-    <value>The invoices cannot be processed!</value>
+    <value>Die Rechnungen können nicht bearbeitet werden!</value>
   </data>
   <data name="AtLeastOneInvalidInvoice" xml:space="preserve">
-    <value>There is at least one invalid invoice!</value>
+    <value>Es gibt mindestens eine ungültige Rechnung!</value>
   </data>
   <data name="InvoicesSaved" xml:space="preserve">
-    <value>The invoices have been saved!</value>
+    <value>Die Rechnungen wurden gespeichert!</value>
   </data>
   <data name="CannotCheckDoctorSchedule" xml:space="preserve">
-    <value>Cannot retrieve from the database data about the doctor and the date you picked for the appointment.</value>
+    <value>Es können keine Daten über den Arzt und das Datum, das Sie für den Termin ausgewählt haben, aus der Datenbank abgerufen werden.</value>
   </data>
   <data name="DoctorUnavailable" xml:space="preserve">
-    <value>The doctor you picked is unavailable in the specified time interval! Please check the doctors' schedule before making an appointment. Choose another doctor or another date/ hour for this appointment or go back.</value>
+    <value>Der von Ihnen gewählte Arzt ist im angegebenen Zeitraum nicht verfügbar! Bitte prüfen Sie vor der Terminvereinbarung den ärztlichen Terminplan. Wählen Sie einen anderen Arzt oder ein anderes Datum/Uhrzeit für diesen Termin oder gehen Sie zurück.</value>
   </data>
   <data name="IdiopathicPulmonaryFibrosis" xml:space="preserve">
-    <value>Idiopathic pulmonary fibrosis</value>
+    <value>Idiopathische Lungenfibrose</value>
   </data>
 </root>

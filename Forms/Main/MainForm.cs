@@ -33,6 +33,7 @@ namespace HealthClinic
 
             cbLanguage.Items.Add(res.GetString("English"));
             cbLanguage.Items.Add(res.GetString("Romanian"));
+            cbLanguage.Items.Add(res.GetString("German"));
 
             cbLanguage.SelectedItem = res.GetString(string.IsNullOrEmpty(languageLong) ? "English" : languageLong);
         }

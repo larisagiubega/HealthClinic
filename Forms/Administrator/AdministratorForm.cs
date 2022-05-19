@@ -92,22 +92,18 @@ namespace HealthClinic.Forms__Views_
                 {
                     foreach (var invoice in invoices)
                     {
-                       success = success && SaveInvoiceAndMedicineToDatabase(invoice);
+                        success = success && SaveInvoiceAndMedicineToDatabase(invoice);
+                    }
+
+                    if(success)
+                    {
+                        MessageBox.Show(res.GetString("InvoicesSaved"), res.GetString("Success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show(res.GetString("NoValidInvoices"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                if (success)
-                {
-                    MessageBox.Show(res.GetString("InvoicesSaved"), res.GetString("Success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                else
-                {
-                    MessageBox.Show(res.GetString("AtLeastOneInvalidInvoice"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(res.GetString("NoInvoices"), res.GetString("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
