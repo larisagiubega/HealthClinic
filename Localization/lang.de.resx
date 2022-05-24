@@ -862,7 +862,7 @@
     <value>Erstellt von</value>
   </data>
   <data name="ApplicationWillRestart" xml:space="preserve">
-    <value>Die Anwendung wird neu gestartet, damit Änderungen vorgenommen werden.</value>
+    <value>Die Anwendung muss neu gestartet werden, damit die Änderungen wirksam werden.</value>
   </data>
   <data name="HealthClinic" xml:space="preserve">
     <value>Gesundheitsklinik</value>

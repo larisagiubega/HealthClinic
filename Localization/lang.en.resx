@@ -862,7 +862,7 @@
     <value>Created by</value>
   </data>
   <data name="ApplicationWillRestart" xml:space="preserve">
-    <value>The application will restart for changes to take place.</value>
+    <value>The application needs restart for changes to take place.</value>
   </data>
   <data name="HealthClinic" xml:space="preserve">
     <value>Health clinic</value>

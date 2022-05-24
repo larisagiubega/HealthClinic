@@ -862,7 +862,7 @@
     <value>Creat de către</value>
   </data>
   <data name="ApplicationWillRestart" xml:space="preserve">
-    <value>Pentru a avea loc modificările, aplicația se va reporni.</value>
+    <value>Pentru a avea loc modificările, aplicația va trebui repornită.</value>
   </data>
   <data name="HealthClinic" xml:space="preserve">
     <value>Clinică medicală</value>

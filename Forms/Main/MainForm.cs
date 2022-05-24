@@ -91,7 +91,7 @@ namespace HealthClinic
 
                 if (result == DialogResult.OK)
                 {
-                    Application.Restart();
+                    Application.Exit();
                 }
             }
         }
