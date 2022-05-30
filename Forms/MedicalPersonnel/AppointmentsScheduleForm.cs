@@ -1,15 +1,13 @@
 ﻿
 namespace HealthClinic.Forms__Views_.MedicalPersonnel
 {
-    using HealthClinic.DAL;
     using HealthClinic.DTOs;
     using HealthClinic.Enums;
     using HealthClinic.Interfaces;
     using HealthClinic.Localization;
+    using HealthClinic.Presenters;
     using System;
-    using System.Data;
     using System.Drawing;
-    using System.Linq;
     using System.Resources;
     using System.Windows.Forms;
     public partial class ScheduleForm : Form
@@ -21,8 +19,7 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
 
         static UserDto loggedInUser = null;
 
-        private readonly IScheduleDal scheduleDal;
-        private readonly IAppointmentsDal appointmentsDal;
+        IAppointmentsSchedulePresenter presenter;
 
         Form prevForm;
         public ScheduleForm(HealthClinicEntities ctx, Form prevForm, UserDto user)
@@ -30,8 +27,9 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
             InitializeComponent();
 
             _ctx = ctx;
-            scheduleDal = new ScheduleDal(_ctx);
-            appointmentsDal = new AppointmentsDal(_ctx);
+
+            presenter = new AppointmentsSchedulePresenter(ctx);
+
             this.prevForm = prevForm;
             loggedInUser = user;
         }
@@ -84,11 +82,11 @@ namespace HealthClinic.Forms__Views_.MedicalPersonnel
         {
             tbAppointments.Text = "";
 
-            var firstDayOfNextWeek = scheduleDal.StartOfWeek(DateTime.Today.AddDays(7));
+            var firstDayOfNextWeek = presenter.StartOfWeek(DateTime.Today.AddDays(7));
 
             var selectedDay = firstDayOfNextWeek.AddDays(cbDaysOfWeek.SelectedIndex); //cbDaysOfWeek.SelectedIndex equals to selected day of week
 
-            var allApointmentsForDay = appointmentsDal.GetAppointmentsForUserByUsernameAndDay(loggedInUser.Username, selectedDay);
+            var allApointmentsForDay = presenter.GetAppointmentsForUserByUsernameAndDay(loggedInUser.Username, selectedDay);
 
             if (allApointmentsForDay.Count == 0)
             {

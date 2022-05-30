@@ -173,7 +173,7 @@ namespace HealthClinic.Forms__Views_.Administrator
         private int GetNoticeNumberFromDropdown()
         {
             var selectedNotice = Convert.ToString(cbNotices.SelectedItem).Trim();
-            return Convert.ToInt32(selectedNotice.Split(' ')[2]);
+            return Convert.ToInt32(selectedNotice.Split(' ')[1]);
         }
 
         private void FillNoticeBoardWithNoticeNumber(int noticeNumber)

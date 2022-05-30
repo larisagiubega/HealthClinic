@@ -1,9 +1,9 @@
 ﻿namespace HealthClinic.Forms__Views_.Administrator
 {
-    using HealthClinic.DAL;
     using HealthClinic.DTOs;
     using HealthClinic.Interfaces;
     using HealthClinic.Localization;
+    using HealthClinic.Presenters;
     using System;
     using System.Collections.Generic;
     using System.Drawing;
@@ -21,7 +21,7 @@
 
         Form prevForm;
 
-        private IMedicineDal medicineDal;
+        private IMedicinePresenter presenter;
 
         public MedicineForm(HealthClinicEntities ctx, Form prevForm, UserDto loggedInUser)
         {
@@ -31,7 +31,7 @@
             this.prevForm = prevForm;
             this.loggedInUser = loggedInUser;
 
-            medicineDal = new MedicineDal(_ctx);
+            presenter = new MedicinePresenter(_ctx);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@
 
             List<string> insufficientStock = new List<string>();
 
-            var allMedicine = medicineDal.GetAllMedicine();
+            var allMedicine = presenter.GetAllMedicine();
 
             foreach (var medicine in allMedicine)
             {

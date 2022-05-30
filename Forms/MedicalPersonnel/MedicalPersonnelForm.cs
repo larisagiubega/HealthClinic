@@ -1,16 +1,16 @@
-﻿using HealthClinic.DAL;
-using HealthClinic.DTOs;
-using HealthClinic.Forms;
-using HealthClinic.Forms__Views_.MedicalPersonnel;
-using HealthClinic.Interfaces;
-using HealthClinic.Localization;
-using System;
-using System.Drawing;
-using System.Resources;
-using System.Windows.Forms;
-
+﻿
 namespace HealthClinic.Forms__Views_
 {
+    using HealthClinic.DTOs;
+    using HealthClinic.Forms;
+    using HealthClinic.Forms__Views_.MedicalPersonnel;
+    using HealthClinic.Interfaces;
+    using HealthClinic.Localization;
+    using HealthClinic.Presenters;
+    using System;
+    using System.Drawing;
+    using System.Resources;
+    using System.Windows.Forms;
     public partial class MedicalPersonnelForm : Form
     {
         private HealthClinicEntities _ctx = new HealthClinicEntities();
@@ -18,9 +18,9 @@ namespace HealthClinic.Forms__Views_
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
         private string language = HealthClinicLocalization.GetLanguage();
 
-        static UserDto loggedInUser = null;
+        IMedicalPersonnelPresenter presenter;
 
-        private readonly IUserDal personDal;
+        static UserDto loggedInUser = null;
         public MedicalPersonnelForm(HealthClinicEntities ctx, UserDto user)
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace HealthClinic.Forms__Views_
             _ctx = ctx;
             loggedInUser = user;
 
-            personDal = new UserDal(_ctx);
+            presenter = new MedicalPersonnelPresenter(ctx);
         }
 
         private void ChangeControlsFont()
@@ -73,7 +73,7 @@ namespace HealthClinic.Forms__Views_
         {
             ChangeControlsFont();
 
-            this.Text = $"{res.GetString("Welcome")}, {personDal.GetUserFullNameByUser(loggedInUser)}!";
+            this.Text = $"{res.GetString("Welcome")}, {presenter.GetUserFullNameByUser(loggedInUser)}!";
 
             HealthClinicLocalization.FillControlsByLanguage(res, language, panelMedicalPersonnel);
         }

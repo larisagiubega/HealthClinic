@@ -1,17 +1,12 @@
-﻿using HealthClinic.DAL;
-using HealthClinic.Forms;
-using HealthClinic.Localization;
-using HealthClinic.Presenters;
-using System;
-using System.Collections;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Resources;
-using System.Windows.Forms;
-
-namespace HealthClinic
+﻿namespace HealthClinic
 {
+    using HealthClinic.Forms;
+    using HealthClinic.Localization;
+    using HealthClinic.Presenters;
+    using System;
+    using System.Drawing;
+    using System.Resources;
+    using System.Windows.Forms;
     public partial class MainForm : Form
     {
         private HealthClinicEntities _ctx = new HealthClinicEntities();

@@ -1,19 +1,18 @@
-﻿
+﻿using HealthClinic.Forms;
+using HealthClinic.Forms.Administrator;
+using HealthClinic.Forms__Views_.Administrator;
+using System;
+using System.Drawing;
+using System.Resources;
+using System.Windows.Forms;
+using HealthClinic.Localization;
+using HealthClinic.DTOs;
+using HealthClinic.Interfaces;
+using HealthClinic.Exceptions;
+using HealthClinic.Presenters;
+
 namespace HealthClinic.Forms__Views_
 {
-    using HealthClinic.Forms;
-    using HealthClinic.Forms.Administrator;
-    using HealthClinic.Forms__Views_.Administrator;
-    using System;
-    using System.Drawing;
-    using System.Resources;
-    using System.Windows.Forms;
-    using HealthClinic.Localization;
-    using HealthClinic.DTOs;
-    using HealthClinic.Interfaces;
-    using HealthClinic.DAL;
-    using HealthClinic.Exceptions;
-
     public partial class AdministratorForm : Form
     {
         HealthClinicEntities _ctx = new HealthClinicEntities();
@@ -21,9 +20,7 @@ namespace HealthClinic.Forms__Views_
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
         private string language = HealthClinicLocalization.GetLanguage();
 
-        private IAppointmentsDal appointmentsDal;
-        private IMedicineDal medicineDal;
-        private IInvoiceDal invoiceDal;
+        IAdministratorPresenter presenter;
 
         static UserDto loggedInUser = null;
         public AdministratorForm(HealthClinicEntities ctx, UserDto user)
@@ -33,9 +30,7 @@ namespace HealthClinic.Forms__Views_
             _ctx = ctx;
             loggedInUser = user;
 
-            appointmentsDal = new AppointmentsDal(_ctx);
-            medicineDal = new MedicineDal(_ctx);
-            invoiceDal = new InvoiceDal(_ctx);
+            presenter = new AdministratorPresenter(_ctx);
         }
 
         private void ChangeControlsFont()
@@ -70,7 +65,7 @@ namespace HealthClinic.Forms__Views_
             }
             else
             {
-                if (appointmentsDal.SaveAppointmentsToDb(appointments))
+                if (presenter.SaveAppointmentsToDb(appointments))
                 {
                     MessageBox.Show(res.GetString("AppointmentsSaved"), res.GetString("Success"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -120,10 +115,10 @@ namespace HealthClinic.Forms__Views_
 
             foreach (var medicine in medicineList)
             {
-                success = success && medicineDal.SaveMedicineToDatabase(medicine);
+                success = success && presenter.SaveMedicineToDatabase(medicine);
             }
 
-            success = success && invoiceDal.SaveInvoiceToDatabase(invoice);
+            success = success && presenter.SaveInvoiceToDatabase(invoice);
 
             return success;
         }

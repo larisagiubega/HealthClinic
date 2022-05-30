@@ -186,13 +186,21 @@
     <Compile Include="Forms\Patient\CheckDoctorsSchedule.Designer.cs">
       <DependentUpon>CheckDoctorsSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IAdministratorPresenter.cs" />
     <Compile Include="Interfaces\IAppointmentsDal.cs" />
     <Compile Include="Interfaces\IAppointmentsPresenter.cs" />
+    <Compile Include="Interfaces\IAppointmentsSchedulePresenter.cs" />
     <Compile Include="Interfaces\ICheckDoctorsSchedulePresenter.cs" />
     <Compile Include="Interfaces\IInvoiceDal.cs" />
+    <Compile Include="Interfaces\IMedicalPersonnelPresenter.cs" />
     <Compile Include="Interfaces\IMedicineDal.cs" />
+    <Compile Include="Interfaces\IMedicinePresenter.cs" />
+    <Compile Include="Presenters\AdministratorPresenter.cs" />
     <Compile Include="Presenters\AppointmentsPresenter.cs" />
+    <Compile Include="Presenters\AppointmentsSchedulePresenter.cs" />
     <Compile Include="Presenters\CheckDoctorsSchedulePresenter.cs" />
+    <Compile Include="Presenters\MedicalPersonnelPresenter.cs" />
+    <Compile Include="Presenters\MedicinePresenter.cs" />
     <Compile Include="UseEmail.cs" />
     <Compile Include="UseExcel.cs" />
     <Compile Include="Interfaces\IDiseasesSymptomsPresenter.cs" />

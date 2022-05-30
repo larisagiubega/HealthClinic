@@ -850,7 +850,7 @@
     <value>Bine ați venit, pacient!</value>
   </data>
   <data name="btnCreateNotice" xml:space="preserve">
-    <value>Creați anunt</value>
+    <value>Creați anunț</value>
   </data>
   <data name="btnEditDeleteNotice" xml:space="preserve">
     <value>Modificați/ Ștergeți anunțul</value>
@@ -937,7 +937,7 @@
     <value>Alegeți un anunț</value>
   </data>
   <data name="Notice" xml:space="preserve">
-    <value>Anunț </value>
+    <value>Anunț</value>
   </data>
   <data name="PleaseSelectNotice" xml:space="preserve">
     <value>Vă rugăm să alegeți un anunț.</value>
