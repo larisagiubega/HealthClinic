@@ -4,6 +4,7 @@ namespace HealthClinic.Forms.Patient
     using HealthClinic.DTOs;
     using HealthClinic.Enums;
     using HealthClinic.Forms__Views_.Patient;
+    using HealthClinic.Interfaces;
     using HealthClinic.Localization;
     using HealthClinic.Presenters;
     using System;
@@ -19,7 +20,7 @@ namespace HealthClinic.Forms.Patient
         private ResourceManager res = HealthClinicLocalization.GetResourceManager();
         private string language = HealthClinicLocalization.GetLanguage();
 
-        CheckDoctorsSchedulePresenter presenter;
+        ICheckDoctorsSchedulePresenter presenter;
 
         Form prevForm;
         public CheckDoctorsSchedule(HealthClinicEntities ctx, Form prevForm)
