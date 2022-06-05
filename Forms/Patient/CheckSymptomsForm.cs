@@ -113,11 +113,11 @@ namespace HealthClinic.Forms__Views_
                     checkedDisease = disease.Disease;
                     diseaseCount = intersectedSymptoms.Count;
                 }
+            }
 
-                if (diseaseCount < 2)
-                {
-                    checkedDisease = "Inconclusive";
-                }
+            if (diseaseCount < 2)
+            {
+                checkedDisease = "Inconclusive";
             }
 
             return checkedDisease;
