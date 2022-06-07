@@ -23,7 +23,7 @@ namespace HealthClinic
         private const string MOVE_TO_PATH = @"D:\FACULTATE\Licenta\HealthClinicSolution\HealthClinic\Documents\Processed invoices\";
         private const string FILE_FORMAT = "*.pdf";
 
-        private const string MOVE_FORMAT = "dd/MM/yyyy HHmmssff";
+        private const string MOVE_FORMAT = "dd.MM.yyyy HHmmssff";
 
         private const string TOTAL = "total";
         private const string DATE = "DATE: ";
@@ -66,7 +66,7 @@ namespace HealthClinic
             string invoiceNumber = GetInvoiceNumber(contentList);
 
             List<MedicineDto> medicineList = GetInvoiceMedicine(contentList, invoiceDateTime);
-            
+
             InvoiceDto invoiceDto = new InvoiceDto
             {
                 ValidatedBy = username,
