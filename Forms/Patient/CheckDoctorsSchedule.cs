@@ -73,11 +73,23 @@ namespace HealthClinic.Forms.Patient
 
         private void cbDoctors_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            ClearScheduleDays();
+
             var selectedDoctor = presenter.GetUserByFullName(Convert.ToString(cbDoctors.SelectedItem));
 
             var doctorsSchedule = presenter.GetAllSchedulesForUserByUsername(selectedDoctor.Username);
 
             FillScheduleDays(doctorsSchedule);
+        }
+
+        private void ClearScheduleDays()
+        {
+            tbMonday.Text = string.Empty;
+            tbTuesday.Text = string.Empty;
+            tbThursday.Text = string.Empty;
+            tbFriday.Text = string.Empty;
+            tbSaturday.Text = string.Empty;
+            tbSunday.Text = string.Empty;
         }
 
         private void FillScheduleDays(List<ScheduleDto> doctorsSchedule)
